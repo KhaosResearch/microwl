@@ -1,0 +1,2642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:microwl="http://www.khaos.uma.es/microwl/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+   xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasHostPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/NetworkSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port bound on the node or host by every replica (hostPort, published Compose port, ECS hostPort in bridge or host network mode).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/networkSpecOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasNetworkSpec; its domain and range follow from those of hasNetworkSpec.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:comment xml:lang="en">Abstract class for platform-specific configurations</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0183a628a40f41d3b35a123524ad64d9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasAccessMode"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#st"/>
+    <swrl:argument2>ReadWriteOnce</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee8e02a4ebd34562a174271724bab33d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resourceType"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+    <swrl:argument2>nodePort</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S16">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/WarningConstraint"/>
+    <microwl:hasConstraintId>S16</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">No memory limit is declared.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N058e245361d146878d5d0dfd7d272886">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#replicas"/>
+    <rdf:rest rdf:nodeID="N5f9cda6bfb594650b92bc814f615f2a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasImageTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Tag of the container image ("latest" when the reference has neither tag nor digest).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf935f9cb53234019904c76ce3610326c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S3b_NodePortUpperBound</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <swrl:body rdf:nodeID="N7996af5a751e473d8d9c652cdc3a8071"/>
+    <swrl:head rdf:nodeID="N40bba548ae114136a8b3e24e53f52fb1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf89ed8ffe0be4ebd8923146328fad049">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasEndpointNodePort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/hp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/configurationFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/CloudProvider"/>
+    <rdfs:comment xml:lang="en">Cloud provider for which a deployment configuration is written.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa1c8e3f02d7415398ec6042d442f020">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasContainerSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#ct"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c7dc21400b14b37ac3d113f314f4759">
+    <rdf:first rdf:nodeID="N46c16adfb3c24d21af44f112ca2a6c80"/>
+    <rdf:rest rdf:nodeID="N1b0ee89287474516af209d6a55c44715"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64207d12f365485e9307803748dc770f">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/tport"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a01f3fa1082447a8a4d8d4e6198e01e">
+    <rdf:first rdf:nodeID="Ncfc9f923370542e8ace8db549db96869"/>
+    <rdf:rest rdf:nodeID="Nd3ec72c4d7c94cdea4e4de2d59c7eb21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc3e84f0e68634d2689be6ed13c26c53b">
+    <rdf:first rdf:nodeID="N36720010a4c2449eb0f983666ce97751"/>
+    <rdf:rest rdf:nodeID="N0acca98e727b4e54a1aae7c2df8de07e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e42b051994e4cfaadb211bec8fea2e7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S3</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd196e2bd13945d2a9bd153d709132d5">
+    <rdf:first rdf:nodeID="Nad321d41b64d42bb9fa52941f695920a"/>
+    <rdf:rest rdf:nodeID="Nc788cb3c9b464932a639e8de0793bc16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad321d41b64d42bb9fa52941f695920a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82bdbf1d31a9465bb4af7dfb92202e76">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc9c7c91a9e34694b20537c2ee50c19e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2>S8</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasPlatformConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/platformConfigOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:comment xml:lang="en">Generic link to platform-specific configuration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N485b08b4793249b782137affe865707d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nac62364af61c47af8904b6fde851d349"/>
+    <rdf:rest rdf:nodeID="N45844c23a6174f7aafb37e7ee61ddcee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd399cdc19d524e40b3b056be4c469d27">
+    <rdf:first rdf:nodeID="Nf22861a6f6b34d8e819b5c5bdbb89e7c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/resourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Value associated with a platform resource (e.g., port number, volume name, ARN)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6d2aa07a55d4733a680d96424533d7e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasStorageSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#st"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Pattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N60457c7a4f9042089d0f15b170a41a4e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasContainerPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#ct"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#cport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasContainerPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port the container listens on (platform-agnostic)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/deployedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPlatform"/>
+    <rdfs:comment xml:lang="en">Platform(s) where the microservice is deployed</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd72754e41e5646cabfe4bc86be49de55">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naaf7d06c0622414286cad0b265347c73">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N941905fcd50d4dbc816b2659cc4e5039">
+    <rdf:first rdf:nodeID="N7f7b63f4c6464015bc0cb01aaa6e3592"/>
+    <rdf:rest rdf:nodeID="N20d587077d9f474ebc4bcd351bb78314"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S8">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S8</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">Two endpoints or services of a unit bind the same node or host port.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e91d1e91c654975aba4b4833b63b218">
+    <rdf:first rdf:nodeID="N51f06618a72e4f04ad3f0649c767005d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentError">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Na752d7cfefd2432ab42da86ce37a2a30"/>
+    <rdfs:comment xml:lang="en">Element that violates an error constraint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7d08f0a4ef74537b9c4d9264a7e12a0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N0183a628a40f41d3b35a123524ad64d9"/>
+    <rdf:rest rdf:nodeID="N75e0e3f9a91347ef9a525a0bc38846dd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ErrorConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/ValidationConstraint"/>
+    <rdfs:comment xml:lang="en">Constraint whose violation can make the deployment, or the traffic it serves, fail.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://www.khaos.uma.es/microwl/WarningConstraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf37153cdd2c1474e93455bab2beb8df0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#err"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb9a5a561b2746018ef2cfd427b7702e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S8a_DuplicateNodePort</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>Two endpoints of the same deployment unit open the same NodePort.</rdfs:comment>
+    <swrl:body rdf:nodeID="Nb2dc931fe5c84a01a7eff6f5e605a16a"/>
+    <swrl:head rdf:nodeID="N6aaf9f6fad754776ac61e1a7572f1f09"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N021cbc19747643ac9a7d86285c8eb384">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#replicas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/violates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/ValidationConstraint"/>
+    <rdfs:comment xml:lang="en">Constraint violated by an element (inferred by rule V).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d529ee5396841119c1045fc7a094f06">
+    <rdf:first rdf:nodeID="Nbeb51cf1e5e34c80aa608af1cff8291a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc211be63846e4696b5fe7d7377f81404">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/i2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6740727376714e3ab4b16c4ef9c1803f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>D1_ResolveDependency</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>A dependency resolves to the endpoint of the same deployment unit with the same name.</rdfs:comment>
+    <swrl:body rdf:nodeID="N2b6af6966f4e4a17aeaac81ce09e01e6"/>
+    <swrl:head rdf:nodeID="Nca4ffa673b8a44aea4c7116f2ba6424f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/NodePortOutOfRange">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/KubernetesConfig"/>
+    <rdfs:comment xml:lang="en">Kubernetes configuration with a NodePort outside the range of the cluster (S3a, S3b).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEnvKey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/EnvironmentVariable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Environment variable key</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9ab4fba33034e23a81fe3c23090b097">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resourceValue"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#portVal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40401c4f8f934e2f9e8de2ae15d22704">
+    <rdf:first rdf:nodeID="N71fe053bc5d348548c4cad08db85c3c5"/>
+    <rdf:rest rdf:nodeID="Nd399cdc19d524e40b3b056be4c469d27"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasQualityMetric">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/qualityMetricOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/QualityMetric"/>
+    <rdfs:comment xml:lang="en">Quality metric that applies to a microservice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f91d64866d24387adcae1487513232f">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dd0f35129de4b5eb3d06c6cd3ca4555">
+    <rdf:first rdf:nodeID="N8f7a5ffc11a049e7b7ec65f23566c458"/>
+    <rdf:rest rdf:nodeID="N0d529ee5396841119c1045fc7a094f06"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasAntiPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/AntiPattern"/>
+    <rdfs:comment xml:lang="en">Anti-pattern (OMSAC) present in a microservice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2ea843b6bee14fca9a204dd46a0ba339">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S3a_NodePortLowerBound</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <swrl:body rdf:nodeID="Na53c246bf8744d429ae12bc3fc879b8c"/>
+    <swrl:head rdf:nodeID="N28e221f258334fe885681da841390f29"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N823841f1c9d8403d92f2cd79f298f48a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S5_MinimumReplicaForStateful</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <swrl:body rdf:nodeID="N07cfd6e94bc94a699dd082ba0672f26f"/>
+    <swrl:head rdf:nodeID="N1a01f3fa1082447a8a4d8d4e6198e01e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#m">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75e0e3f9a91347ef9a525a0bc38846dd">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N795640c34c904e00b4caf3e598542ee0"/>
+    <rdf:rest rdf:nodeID="N004feeb567bd45af93f2f494186b844b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f254b1b95824501a8bb776069e9fc71">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9368cd5cf0264385b8fa72add2a6ae02">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/x"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N070e6b9f8c9847c7aa3619b37344baad">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resolvesTo"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/d"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/AbstractConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Marker for abstract concepts that platform-specific resources implement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N583ec68639a443e1848058e4701253a4">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nee8e02a4ebd34562a174271724bab33d"/>
+    <rdf:rest rdf:nodeID="Ne7b288c1801a41ac83e2047e3f0cb070"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasExposedPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/NetworkSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port exposed externally (platform-agnostic)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7200d69a2b3c4d00b701fa1288a9b81f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N82bdbf1d31a9465bb4af7dfb92202e76"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neaf1016d926145dcb1777fddf6295e08">
+    <rdf:first rdf:nodeID="N9e6cd80bc98e46049bfa8471eb507c99"/>
+    <rdf:rest rdf:nodeID="N9e1e48e61f1441a0947cff89bf939998"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na40b4c933fbf4cd683f333d9cd464dbd">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/dependsOnHost"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/d"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/h"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1463363423742a49ec9c846c9f037b6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N9a6c1c7c5a21408aba5c21d8b0c97168"/>
+    <rdf:rest rdf:nodeID="N5d39a0ed54ec4145b7d519d82cb65f52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0435a57d67384eafb549de257083dc4e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resolvesTo"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/d"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N167e08d5e0b7470e9d063ec56d3a2cec">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e709882079f49bba32fc1f9205949c0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasNetworkSpec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/networkSpecOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/NetworkSpecification"/>
+    <rdfs:comment xml:lang="en">Links a microservice to its network specification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6fca05802ea46718a14c025c978c5f5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S11_MutableImageTag</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>Replicas started from a mutable tag may run different image versions.</rdfs:comment>
+    <swrl:body rdf:nodeID="Nff71e70095c1430ea3195c39b39627e2"/>
+    <swrl:head rdf:nodeID="N5e9a588d55f140739dc617318ba60cec"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N806c3b4274824eebad9024d7d4ef9f05">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/platformConfigOf"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEndpointName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name under which an endpoint is reachable.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N76a9268c4d2d488bb191d456ea3a3978">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/p"/>
+    <rdf:rest rdf:nodeID="N8f91d64866d24387adcae1487513232f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ServiceDependency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/AbstractConcept"/>
+    <rdfs:comment xml:lang="en">Reference from a microservice (environment variable) or an Ingress (backend) to a host name and, optionally, a port.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32027b9a1abb4025b0c424bf7244e4f9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b455cdbced44d95bb2529104803d842">
+    <rdf:first rdf:nodeID="N2b75482cb7444404beed313de3f84c85"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b26596008434f5582274f41ba3a78ae">
+    <rdf:first rdf:nodeID="N70c1235e10804dca8ab60404436cdfe2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasContainerSpec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:comment xml:lang="en">Links a microservice to its container specification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N173bfeadc50c46e48e3a7f999bdf8d5a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasEndpointName"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/h"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N358d074de67c4cd2bc093ad88a8288d3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne0b4298b22a74fdb88a8de6b9bc446ca"/>
+    <rdf:rest rdf:nodeID="N0316bcdcb88a4b788a331e6d54a4d319"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5680353dcb9246b1abe01296043f906c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S15_ReadWriteOncePodReplicas</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>A ReadWriteOncePod volume can be mounted by a single pod, so only one replica can start.</rdfs:comment>
+    <swrl:body rdf:nodeID="N6a84b90e32ba43748338152dae4b6367"/>
+    <swrl:head rdf:nodeID="N59e67f9ce9e3467c9bc94d4dd8c912dd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79e575494ad246d89e806edba0e89af2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S2_PortAlignmentConsistency</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrla:isRuleEnabled>
+    <rdfs:comment>Open-world formulation kept for comparison; it flags containers that listen on several ports. The MicrOWL validator uses the closed-world SHACL shape S2c instead (experiments/shapes/microwl-shapes-hybrid.ttl).</rdfs:comment>
+    <swrl:body rdf:nodeID="Nce0548d8576b4798b30c9df41e7bb5b1"/>
+    <swrl:head rdf:nodeID="N1cf75ed6187b4eb8af3cfbc33eca4f2a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/i1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/isIncomplete">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/DeploymentUnit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">True when some descriptors of the unit could not be translated (e.g. templated manifests).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N48a3fa0d011144678e8a561ac07dce86">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8746c727d3804c0094e930f068244964">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasReplicas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/WorkloadSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Number of replicas (platform-agnostic)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09b2fec334a14a27846ca27bdd61b636">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4dc44f5f84204389a06d08157f7212b7">
+    <rdf:first rdf:nodeID="N9368cd5cf0264385b8fa72add2a6ae02"/>
+    <rdf:rest rdf:nodeID="N26089987989e4c14a5dbf3ee2a682ad1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44d5e1e1d9dc4a87a639cc38b6febe46">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasAccessMode"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+    <swrl:argument2>ReadWriteOnce</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasConstraintId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ValidationConstraint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Identifier of a constraint (S1, S2c, ...).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79827be67d9c43f5b086f18973ff4f0b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violates"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/x"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1727c99e44ee4f529e90493f652f80dc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNodePortValue"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/p"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/deployedOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPlatform"/>
+    <rdfs:comment xml:lang="en">Platform where this configuration is deployed</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99e45c18c25d48439d5904190ed2e20a">
+    <rdf:first rdf:nodeID="N327bafce494042599e5afa1089d301c8"/>
+    <rdf:rest rdf:nodeID="N4d134129919842a9b74c10b33f055d0a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54911becc3c94026a18ce2a235097ec3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasEndpointNodePort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/hp2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71444c9d8ebf4246aacc421e0defbfcf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#portVal"/>
+    <rdf:rest rdf:nodeID="Ne0e2c576eff74ca2a93e8b7c0c850fef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0593530015744ffd940894aed69b5275">
+    <rdf:first rdf:nodeID="Nab0de5080721481c9f081faea28c8b49"/>
+    <rdf:rest rdf:nodeID="N0b3977260d1e48b0abc24cc1b0b1f91a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14914ba7235b46dab306e13737f54396">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasExposedPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#nt"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#eport"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0b4298b22a74fdb88a8de6b9bc446ca">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/WorkloadSpecification"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb1e50c43fca4340b43b69c641769d1f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNetworkSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2a09548d105430986f17e855f23711f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a5bc641831d4d9792e12acb045fea6c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/inDeployment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/DeploymentUnit"/>
+    <rdfs:comment xml:lang="en">Deployment unit of a microservice, endpoint or Ingress.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8617c661dc29498282934bad3db5cbe7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.khaos.uma.es/microwl/violates"/>
+    <owl:someValuesFrom rdf:resource="http://www.khaos.uma.es/microwl/WarningConstraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91289590317b478db855f1b74647ab41">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63395b7475b24167a08c983b34490fd8">
+    <rdf:first rdf:nodeID="N8ab039f12b114cb09d9214ce6cc6c077"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S10">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S10</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A dependency names no endpoint of its deployment unit.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b5bf149eb28416ea60382b0cd95a8b0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasDependency"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/x"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93cd54c5c0744cad9d3fe69a6d78446c">
+    <rdf:first rdf:nodeID="Nf3599764a8074d278e387a0baacfbde2"/>
+    <rdf:rest rdf:nodeID="N917d674310f24535bb56600f74838511"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasAccessMode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/StorageSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Storage access mode (ReadWriteOnce, ReadWriteMany) - platform-agnostic</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasNodePortValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/NodePortResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port number of a NodePortResource.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hp">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/providedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ComputeService"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/CloudProvider"/>
+    <rdfs:comment xml:lang="en">Which cloud provider offers this service</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Reusable deployment pattern (sidecar, ambassador, etc.)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90b6dc390bab4d788d8ae630453b20d3">
+    <rdf:first rdf:nodeID="Nf53e8e3d062c41ec8b09ddccae3f7f2f"/>
+    <rdf:rest rdf:nodeID="N8b455cdbced44d95bb2529104803d842"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e732dabedfa4e749610c4d914cd3e5c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S15</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N249c5c219b834546927cf647d6dd16b6">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ValidationConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/AbstractConcept"/>
+    <rdfs:comment xml:lang="en">Validation constraint of the knowledge base.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a6c1c7c5a21408aba5c21d8b0c97168">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNetworkSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#nt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfcce40a231ff48fd8974a9741c35f12e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ae1f7003f5240c897dbc911d2613c1a">
+    <rdf:first rdf:nodeID="N3565dc31899a4a0db6d48590bd7328e0"/>
+    <rdf:rest rdf:nodeID="N40401c4f8f934e2f9e8de2ae15d22704"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98d6fc2993184eb0b1a8f4db1a6c090f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Na920c272016a4e73b6ad0a90e6b8d32e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc6a87248751f4bfe82333ec349e08403">
+    <rdf:first rdf:nodeID="Ndc9c7c91a9e34694b20537c2ee50c19e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e1e48e61f1441a0947cff89bf939998">
+    <rdf:first rdf:nodeID="N64405e891659473fa9b7b707788c9cf0"/>
+    <rdf:rest rdf:nodeID="N92fc36386275416c91e93535caa7d707"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70c1235e10804dca8ab60404436cdfe2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/dependsOn"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1ad989a00934aacaac9de7c0ea68155">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasContainerSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/QualityMetric">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Quality metric for microservice evaluation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/violatesConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Constraint violated by an element (inferred).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/qualityMetricOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasQualityMetric; its domain and range follow from those of hasQualityMetric.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ffa33497391478ea13b24ea4d2fcf3d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNodePortValue"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/p"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S15">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S15</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">Several replicas share a ReadWriteOncePod volume.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4033337e26f94518bda84d5032576801">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34b26bf4c2ca4e17aacfe13bd022847c">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasCohesionScore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Cohesion score (0-1)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2310cad860784f2dbb8bb0f1c5df1099">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasTargetPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/tport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasStorageSize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/StorageSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Storage size (e.g., '10Gi') - platform-agnostic</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfc9f923370542e8ace8db549db96869">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N341462244aea4374867ea61128f1889b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resourceType"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+    <swrl:argument2>nodePort</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71fe053bc5d348548c4cad08db85c3c5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasDependency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/ServiceDependency"/>
+    <rdfs:comment xml:lang="en">Dependency declared by a microservice or an Ingress.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N412e3aba03e6424988d3488176bab600">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8645c76152c5408087c578c0c39dfdf4">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0a4a9c140554720bb63ff059ba0921f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N3bcff3fdab8d4ece8a144806afcfa830"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/cid">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na7cc3d508f1b4b1896e0c7b8faebe37a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasStorageSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S12">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S12</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">An endpoint with a selector routes to no microservice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9de1002b46e45c0b7d77c8024b472d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6aaf9f6fad754776ac61e1a7572f1f09">
+    <rdf:first rdf:nodeID="N2ee09f8abe824ba39ab1d7bfc0ed0077"/>
+    <rdf:rest rdf:nodeID="Nc6a87248751f4bfe82333ec349e08403"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/platformConfigOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasPlatformConfig; its domain and range follow from those of hasPlatformConfig.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae2ac1148fea44acaf8373261dfe9304">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05db0dbe527a40c18017882f19d4a866">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasStorageSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b6a7b862ed24c348b81ac8d74c2d894">
+    <rdf:first rdf:nodeID="N79827be67d9c43f5b086f18973ff4f0b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2ee09f8abe824ba39ab1d7bfc0ed0077">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentEndpoint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b0f6777fb5142078ccdbffb83016b56">
+    <rdf:first rdf:nodeID="N9894a36fe9b640e6a2c766f83e845fda"/>
+    <rdf:rest rdf:nodeID="N8822218d096343bca0c0dc61cc013813"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEnvironmentVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/EnvironmentVariable"/>
+    <rdfs:comment xml:lang="en">Container has environment variable</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b41b93bea484d3295f35a1ea1c29e48">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N8bb2eb8333b9437db5daf6e83ab32b8e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59e67f9ce9e3467c9bc94d4dd8c912dd">
+    <rdf:first rdf:nodeID="N0d29fbe14f80404890025719d4c8f6ee"/>
+    <rdf:rest rdf:nodeID="Nf2e9363eb81d4747b5ceb910dddac8ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S14">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S14</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A probe checks a port that is not a container port.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasMemoryLimit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Memory limit declared for the containers of the microservice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/NetworkSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:comment xml:lang="en">Network exposure configuration: ports to expose externally</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ee22a3d5c8640e2a0d2953e279e5957">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasContainerPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ct"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/cport"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2909fc966484edebbf43a34c97d0856">
+    <rdf:first rdf:nodeID="Na7cc3d508f1b4b1896e0c7b8faebe37a"/>
+    <rdf:rest rdf:nodeID="N8626d67176c14dd18e2595ee8e6bfa48"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N07b29a3cf99f49949f750b79892acee3">
+    <rdf:first rdf:nodeID="N05db0dbe527a40c18017882f19d4a866"/>
+    <rdf:rest rdf:nodeID="N4fe91136ad9c41c1a2c2283536380d8f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasWorkloadSpec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/workloadSpecOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/WorkloadSpecification"/>
+    <rdfs:comment xml:lang="en">Links a microservice to its workload specification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ac172b0ec514efd9779ba80ab6eac0b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/ValidationConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac62364af61c47af8904b6fde851d349">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/KubernetesConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64405e891659473fa9b7b707788c9cf0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1b2f575ec154ee2af5bc55545747df7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7258b43bb4344ceb861cbab0530fe41e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf22861a6f6b34d8e819b5c5bdbb89e7c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/dependsOnHost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceDependency"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Canonical host name of a dependency.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N42459dd5c6814d96957db434a72c3eeb">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasContainerSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/AbstractConcept"/>
+    <rdfs:comment xml:lang="en">Set of elements deployed together (a directory of Kubernetes manifests, a Compose file, a CloudFormation template); names and host ports are resolved within a unit.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71ea0f72928b4e438144fb7cb213e160">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N361d5018dfd44079b0d14cef6707762e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+    <swrl:arguments rdf:nodeID="Nc279d027842d4521b155da53106e7887"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/resourceOf"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Generic link to platform-specific resources (volumes, networks, ingresses, services)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N819b772327e74047b3ef456fbd1b425c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N60457c7a4f9042089d0f15b170a41a4e"/>
+    <rdf:rest rdf:nodeID="Nc1463363423742a49ec9c846c9f037b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N283ad204abc447dcafe98f9b2929daf1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne4dfdd0d8d3a4e98807722f1ebd3c936"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N07cfd6e94bc94a699dd082ba0672f26f">
+    <rdf:first rdf:nodeID="Nd7774fc0f0054145bb48ab58dde48bde"/>
+    <rdf:rest rdf:nodeID="N07b29a3cf99f49949f750b79892acee3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3aef9adafb5645f39a67b8b997f3019b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S1</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b3977260d1e48b0abc24cc1b0b1f91a">
+    <rdf:first rdf:nodeID="N19e7f5f6317b46cf8a058c81fd2f1d34"/>
+    <rdf:rest rdf:nodeID="Ncd7798f1f2b8445c9428569da65c7c1e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72a17b12c0594ca497a16f18d0b6fa1e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/InconsistentEndpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:comment xml:lang="en">Service endpoint that violates a constraint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12d97c5ebd29455f8e9db106f2116e47">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0ff210665f84f2988823172e57adf90">
+    <rdf:first rdf:nodeID="N968095f9664f4752b22b068dfc173565"/>
+    <rdf:rest rdf:nodeID="N5b0f6777fb5142078ccdbffb83016b56"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7145eb61bad845ff8366ee22c34b45d9">
+    <rdf:first rdf:nodeID="N050c2cf14b53416d93d767c6b41ecc62"/>
+    <rdf:rest rdf:nodeID="N70996821b6dd47bea46e2692cc59564e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf4e1a39c94a4079b1722702d9a6c289">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N2fa0d3a84a134d60b4fcbb6ec1ae678a"/>
+    <rdf:rest rdf:nodeID="N8482acb9926c43d6b113a078da743f52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ccf24fa6f254e4880b6296c87226e09">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasAccessMode"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+    <swrl:argument2>ReadWriteOnce</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e1f74430a724fc48739df1955ed35a5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S1_StorageAccessModeConsistency</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <swrl:body rdf:nodeID="Na5e16a64ae174080af0d675f1584f3db"/>
+    <swrl:head rdf:nodeID="Ndf6403188d5c4ceaa09cad69ac09b0e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b75482cb7444404beed313de3f84c85">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasHostPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/hp"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8822218d096343bca0c0dc61cc013813">
+    <rdf:first rdf:nodeID="Nc43badedb858440ea602662dd8feee4b"/>
+    <rdf:rest rdf:nodeID="N9ae1f7003f5240c897dbc911d2613c1a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4fe91136ad9c41c1a2c2283536380d8f">
+    <rdf:first rdf:nodeID="N8ccf24fa6f254e4880b6296c87226e09"/>
+    <rdf:rest rdf:nodeID="N57fc3dd27da246b689ee93a181172c21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd998b5ae16b54ad09367e6adc2a1e05c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S8b_DuplicateHostPort</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>Two services of the same Compose file, which run on a single host, publish the same host port.</rdfs:comment>
+    <swrl:body rdf:nodeID="Nb38bf470751849f18fc506f8498ae57e"/>
+    <swrl:head rdf:nodeID="N7dd0f35129de4b5eb3d06c6cd3ca4555"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fa0d3a84a134d60b4fcbb6ec1ae678a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/KubernetesConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N97fc631f834d4967a6935e06ca39e974">
+    <rdf:first rdf:nodeID="N806c3b4274824eebad9024d7d4ef9f05"/>
+    <rdf:rest rdf:nodeID="N7e2d9948346e47f885cd56c79c517936"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5cf5a053df14208b037ca04025f4b13">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/hp"/>
+    <rdf:rest rdf:nodeID="N5855d2980f7e478caeec1077745dde33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/StorageSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:comment xml:lang="en">Storage configuration: size, access mode</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58aa37523a534e88b6d6d0c7302904cf">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N71444c9d8ebf4246aacc421e0defbfcf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N004feeb567bd45af93f2f494186b844b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N021cbc19747643ac9a7d86285c8eb384"/>
+    <rdf:rest rdf:nodeID="N98d6fc2993184eb0b1a8f4db1a6c090f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f8e2e0e827d4b0abd948e9219f7f623">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N161c87ab7e944cffab2da3700f125e07">
+    <rdf:first rdf:nodeID="N047a5a3aa59e4de99a08a2c0b731b6ee"/>
+    <rdf:rest rdf:nodeID="Nf51659db9e9448ada9f98c49b23e19e0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc43badedb858440ea602662dd8feee4b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasIdentifier"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/i2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#resourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S2">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S2</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A target port differs from a container port (open-world formulation, disabled).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68e75d5472004d03aea331dd2f706805">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/NodePortResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Kubernetes NodePort assigned to a Service; its value is a typed integer.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/WarningConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/ValidationConstraint"/>
+    <rdfs:comment xml:lang="en">Constraint whose violation indicates a risky or incomplete design (best practice).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8482acb9926c43d6b113a078da743f52">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N8746c727d3804c0094e930f068244964"/>
+    <rdf:rest rdf:nodeID="N3f06990267af45df8e94bc26853f4894"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/utilisePattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPattern"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Pattern"/>
+    <rdfs:comment xml:lang="en">Pattern (OMSAC) used by a deployment pattern.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N162b7973d3204b81a1e0d8f89abf156c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/inDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/u"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEndpointPortName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name of an endpoint port.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf16e5c6b70de4f75a72aa6788dc70c70">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/resourceType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Type of platform resource: 'volume', 'network', 'ingress', 'service', 'nodePort', 'serviceType', 'launchType', 'composeVersion'</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/InconsistentDeployment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:comment xml:lang="en">Microservice that violates at least one constraint checked by a SWRL rule; the severity is given by DeploymentError and DeploymentWarning.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N099f6b20c88041749add2f6dd908eb3d">
+    <rdf:first rdf:nodeID="Nc0487498d8af48aa8ff4040099b5cfc2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34f781ff06cf472d9e60dd3443a98d3d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nd492c229fd8647a9955f9bc5cd58a58b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33f1a61a26254001a199f198e9d82494">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+    <swrl:arguments rdf:nodeID="N5ed58d55b96442c880405badcc55da33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S1">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S1</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">Replicas share a ReadWriteOnce volume.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S2c">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S2c</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A target port matches none of the container ports.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b6720852d614deb8c25aa0b2d5855bd">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasAccessMode"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+    <swrl:argument2>ReadWriteOncePod</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ab039f12b114cb09d9214ce6cc6c077">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasConstraintId"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/c"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/cid"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5855d2980f7e478caeec1077745dde33">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/hp2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc788cb3c9b464932a639e8de0793bc16">
+    <rdf:first rdf:nodeID="N5e52836cd93846d58c1176f12c6e1f0f"/>
+    <rdf:rest rdf:nodeID="N884dd90d2cd54257962b39e31ec7ed31"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N897401a7f1694992837dc40acdd0e08d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f7b63f4c6464015bc0cb01aaa6e3592">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8626d67176c14dd18e2595ee8e6bfa48">
+    <rdf:first rdf:nodeID="Ne64b452de7e248d2ad43cb73632bf7ff"/>
+    <rdf:rest rdf:nodeID="N8eddecc8e8274f519270831b1b8a4d2c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26089987989e4c14a5dbf3ee2a682ad1">
+    <rdf:first rdf:nodeID="N65d13b4158df4e1c961a6c20e8f105bf"/>
+    <rdf:rest rdf:nodeID="Nb1587fddb23d420fb11f0d72816ea364"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9963a88b898d46c89618314ee88c6a0a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4dfdd0d8d3a4e98807722f1ebd3c936">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb69c5025e2c6432e913c7c4b824b8605">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasHostPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/hp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">
+            MICROWL - A Platform-Agnostic Ontology for Microservices Deployment
+            
+            DESIGN PRINCIPLES:
+            1. Abstract layer with platform-agnostic concepts (WorkloadSpecification, 
+               ContainerSpecification, NetworkSpecification, StorageSpecification)
+            2. Platform-specific layer (PlatformSpecificConfiguration) with resources
+            3. Generic properties for cross-platform queries
+            4. Extensible for new platforms without modifying existing structure
+            
+            Namespaces:
+            - MICROWL: http://www.khaos.uma.es/microwl/
+            - OMSAC: http://www.semanticweb.org/ontologyOfMicroservicesArchitecture
+        </rdfs:comment>
+    <dcterms:title xml:lang="en">MicrOWL: an ontology for the multi-platform validation of microservice deployments</dcterms:title>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Identifier of a microservice, endpoint or Ingress.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbeb51cf1e5e34c80aa608af1cff8291a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S8</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e7c3948949c49d0be6861fefdebc7e7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/networkSpecOf"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEndpointPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port on which clients reach an endpoint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70996821b6dd47bea46e2692cc59564e">
+    <rdf:first rdf:nodeID="N1727c99e44ee4f529e90493f652f80dc"/>
+    <rdf:rest rdf:nodeID="Nbf30cc24a0d34ef38ca5933b7768694d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1587fddb23d420fb11f0d72816ea364">
+    <rdf:first rdf:nodeID="N91289590317b478db855f1b74647ab41"/>
+    <rdf:rest rdf:nodeID="N58f90e17b07e4c2fa2675dfa712ec40b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/dependsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:comment xml:lang="en">A microservice depends on another one (inferred by D2).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb144a343d576494188ef4b3c08bc3310">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/throws">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/DeploymentError"/>
+    <rdfs:comment xml:lang="en">Deployment error raised by a deployment configuration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/KubernetesIngress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Kubernetes Ingress resource</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e2d9948346e47f885cd56c79c517936">
+    <rdf:first rdf:nodeID="Neeb41214da1843a396533dc550b05ad0"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ECSService">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">ECS Service resource</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd5a9c6e04a642a09f3a62eb9e5d7c5d">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+    <rdf:rest rdf:nodeID="N9f8e2e0e827d4b0abd948e9219f7f623"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a1b3f85cc9b418d98ba80212a0591a9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nbbb3307436f0405ba865bb7404f7e09d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/p">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/implements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/AbstractConcept"/>
+    <rdfs:comment xml:lang="en">Abstract concept implemented by a microservice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3bcff3fdab8d4ece8a144806afcfa830">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+    <swrl:arguments rdf:nodeID="Nd785debad8e44e4995301e9c06d2528a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd947e3d1e16b44118e9daeaa747184b5">
+    <rdf:first rdf:nodeID="Nf2a09548d105430986f17e855f23711f"/>
+    <rdf:rest rdf:nodeID="Nd972c4f3aab54f16a991cf05098a4c0b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4145a67a90b4256b043f06e8c890fb7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N0693f65b34694ddd91c4984668fd41c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc40e5e0531234a9aba48c8a9c3a1f6fc">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>V_ViolatedConstraint</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>Links an element to the catalogue entry of each constraint it violates.</rdfs:comment>
+    <swrl:body rdf:nodeID="N99e45c18c25d48439d5904190ed2e20a"/>
+    <swrl:head rdf:nodeID="N9b6a7b862ed24c348b81ac8d74c2d894"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4ebab4bfb24458eb179479c690796a4">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Naa1c8e3f02d7415398ec6042d442f020"/>
+    <rdf:rest rdf:nodeID="N819b772327e74047b3ef456fbd1b425c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/MigrationPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Pattern"/>
+    <rdfs:comment xml:lang="en">Pattern for migrating from monolith to microservices</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/InconsistentIngress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/KubernetesIngress"/>
+    <rdfs:comment xml:lang="en">Ingress that violates a constraint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b6af6966f4e4a17aeaac81ce09e01e6">
+    <rdf:first rdf:nodeID="N3b5bf149eb28416ea60382b0cd95a8b0"/>
+    <rdf:rest rdf:nodeID="N6821c6abb0e24065ac1b2579e6f238df"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S9">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S9</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A dependency uses a port that its endpoint does not serve.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b19eabf71344a869d4c836fb5262f4d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0316bcdcb88a4b788a331e6d54a4d319">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N5a0ed84ceb0e4de89a2d92756f869857"/>
+    <rdf:rest rdf:nodeID="N9d54c235f0bb4fbcba68cc80f6a3e8b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf30cc24a0d34ef38ca5933b7768694d">
+    <rdf:first rdf:nodeID="N33f1a61a26254001a199f198e9d82494"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec60636f4e244e2898815d7fe5ac8384">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasStorageSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#st"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5bc5bc044504d1f9b8c0f414011940f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N76a9268c4d2d488bb191d456ea3a3978"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e3970c4b0fe4730b643d5f8cee4e120">
+    <rdf:first rdf:nodeID="Neb1e50c43fca4340b43b69c641769d1f"/>
+    <rdf:rest rdf:nodeID="Nb129c58741c643aeb749d8a491184340"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45844c23a6174f7aafb37e7ee61ddcee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne4ad4396628846e4901a6297341e9046"/>
+    <rdf:rest rdf:nodeID="Nb200863827d147058ad0188f7ce6e4f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na920c272016a4e73b6ad0a90e6b8d32e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+    <swrl:arguments rdf:nodeID="N058e245361d146878d5d0dfd7d272886"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19e7f5f6317b46cf8a058c81fd2f1d34">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasIdentifier"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/i2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7fe1dcdb71054794b1c406ef64a77b67">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/platformConfigOf"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#err"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/c1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0487498d8af48aa8ff4040099b5cfc2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/WorkloadSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:comment xml:lang="en">Workload configuration: replicas, scaling policies, etc.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e708bd656784242a31286fa3760b951">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N5dfeff3e8ad04ecfbd36c1f8800f4b99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f06990267af45df8e94bc26853f4894">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Naaf7d06c0622414286cad0b265347c73"/>
+    <rdf:rest rdf:nodeID="Nd98c2a2e8ac14e16b2dcdafc50c193f1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6e26987d32942e6b4c5c47917182a9a">
+    <rdf:first rdf:nodeID="Nf1ff6210651f49469c181836e99906f4"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8cf99c8c992943dbb9e948b50e716cb6">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#cport"/>
+    <rdf:rest rdf:nodeID="N911fa828ec8a481789199ad5a93beed9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ECSConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:comment xml:lang="en">AWS ECS specific configuration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasProbePort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port checked by a liveness, readiness or startup probe.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/containerSpecOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/hasContainerSpec"/>
+    <rdfs:comment xml:lang="en">Inverse of hasContainerSpec; its domain and range follow from those of hasContainerSpec.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasSelector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">True when the endpoint selects the microservices it routes to (Kubernetes selector, ECS container name).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne13777c48d144083b9820c2c9618f35b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N85bf3e9670ec4c9c81debbf9b978a5ae">
+    <rdf:first rdf:nodeID="N412e3aba03e6424988d3488176bab600"/>
+    <rdf:rest rdf:nodeID="N8d439c8d1c7d462daf6a864e8dcd95e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17055e539cea4383b805261d1e4a431f">
+    <rdf:first rdf:nodeID="N44d5e1e1d9dc4a87a639cc38b6febe46"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb129c58741c643aeb749d8a491184340">
+    <rdf:first rdf:nodeID="N2310cad860784f2dbb8bb0f1c5df1099"/>
+    <rdf:rest rdf:nodeID="N9f2d3554bfbd4ae2b9694ecdf663a2b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/resolvesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceDependency"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:comment xml:lang="en">Endpoint of the same deployment unit whose name matches the host of a dependency (inferred by D1).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/storageSpecOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasStorageSpec; its domain and range follow from those of hasStorageSpec.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N968095f9664f4752b22b068dfc173565">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+    <swrl:arguments rdf:nodeID="N178da25592894ecaa0143211000edba8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc7054c8f92cb4dce9aef3a291763ee3f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N71ea0f72928b4e438144fb7cb213e160"/>
+    <rdf:rest rdf:nodeID="N5e73c294db1347a3b68f5c968cd2f522"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N692ef514fab840babdf9812cdf6ad189">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/KubernetesConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b4b5eb8b7584b79a7e684ddfb7cf2ea">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/i1"/>
+    <rdf:rest rdf:nodeID="Nc211be63846e4696b5fe7d7377f81404"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b4d9b03f86e479babdbaa35a8397a82">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/DockerComposeConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/deployedOnInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/InfrastructureTarget"/>
+    <rdfs:comment xml:lang="en">Concrete infrastructure (cluster) where this configuration is deployed</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80111f0c023b4f01bdec96ce36bd5ffe">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/i1"/>
+    <rdf:rest rdf:nodeID="N5d4ca80acd0c40fcb009f3234a4b731d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03026b7a7b57424ebca4b033ae2d4cfb">
+    <rdf:first rdf:nodeID="N1ffa33497391478ea13b24ea4d2fcf3d"/>
+    <rdf:rest rdf:nodeID="N9a9a77c3aee547d6a64def0d05d90df2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1996148f8cf4b90b48d17813e17415b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasStorageSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4d5d8469f9904ca8b7dc6b47534319fa">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S4_PropagateInconsistency</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <swrl:body rdf:nodeID="N118d3694479b41d9b1065cdcf7d47aec"/>
+    <swrl:head rdf:nodeID="N18193dc771654a8c81922293529c9f3f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7258b43bb4344ceb861cbab0530fe41e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+    <swrl:arguments rdf:nodeID="N8cf99c8c992943dbb9e948b50e716cb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab3aae3c988841908eac650ea4b8651c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N122465aa6a264140a59a4f2d7e62f072">
+    <rdf:first rdf:nodeID="N613af18ebd9d4aecb04f7256cf956c78"/>
+    <rdf:rest rdf:nodeID="Nbba200cdf74047eba918b433da44aad9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S13">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S13</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">An Ingress backend names no endpoint, or a port it does not serve.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/resourceOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasResource; its domain and range follow from those of hasResource.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e52836cd93846d58c1176f12c6e1f0f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="N593be5e1397645a5bb4e7d7c301ad4ff"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2f2161ac2a848e29509c17ff1c6c9a9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nf37153cdd2c1474e93455bab2beb8df0"/>
+    <rdf:rest rdf:nodeID="N3e3d9504a50a494fa0b804f61e696cd2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce0548d8576b4798b30c9df41e7bb5b1">
+    <rdf:first rdf:nodeID="N4033337e26f94518bda84d5032576801"/>
+    <rdf:rest rdf:nodeID="N5198bc6131714d72a0138f3672db48b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DockerComposeConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:comment xml:lang="en">Docker Compose specific configuration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5198bc6131714d72a0138f3672db48b1">
+    <rdf:first rdf:nodeID="Nf1ad989a00934aacaac9de7c0ea68155"/>
+    <rdf:rest rdf:nodeID="N334de2115c034443b435deb4581d2f1c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88009905b02d46d1ad5b12530f74cae6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N58aa37523a534e88b6d6d0c7302904cf"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne64b452de7e248d2ad43cb73632bf7ff">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/SharedStorageSpecification"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b8a3bcf4b404a04acac664dd4620ce6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/st">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ed58d55b96442c880405badcc55da33">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/p"/>
+    <rdf:rest rdf:nodeID="Nf16e5c6b70de4f75a72aa6788dc70c70"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd68f405a25f847ebb291be9a42d558ac">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7f4e31ac41f34d9f84b780e2c9e2a93d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/dependsOnPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceDependency"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port of a dependency.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/EnvironmentVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Environment variable key-value pair</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbbb3307436f0405ba865bb7404f7e09d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasAccessMode"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#st"/>
+    <swrl:argument2>ReadWriteOnce</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3ec72c4d7c94cdea4e4de2d59c7eb21">
+    <rdf:first rdf:nodeID="N9c2ceab7081b4194b0cb50d6ff9a5356"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2da6d8d780f74d5db03d4aea845c5abe">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nd6d2aa07a55d4733a680d96424533d7e"/>
+    <rdf:rest rdf:nodeID="Ne7d08f0a4ef74537b9c4d9264a7e12a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb67445dab4894eaaaee94e41a5098b10">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35d9606b85074b23b13ba513401cac79">
+    <rdf:first rdf:nodeID="N3aef9adafb5645f39a67b8b997f3019b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3da1a13a8f54ab092637876ed0cdb58">
+    <rdf:first rdf:nodeID="N7328b34f20f54dd58518dae24b7511b3"/>
+    <rdf:rest rdf:nodeID="N0593530015744ffd940894aed69b5275"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3599764a8074d278e387a0baacfbde2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6229f23638ab46699b1beba2d395545c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N17ff0204697c43ad8cd46115f294fb65"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf53e8e3d062c41ec8b09ddccae3f7f2f">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNetworkSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/nt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f9cda6bfb594650b92bc814f615f2a9">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ContainerSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentConfiguration"/>
+    <rdfs:comment xml:lang="en">Container configuration: image, ports, environment variables</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd51ab0d125fd4b5f8f61193cec9cc715">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S11</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEnvValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/EnvironmentVariable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Environment variable value</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N917d674310f24535bb56600f74838511">
+    <rdf:first rdf:nodeID="N167e08d5e0b7470e9d063ec56d3a2cec"/>
+    <rdf:rest rdf:nodeID="N161c87ab7e944cffab2da3700f125e07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasTargetPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/NetworkSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Port of the container to which the exposed port forwards traffic.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N334de2115c034443b435deb4581d2f1c">
+    <rdf:first rdf:nodeID="N1ee22a3d5c8640e2a0d2953e279e5957"/>
+    <rdf:rest rdf:nodeID="N6e3970c4b0fe4730b643d5f8cee4e120"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S7">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S7</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">Several replicas bind a fixed host port.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0e2c576eff74ca2a93e8b7c0c850fef">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32767</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a1c79c7a41f435a93e984b838e73d73">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/SharedStorageSpecification"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/st"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N396963a4c56f413cbfe9c5f140b0bdb3">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+    <rdf:rest rdf:nodeID="N5271af2236bc4bc7ad50ec07e1edfd00"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncbb71be377744782a694238c590fe65d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S7_HostPortReplicas</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>Several replicas bind the same fixed host port: at most one replica can run on each node.</rdfs:comment>
+    <swrl:body rdf:nodeID="N3c4d433e137b4864a7cb91ddac7ab491"/>
+    <swrl:head rdf:nodeID="N122465aa6a264140a59a4f2d7e62f072"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b6361d511d34793897eb3fd3ea6a856">
+    <rdf:first rdf:nodeID="N48a3fa0d011144678e8a561ac07dce86"/>
+    <rdf:rest rdf:nodeID="N0c7dc21400b14b37ac3d113f314f4759"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4ad4396628846e4901a6297341e9046">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c2ceab7081b4194b0cb50d6ff9a5356">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S5</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e376390ab1545a289a4133ab0611ed0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/KubernetesConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:comment xml:lang="en">Kubernetes specific configuration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N327bafce494042599e5afa1089d301c8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/x"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/cid"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb441f6214f0450e9858b4addecd2b85">
+    <rdf:first rdf:nodeID="N981e9090cadd4cb99dc83a1449188129"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/m">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e3d9504a50a494fa0b804f61e696cd2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N7fe1dcdb71054794b1c406ef64a77b67"/>
+    <rdf:rest rdf:nodeID="N4a4c0b33498e4e5c8ea1e5eca64a1c32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/InfrastructureTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPlatform"/>
+    <rdfs:comment xml:lang="en">Concrete infrastructure target (cluster, node pool, etc.)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51f06618a72e4f04ad3f0649c767005d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S2</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e6cd80bc98e46049bfa8471eb507c99">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6a626b7efb943c983cad3408ebbc7e3">
+    <rdf:first rdf:nodeID="N7e42b051994e4cfaadb211bec8fea2e7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a0ed84ceb0e4de89a2d92756f869857">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasReplicas"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#ws"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#replicas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hp2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/followsPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPattern"/>
+    <rdfs:comment xml:lang="en">Configuration follows a specific deployment pattern</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5de1c0811ff435ca264b10aeb6f4837">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N255776fa0d3b4d4b93a93940599eeebf">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f32e4c7f7004c4bb684ef9733b3d691">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb200863827d147058ad0188f7ce6e4f3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N897401a7f1694992837dc40acdd0e08d"/>
+    <rdf:rest rdf:nodeID="N8062561c2e8c426daffbcb4ca7f04c72"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c216c93657f48d3b90c3d33523de6de">
+    <rdf:first rdf:nodeID="Nd51ab0d125fd4b5f8f61193cec9cc715"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb653bda2550d4b3c852dd35bafc214c9">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/hp2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17ff0204697c43ad8cd46115f294fb65">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28e221f258334fe885681da841390f29">
+    <rdf:first rdf:nodeID="N134391ab92474dafbaef29f2fe678a51"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/antiPatternOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/hasAntiPattern"/>
+    <rdfs:comment xml:lang="en">Inverse of hasAntiPattern; its domain and range follow from those of hasAntiPattern.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N228e56ac5e1b436697f2a64257e55996">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65d13b4158df4e1c961a6c20e8f105bf">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd117244ff1e4f2db29df1869cd11ec7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N55d876dc7366491e85f905501c39e053"/>
+    <rdf:rest rdf:nodeID="Nbf4e1a39c94a4079b1722702d9a6c289"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N267878442d5f4f82a7a24d92b4fda7a6">
+    <rdf:first rdf:nodeID="N0c271218d42b4ea8b990e1443a53ff94"/>
+    <rdf:rest rdf:nodeID="Nd947e3d1e16b44118e9daeaa747184b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N333067beb4d84403b6a5fe5d08364074">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasNetworkSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/nt2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasStorageSpec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.khaos.uma.es/microwl/storageSpecOf"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.khaos.uma.es/microwl/StorageSpecification"/>
+    <rdfs:comment xml:lang="en">Links a microservice to its storage specification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N795640c34c904e00b4caf3e598542ee0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1450c650bd024eee9968c30aaf5fe3bf">
+    <rdf:first rdf:nodeID="N5687c5e854cc49d982bc51a7ab664412"/>
+    <rdf:rest rdf:nodeID="Nb3da1a13a8f54ab092637876ed0cdb58"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a4c0b33498e4e5c8ea1e5eca64a1c32">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ndcd94d62716f4437b63f0795f8c9e721"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c271218d42b4ea8b990e1443a53ff94">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/KubernetesConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82e618716e964962b95705fd6903c5a9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>D2_DependsOn</rdfs:label>
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment>A microservice depends on the microservices to which its dependencies are routed.</rdfs:comment>
+    <swrl:body rdf:nodeID="N1fdd6ed0d7324decaced66e6a271112f"/>
+    <swrl:head rdf:nodeID="N6b26596008434f5582274f41ba3a78ae"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58f90e17b07e4c2fa2675dfa712ec40b">
+    <rdf:first rdf:nodeID="N173bfeadc50c46e48e3a7f999bdf8d5a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc88dc6c99de645d68e1ff8424f710066">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/violatesConstraint"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2>S7</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5271af2236bc4bc7ad50ec07e1edfd00">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8920882ffe8047c6bdd3f8bdaab94d23">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad1f7af2d8394152ac2acb73eabc1f78">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N8f32e4c7f7004c4bb684ef9733b3d691"/>
+    <rdf:rest rdf:nodeID="N358d074de67c4cd2bc093ad88a8288d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e9a588d55f140739dc617318ba60cec">
+    <rdf:first rdf:nodeID="Nd5de1c0811ff435ca264b10aeb6f4837"/>
+    <rdf:rest rdf:nodeID="N2c216c93657f48d3b90c3d33523de6de"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9fa5466de454f7383c850a249ead6ba">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N0caefa92cce141f5a078e64c19951805"/>
+    <rdf:rest rdf:nodeID="N88009905b02d46d1ad5b12530f74cae6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a9a77c3aee547d6a64def0d05d90df2">
+    <rdf:first rdf:nodeID="Nf5bc5bc044504d1f9b8c0f414011940f"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3958a2c98504d18abb7ff03f3e54454">
+    <rdf:first rdf:nodeID="N2a5bc641831d4d9792e12acb045fea6c"/>
+    <rdf:rest rdf:nodeID="N099f6b20c88041749add2f6dd908eb3d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S5">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/WarningConstraint"/>
+    <microwl:hasConstraintId>S5</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">ReadWriteOnce storage is requested with zero replicas.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2dc931fe5c84a01a7eff6f5e605a16a">
+    <rdf:first rdf:nodeID="Nf89ed8ffe0be4ebd8923146328fad049"/>
+    <rdf:rest rdf:nodeID="N85bf3e9670ec4c9c81debbf9b978a5ae"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd807a00db3d4551a2ee534d45dd226a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasWorkloadSpec"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/ws"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7328b34f20f54dd58518dae24b7511b3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+    <swrl:arguments rdf:nodeID="Na5cf5a053df14208b037ca04025f4b13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0693f65b34694ddd91c4984668fd41c2">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+    <rdf:rest rdf:nodeID="N34b26bf4c2ca4e17aacfe13bd022847c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/CloudProvider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Cloud provider (AWS, GCP, Azure, etc.)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31fdadf77f814da1a0acedbaf26559c9">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+    <swrl:arguments rdf:nodeID="N396963a4c56f413cbfe9c5f140b0bdb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18193dc771654a8c81922293529c9f3f">
+    <rdf:first rdf:nodeID="Na93464ef247f4398bccaba64c0d51815"/>
+    <rdf:rest rdf:nodeID="Ne6a626b7efb943c983cad3408ebbc7e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ComputeService">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Managed compute service (EKS, GKE, AKS, ECS)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb495e810ca54a1aaec28e8af7c8c565">
+    <rdf:first rdf:nodeID="N4e708bd656784242a31286fa3760b951"/>
+    <rdf:rest rdf:nodeID="Nb2909fc966484edebbf43a34c97d0856"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N134391ab92474dafbaef29f2fe678a51">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N613af18ebd9d4aecb04f7256cf956c78">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasContainerImage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ContainerSpecification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Container image name (platform-agnostic)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ServiceEndpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/AbstractConcept"/>
+    <rdfs:comment xml:lang="en">Named entry point through which clients reach microservices of the same deployment unit (Kubernetes Service, Compose service name, ECS load-balancer target).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#replicas">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8062561c2e8c426daffbcb4ca7f04c72">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N6d3b4c0c176647e49413047341774a74"/>
+    <rdf:rest rdf:nodeID="N583ec68639a443e1848058e4701253a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4d134129919842a9b74c10b33f055d0a">
+    <rdf:first rdf:nodeID="N4ac172b0ec514efd9779ba80ab6eac0b"/>
+    <rdf:rest rdf:nodeID="N63395b7475b24167a08c983b34490fd8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#err">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d29fbe14f80404890025719d4c8f6ee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A platform where applications can be deployed</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N047a5a3aa59e4de99a08a2c0b731b6ee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <swrl:arguments rdf:nodeID="Nfd5a9c6e04a642a09f3a62eb9e5d7c5d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62dc3edc18b343b49ad1c66f12220e31">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Na9de1002b46e45c0b7d77c8024b472d6"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5687c5e854cc49d982bc51a7ab664412">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasHostPort"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/nt2"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/hp2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/res">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#ct">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf309aea1ccd445cdbbc4d443ad2509c9">
+    <rdf:first rdf:nodeID="Nae2ac1148fea44acaf8373261dfe9304"/>
+    <rdf:rest rdf:nodeID="N2e95e22fdffe4dbd8dfe03948ae54645"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5dfeff3e8ad04ecfbd36c1f8800f4b99">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+    <rdf:rest rdf:nodeID="N12d97c5ebd29455f8e9db106f2116e47"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1cf75ed6187b4eb8af3cfbc33eca4f2a">
+    <rdf:first rdf:nodeID="N9e709882079f49bba32fc1f9205949c0"/>
+    <rdf:rest rdf:nodeID="N5e91d1e91c654975aba4b4833b63b218"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e473144ea24412fb58be6105343d47e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+    <swrl:arguments rdf:nodeID="N5b4b5eb8b7584b79a7e684ddfb7cf2ea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a5b53df9a53461aa061204005613546">
+    <rdf:first rdf:nodeID="N8f254b1b95824501a8bb776069e9fc71"/>
+    <rdf:rest rdf:nodeID="N267878442d5f4f82a7a24d92b4fda7a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N884dd90d2cd54257962b39e31ec7ed31">
+    <rdf:first rdf:nodeID="N42459dd5c6814d96957db434a72c3eeb"/>
+    <rdf:rest rdf:nodeID="Na6e26987d32942e6b4c5c47917182a9a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DockerNetwork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Docker network resource</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55d876dc7366491e85f905501c39e053">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentWarning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N8617c661dc29498282934bad3db5cbe7"/>
+    <rdfs:comment xml:lang="en">Element that violates a warning constraint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/dependsOnPortName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceDependency"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Port name of a dependency.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7b288c1801a41ac83e2047e3f0cb070">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne9ab4fba33034e23a81fe3c23090b097"/>
+    <rdf:rest rdf:nodeID="Nb0a4a9c140554720bb63ff059ba0921f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N46c16adfb3c24d21af44f112ca2a6c80">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/DockerComposeConfig"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d39a0ed54ec4145b7d519d82cb65f52">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N14914ba7235b46dab306e13737f54396"/>
+    <rdf:rest rdf:nodeID="Nf1b2f575ec154ee2af5bc55545747df7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/PlatformResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Abstract resource that can be attached to platform-specific configs</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N981e9090cadd4cb99dc83a1449188129">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/routesTo"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/m2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7996af5a751e473d8d9c652cdc3a8071">
+    <rdf:first rdf:nodeID="N8920882ffe8047c6bdd3f8bdaab94d23"/>
+    <rdf:rest rdf:nodeID="N8a5b53df9a53461aa061204005613546"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d439c8d1c7d462daf6a864e8dcd95e4">
+    <rdf:first rdf:nodeID="Nfcce40a231ff48fd8974a9741c35f12e"/>
+    <rdf:rest rdf:nodeID="Ncb698960c8304ea18438b53768da4623"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na752d7cfefd2432ab42da86ce37a2a30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.khaos.uma.es/microwl/violates"/>
+    <owl:someValuesFrom rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fdd6ed0d7324decaced66e6a271112f">
+    <rdf:first rdf:nodeID="Ncb51af84acbe4ac4b5297081f18718d6"/>
+    <rdf:rest rdf:nodeID="Nc3e84f0e68634d2689be6ed13c26c53b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd98c2a2e8ac14e16b2dcdafc50c193f1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N341462244aea4374867ea61128f1889b"/>
+    <rdf:rest rdf:nodeID="Nf9fa5466de454f7383c850a249ead6ba"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98ea782c791c4f2f9f18fc5c17098ac3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasEndpointNodePort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">NodePort opened by an endpoint.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S3">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/ErrorConstraint"/>
+    <microwl:hasConstraintId>S3</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">A NodePort lies outside the range of the cluster.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c4d433e137b4864a7cb91ddac7ab491">
+    <rdf:first rdf:nodeID="N9b19eabf71344a869d4c836fb5262f4d"/>
+    <rdf:rest rdf:nodeID="Neaf1016d926145dcb1777fddf6295e08"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N178da25592894ecaa0143211000edba8">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/hp"/>
+    <rdf:rest rdf:nodeID="Nb653bda2550d4b3c852dd35bafc214c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3565dc31899a4a0db6d48590bd7328e0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+    <swrl:arguments rdf:nodeID="N80111f0c023b4f01bdec96ce36bd5ffe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc279d027842d4521b155da53106e7887">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/cport"/>
+    <rdf:rest rdf:nodeID="N64207d12f365485e9307803748dc770f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#st">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#eport">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8bb2eb8333b9437db5daf6e83ab32b8e">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#replicas"/>
+    <rdf:rest rdf:nodeID="N228e56ac5e1b436697f2a64257e55996"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92fc36386275416c91e93535caa7d707">
+    <rdf:first rdf:nodeID="Na4145a67a90b4256b043f06e8c890fb7"/>
+    <rdf:rest rdf:nodeID="N90b6dc390bab4d788d8ae630453b20d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36720010a4c2449eb0f983666ce97751">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasDependency"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e73c294db1347a3b68f5c968cd2f522">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nec60636f4e244e2898815d7fe5ac8384"/>
+    <rdf:rest rdf:nodeID="N1a1b3f85cc9b418d98ba80212a0591a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na93464ef247f4398bccaba64c0d51815">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49d346f6633a4595abe5f17b2e7f5a02">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nb67445dab4894eaaaee94e41a5098b10"/>
+    <rdf:rest rdf:nodeID="Nf4ebab4bfb24458eb179479c690796a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f2d3554bfbd4ae2b9694ecdf663a2b2">
+    <rdf:first rdf:nodeID="N361d5018dfd44079b0d14cef6707762e"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6821c6abb0e24065ac1b2579e6f238df">
+    <rdf:first rdf:nodeID="Na40b4c933fbf4cd683f333d9cd464dbd"/>
+    <rdf:rest rdf:nodeID="N4dc44f5f84204389a06d08157f7212b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d3b4c0c176647e49413047341774a74">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#k8s"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/routesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/ServiceEndpoint"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:comment xml:lang="en">Microservice to which an endpoint routes traffic.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd785debad8e44e4995301e9c06d2528a">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#portVal"/>
+    <rdf:rest rdf:nodeID="Nb144a343d576494188ef4b3c08bc3310"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c869e99cbde4ef4b89e769d04c42e6a">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcd94d62716f4437b63f0795f8c9e721">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd972c4f3aab54f16a991cf05098a4c0b">
+    <rdf:first rdf:nodeID="N3c869e99cbde4ef4b89e769d04c42e6a"/>
+    <rdf:rest rdf:nodeID="N03026b7a7b57424ebca4b033ae2d4cfb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb38bf470751849f18fc506f8498ae57e">
+    <rdf:first rdf:nodeID="Nb69c5025e2c6432e913c7c4b824b8605"/>
+    <rdf:rest rdf:nodeID="N7813e9f865c24b2aa38e90b2af9cef91"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf618246933bc43a8b3e610a1b0c8261c">
+    <rdf:first rdf:nodeID="N9e376390ab1545a289a4133ab0611ed0"/>
+    <rdf:rest rdf:nodeID="N7145eb61bad845ff8366ee22c34b45d9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf51659db9e9448ada9f98c49b23e19e0">
+    <rdf:first rdf:nodeID="Nf1996148f8cf4b90b48d17813e17415b"/>
+    <rdf:rest rdf:nodeID="N933c8d4e0cc240ea91144f2781398b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d4ca80acd0c40fcb009f3234a4b731d">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/i2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca4ffa673b8a44aea4c7116f2ba6424f">
+    <rdf:first rdf:nodeID="N070e6b9f8c9847c7aa3619b37344baad"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab0de5080721481c9f081faea28c8b49">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasIdentifier"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/i1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f7a5ffc11a049e7b7ec65f23566c458">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ce8562161c14726a171dd4290d2b65a">
+    <rdf:first rdf:nodeID="N8645c76152c5408087c578c0c39dfdf4"/>
+    <rdf:rest rdf:nodeID="Ncd196e2bd13945d2a9bd153d709132d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na53c246bf8744d429ae12bc3fc879b8c">
+    <rdf:first rdf:nodeID="N255776fa0d3b4d4b93a93940599eeebf"/>
+    <rdf:rest rdf:nodeID="Nf309aea1ccd445cdbbc4d443ad2509c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/PerReplicaStorageSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/StorageSpecification"/>
+    <rdfs:comment xml:lang="en">Storage provisioned independently for each replica (e.g. StatefulSet volumeClaimTemplates).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7774fc0f0054145bb48ab58dde48bde">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7813e9f865c24b2aa38e90b2af9cef91">
+    <rdf:first rdf:nodeID="N7e7c3948949c49d0be6861fefdebc7e7"/>
+    <rdf:rest rdf:nodeID="Nb6840b5d8425499184a5f88529e0293a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N933c8d4e0cc240ea91144f2781398b25">
+    <rdf:first rdf:nodeID="N8a1c79c7a41f435a93e984b838e73d73"/>
+    <rdf:rest rdf:nodeID="N17055e539cea4383b805261d1e4a431f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#k8s">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N047a6d0d97b94b6c8a3768e87aed30d8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nab3aae3c988841908eac650ea4b8651c"/>
+    <rdf:rest rdf:nodeID="N2da6d8d780f74d5db03d4aea845c5abe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff71e70095c1430ea3195c39b39627e2">
+    <rdf:first rdf:nodeID="N09b2fec334a14a27846ca27bdd61b636"/>
+    <rdf:rest rdf:nodeID="N0ce8562161c14726a171dd4290d2b65a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69c504790f2f44fabcd2817f04623fae">
+    <rdf:first rdf:nodeID="N32027b9a1abb4025b0c424bf7244e4f9"/>
+    <rdf:rest rdf:nodeID="N4624dd623bb74b609dedbed3b34296c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N08b6c323e122454f9cbcd49b5da6b536">
+    <rdf:first rdf:nodeID="N162b7973d3204b81a1e0d8f89abf156c"/>
+    <rdf:rest rdf:nodeID="N3746bfd4bb4a4d95938f74e292f98e50"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N593be5e1397645a5bb4e7d7c301ad4ff">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/r"/>
+    <rdf:rest rdf:nodeID="N249c5c219b834546927cf647d6dd16b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#hasLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/hasCouplingScore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Coupling score (0-1, lower is better)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1ff6210651f49469c181836e99906f4">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasImageTag"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/ct"/>
+    <swrl:argument2>latest</swrl:argument2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbba200cdf74047eba918b433da44aad9">
+    <rdf:first rdf:nodeID="Nc88dc6c99de645d68e1ff8424f710066"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3746bfd4bb4a4d95938f74e292f98e50">
+    <rdf:first rdf:nodeID="N333067beb4d84403b6a5fe5d08364074"/>
+    <rdf:rest rdf:nodeID="N1450c650bd024eee9968c30aaf5fe3bf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neeb41214da1843a396533dc550b05ad0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9894a36fe9b640e6a2c766f83e845fda">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasIdentifier"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/e"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl/i1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d54c235f0bb4fbcba68cc80f6a3e8b2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N2b41b93bea484d3295f35a1ea1c29e48"/>
+    <rdf:rest rdf:nodeID="Nc7054c8f92cb4dce9aef3a291763ee3f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/c2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd7798f1f2b8445c9428569da65c7c1e">
+    <rdf:first rdf:nodeID="N7e473144ea24412fb58be6105343d47e"/>
+    <rdf:rest rdf:nodeID="N4b6361d511d34793897eb3fd3ea6a856"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/AntiPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2e9363eb81d4747b5ceb910dddac8ec">
+    <rdf:first rdf:nodeID="N9e732dabedfa4e749610c4d914cd3e5c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0314b6b31ca24487a706a7dfce6c4fe8">
+    <rdf:first rdf:nodeID="N0b4d9b03f86e479babdbaa35a8397a82"/>
+    <rdf:rest rdf:nodeID="Nf3958a2c98504d18abb7ff03f3e54454"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/u">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N911fa828ec8a481789199ad5a93beed9">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl#eport"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#cport">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/cport">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#ws">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f4e31ac41f34d9f84b780e2c9e2a93d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/SharedStorageSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/StorageSpecification"/>
+    <rdfs:comment xml:lang="en">A single volume shared by all replicas of the microservice (e.g. one PVC referenced by a Deployment, a named Compose volume, an EFS volume).</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://www.khaos.uma.es/microwl/PerReplicaStorageSpecification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#hasDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4624dd623bb74b609dedbed3b34296c9">
+    <rdf:first rdf:nodeID="N31fdadf77f814da1a0acedbaf26559c9"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/workloadSpecOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Inverse of hasWorkloadSpec; its domain and range follow from those of hasWorkloadSpec.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40bba548ae114136a8b3e24e53f52fb1">
+    <rdf:first rdf:nodeID="Nfdd29b0fde9e476a874f72e94eaab5ed"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N118d3694479b41d9b1065cdcf7d47aec">
+    <rdf:first rdf:nodeID="Ne13777c48d144083b9820c2c9618f35b"/>
+    <rdf:rest rdf:nodeID="N97fc631f834d4967a6935e06ca39e974"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20d587077d9f474ebc4bcd351bb78314">
+    <rdf:first rdf:nodeID="N9963a88b898d46c89618314ee88c6a0a"/>
+    <rdf:rest rdf:nodeID="Neb495e810ca54a1aaec28e8af7c8c565"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ws">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0caefa92cce141f5a078e64c19951805">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/resourceValue"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#r"/>
+    <swrl:argument2 rdf:resource="http://www.khaos.uma.es/microwl#portVal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/ct">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb51af84acbe4ac4b5297081f18718d6">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb698960c8304ea18438b53768da4623">
+    <rdf:first rdf:nodeID="N54911becc3c94026a18ce2a235097ec3"/>
+    <rdf:rest rdf:nodeID="Ne0ff210665f84f2988823172e57adf90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DockerVolume">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Docker volume resource</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/Constraint_S11">
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/WarningConstraint"/>
+    <microwl:hasConstraintId>S11</microwl:hasConstraintId>
+    <rdfs:comment xml:lang="en">Several replicas use an image without tag or with the tag latest.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/tport">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8eddecc8e8274f519270831b1b8a4d2c">
+    <rdf:first rdf:nodeID="N8b6720852d614deb8c25aa0b2d5855bd"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/DeploymentConfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Root class for all deployment configuration elements</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/x">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a84b90e32ba43748338152dae4b6367">
+    <rdf:first rdf:nodeID="N72a17b12c0594ca497a16f18d0b6fa1e"/>
+    <rdf:rest rdf:nodeID="N941905fcd50d4dbc816b2659cc4e5039"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b0ee89287474516af209d6a55c44715">
+    <rdf:first rdf:nodeID="N68e75d5472004d03aea331dd2f706805"/>
+    <rdf:rest rdf:nodeID="N0314b6b31ca24487a706a7dfce6c4fe8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N050c2cf14b53416d93d767c6b41ecc62">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortResource"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/res"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf6403188d5c4ceaa09cad69ac09b0e2">
+    <rdf:first rdf:nodeID="N4b8a3bcf4b404a04acac664dd4620ce6"/>
+    <rdf:rest rdf:nodeID="N35d9606b85074b23b13ba513401cac79"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e95e22fdffe4dbd8dfe03948ae54645">
+    <rdf:first rdf:nodeID="N692ef514fab840babdf9812cdf6ad189"/>
+    <rdf:rest rdf:nodeID="Nf618246933bc43a8b3e610a1b0c8261c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/i2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57fc3dd27da246b689ee93a181172c21">
+    <rdf:first rdf:nodeID="Nbd807a00db3d4551a2ee534d45dd226a"/>
+    <rdf:rest rdf:nodeID="N69c504790f2f44fabcd2817f04623fae"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd492c229fd8647a9955f9bc5cd58a58b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl#m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/nt">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#nt">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/e2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5e16a64ae174080af0d675f1584f3db">
+    <rdf:first rdf:nodeID="N98ea782c791c4f2f9f18fc5c17098ac3"/>
+    <rdf:rest rdf:nodeID="N93cd54c5c0744cad9d3fe69a6d78446c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/KubernetesStorage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <rdfs:comment xml:lang="en">Kubernetes Storage (PVC) resource</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdd29b0fde9e476a874f72e94eaab5ed">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <swrl:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/NodePortOutOfRange"/>
+    <swrl:argument1 rdf:resource="http://www.khaos.uma.es/microwl/k8s"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/h">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/k8s">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/tag">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0acca98e727b4e54a1aae7c2df8de07e">
+    <rdf:first rdf:nodeID="N0435a57d67384eafb549de257083dc4e"/>
+    <rdf:rest rdf:nodeID="Ndb441f6214f0450e9858b4addecd2b85"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#portVal">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/m2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#definedBySource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/nt2">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6840b5d8425499184a5f88529e0293a">
+    <rdf:first rdf:nodeID="Nd72754e41e5646cabfe4bc86be49de55"/>
+    <rdf:rest rdf:nodeID="N08b6c323e122454f9cbcd49b5da6b536"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl#r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+</rdf:RDF>

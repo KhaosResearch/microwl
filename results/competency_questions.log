@@ -1,0 +1,13 @@
+CQ1 Which microservices are deployed on Kubernetes? -> [['MyWebApp'], ['DataAggregator'], ['PaymentProcessor']]
+CQ2 What are the abstract specifications of MyWebApp? -> [['3', 'nginx:alpine', '80', '80', '80', '10Gi', 'ReadWriteMany']]
+CQ3 Which microservices have an inconsistent deployment? -> [['PaymentProcessor']]
+CQ4 Which Kubernetes configurations use an out-of-range NodePort? -> []
+CQ5 Which platform-specific parameters does each configuration of DataAggregator define? -> [['DataAggregator_DockerConfig', 'composeVersion', '3.8'], ['DataAggregator_DockerConfig', 'volume', 'aggregator_data:/var/lib/aggregator'], ['DataAggregator_ECSConfig', 'cpu', '1024'], ['DataAggregator_ECSConfig', 'launchType', 'FARGATE'], ['DataAggregator_ECSConfig', 'memory', '2048'], ['DataAggregator_ECSConfig', 'taskRoleArn', 'arn:aws:iam::123456789012:role/dataAggregatorRole'], ['DataAggregator_K8sConfig', 'serviceType', 'ClusterIP'], ['DataAggregator_K8sConfig', 'persistentVolumeClaim', 'aggregator-pvc']]
+CQ6 Which microservices target more than one platform? -> [['MyWebApp', '3'], ['DataAggregator', '3'], ['PaymentProcessor', '3']]
+CQ7 Which microservices replicate a workload over shared ReadWriteOnce storage? -> [['PaymentProcessor', '2']]
+CQ8 On which infrastructure targets is each microservice deployed? -> [['MyWebApp', 'EKSCluster'], ['DataAggregator', 'EKSCluster'], ['PaymentProcessor', 'EKSCluster'], ['DataAggregator', 'ECSClusterProd'], ['MyWebApp', 'ECSClusterProd'], ['PaymentProcessor', 'ECSClusterProd']]
+CQ9 On which microservices does MyWebApp depend? -> [['DataAggregator'], ['PaymentProcessor']]
+CQ10 Which microservices are affected if PaymentProcessor fails? -> [['MyWebApp']]
+CQ11 Which dependencies do not resolve to an endpoint of their deployment unit? -> [['DataAggregator', 'kafka']]
+CQ12 Which constraints does each microservice violate, and with which severity? -> [['PaymentProcessor', 'S1', 'error']]
+SHACL (hybrid shapes): {'DataAggregator': ['S10']}

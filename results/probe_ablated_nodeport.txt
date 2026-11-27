@@ -1,0 +1,4 @@
+stored 30080 (string)        NodePortOutOfRange=[] Inconsistent=['PaymentProcessor']
+8080 as xsd:string           NodePortOutOfRange=[] Inconsistent=['PaymentProcessor']
+8080 as xsd:integer          reasoner error: Java error message is: ERROR: Ontology is inconsistent, run "pellet explain" to get the reason
+40000 as xsd:integer         reasoner error: Java error message is: ERROR: Ontology is inconsistent, run "pellet explain" to get the reason

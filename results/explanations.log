@@ -1,0 +1,149 @@
+{
+ "benchmark": {
+  "elements": 180,
+  "errors": 0,
+  "explained": 180,
+  "explanations_per_element": {
+   "min": 1,
+   "max": 1
+  },
+  "axioms": {
+   "min": 6,
+   "median": 7.0,
+   "max": 16
+  },
+  "axioms_by_rule": {
+   "S1": {
+    "min": 7,
+    "max": 7
+   },
+   "S11": {
+    "min": 6,
+    "max": 6
+   },
+   "S15": {
+    "min": 7,
+    "max": 7
+   },
+   "S3": {
+    "min": 9,
+    "max": 9
+   },
+   "S5": {
+    "min": 6,
+    "max": 6
+   },
+   "S7": {
+    "min": 6,
+    "max": 6
+   },
+   "S8": {
+    "min": 9,
+    "max": 16
+   }
+  },
+  "seconds": {
+   "mean": 0.408,
+   "sd": 0.014,
+   "max": 0.455
+  }
+ },
+ "corpus": {
+  "elements": 24,
+  "errors": 0,
+  "explained": 24,
+  "explanations_per_element": {
+   "min": 1,
+   "max": 1
+  },
+  "axioms": {
+   "min": 6,
+   "median": 6.0,
+   "max": 16
+  },
+  "axioms_by_rule": {
+   "S11": {
+    "min": 6,
+    "max": 6
+   },
+   "S7": {
+    "min": 6,
+    "max": 6
+   },
+   "S8": {
+    "min": 16,
+    "max": 16
+   }
+  },
+  "seconds": {
+   "mean": 0.42,
+   "sd": 0.05,
+   "max": 0.59
+  }
+ }
+}
+{
+ "microservices": 21,
+ "depends_on": 29,
+ "sparql_equals_closure": true,
+ "affected": {
+  "identity-api": [
+   "basket-api",
+   "mobileshoppingagg",
+   "ordering-api",
+   "ordering-signalrhub",
+   "webhooks-api",
+   "webhooks-client",
+   "webmvc",
+   "webshoppingagg",
+   "webspa",
+   "webstatus"
+  ],
+  "ordering-api": [
+   "mobileshoppingagg",
+   "webshoppingagg",
+   "webstatus"
+  ],
+  "payment-api": [
+   "mobileshoppingagg",
+   "webshoppingagg",
+   "webstatus"
+  ],
+  "catalog-api": [
+   "mobileshoppingagg",
+   "webshoppingagg",
+   "webstatus"
+  ],
+  "basket-api": [
+   "mobileshoppingagg",
+   "webshoppingagg",
+   "webstatus"
+  ],
+  "webshoppingapigw": [
+   "webmvc",
+   "webstatus"
+  ],
+  "webmvc": [
+   "webstatus"
+  ],
+  "webspa": [
+   "webstatus"
+  ],
+  "ordering-signalrhub": [
+   "webstatus"
+  ],
+  "ordering-backgroundtasks": [
+   "webstatus"
+  ],
+  "mobileshoppingagg": [
+   "webstatus"
+  ],
+  "webshoppingagg": [
+   "webstatus"
+  ],
+  "webhooks-api": [
+   "webhooks-client"
+  ]
+ },
+ "query": "SELECT ?x WHERE { ?x mw:dependsOn+ mw:<failed microservice> }"
+}

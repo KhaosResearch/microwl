@@ -1,0 +1,274 @@
+{
+ "total": 2825,
+ "elements": 20913,
+ "not_translated": 0,
+ "missed": 0,
+ "by_category": {
+  "M1": 245,
+  "M2": 226,
+  "M3": 227,
+  "M4": 227,
+  "M5": 245,
+  "M7": 384,
+  "M8": 323,
+  "M9": 9,
+  "M10": 39,
+  "M11": 246,
+  "M12": 231,
+  "M13": 1,
+  "M14": 60,
+  "M15": 245,
+  "M16": 117
+ },
+ "by_platform": {
+  "kubernetes": {
+   "M1": {
+    "n": 245,
+    "pellet": 245,
+    "shacl": 245,
+    "opa": 245,
+    "shacl_closed": 245,
+    "opa_closed": 245,
+    "hybrid": 245
+   },
+   "M5": {
+    "n": 245,
+    "pellet": 245,
+    "shacl": 245,
+    "opa": 245,
+    "shacl_closed": 245,
+    "opa_closed": 245,
+    "hybrid": 245
+   },
+   "M15": {
+    "n": 245,
+    "pellet": 245,
+    "shacl": 245,
+    "opa": 245,
+    "shacl_closed": 245,
+    "opa_closed": 245,
+    "hybrid": 245
+   },
+   "M7": {
+    "n": 235,
+    "pellet": 235,
+    "shacl": 235,
+    "opa": 235,
+    "shacl_closed": 235,
+    "opa_closed": 235,
+    "hybrid": 235
+   },
+   "M11": {
+    "n": 160,
+    "pellet": 160,
+    "shacl": 160,
+    "opa": 160,
+    "shacl_closed": 160,
+    "opa_closed": 160,
+    "hybrid": 160
+   },
+   "M2": {
+    "n": 204,
+    "pellet": 204,
+    "shacl": 204,
+    "opa": 204,
+    "shacl_closed": 204,
+    "opa_closed": 204,
+    "hybrid": 204
+   },
+   "M3": {
+    "n": 227,
+    "pellet": 227,
+    "shacl": 227,
+    "opa": 227,
+    "shacl_closed": 227,
+    "opa_closed": 227,
+    "hybrid": 227
+   },
+   "M4": {
+    "n": 227,
+    "pellet": 227,
+    "shacl": 227,
+    "opa": 227,
+    "shacl_closed": 227,
+    "opa_closed": 227,
+    "hybrid": 227
+   },
+   "M14": {
+    "n": 60,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 60,
+    "opa_closed": 60,
+    "hybrid": 60
+   },
+   "M16": {
+    "n": 97,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 97,
+    "opa_closed": 97,
+    "hybrid": 97
+   },
+   "M8": {
+    "n": 211,
+    "pellet": 211,
+    "shacl": 211,
+    "opa": 211,
+    "shacl_closed": 211,
+    "opa_closed": 211,
+    "hybrid": 211
+   },
+   "M12": {
+    "n": 212,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 212,
+    "opa_closed": 212,
+    "hybrid": 212
+   },
+   "M9": {
+    "n": 7,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 7,
+    "opa_closed": 7,
+    "hybrid": 7
+   },
+   "M10": {
+    "n": 13,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 13,
+    "opa_closed": 13,
+    "hybrid": 13
+   },
+   "M13": {
+    "n": 1,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 1,
+    "opa_closed": 1,
+    "hybrid": 1
+   }
+  },
+  "compose": {
+   "M7": {
+    "n": 141,
+    "pellet": 141,
+    "shacl": 141,
+    "opa": 141,
+    "shacl_closed": 141,
+    "opa_closed": 141,
+    "hybrid": 141
+   },
+   "M11": {
+    "n": 82,
+    "pellet": 82,
+    "shacl": 82,
+    "opa": 82,
+    "shacl_closed": 82,
+    "opa_closed": 82,
+    "hybrid": 82
+   },
+   "M8": {
+    "n": 112,
+    "pellet": 112,
+    "shacl": 112,
+    "opa": 112,
+    "shacl_closed": 112,
+    "opa_closed": 112,
+    "hybrid": 112
+   },
+   "M9": {
+    "n": 2,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 2,
+    "opa_closed": 2,
+    "hybrid": 2
+   },
+   "M10": {
+    "n": 26,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 26,
+    "opa_closed": 26,
+    "hybrid": 26
+   },
+   "M16": {
+    "n": 12,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 12,
+    "opa_closed": 12,
+    "hybrid": 12
+   },
+   "M2": {
+    "n": 2,
+    "pellet": 2,
+    "shacl": 2,
+    "opa": 2,
+    "shacl_closed": 2,
+    "opa_closed": 2,
+    "hybrid": 2
+   }
+  },
+  "ecs": {
+   "M2": {
+    "n": 20,
+    "pellet": 20,
+    "shacl": 20,
+    "opa": 20,
+    "shacl_closed": 20,
+    "opa_closed": 20,
+    "hybrid": 20
+   },
+   "M16": {
+    "n": 8,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 8,
+    "opa_closed": 8,
+    "hybrid": 8
+   },
+   "M7": {
+    "n": 8,
+    "pellet": 8,
+    "shacl": 8,
+    "opa": 8,
+    "shacl_closed": 8,
+    "opa_closed": 8,
+    "hybrid": 8
+   },
+   "M12": {
+    "n": 19,
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 19,
+    "opa_closed": 19,
+    "hybrid": 19
+   },
+   "M11": {
+    "n": 4,
+    "pellet": 4,
+    "shacl": 4,
+    "opa": 4,
+    "shacl_closed": 4,
+    "opa_closed": 4,
+    "hybrid": 4
+   }
+  }
+ }
+}

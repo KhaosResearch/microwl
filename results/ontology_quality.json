@@ -1,0 +1,37 @@
+{
+ "classes": 39,
+ "object_properties": 32,
+ "datatype_properties": 30,
+ "annotated": "101/101",
+ "not_annotated": [],
+ "properties_without_domain": [
+  "antiPatternOf",
+  "containerSpecOf",
+  "hasDependency",
+  "inDeployment",
+  "networkSpecOf",
+  "platformConfigOf",
+  "qualityMetricOf",
+  "resourceOf",
+  "storageSpecOf",
+  "violates",
+  "workloadSpecOf"
+ ],
+ "properties_without_range": [
+  "antiPatternOf",
+  "containerSpecOf",
+  "networkSpecOf",
+  "platformConfigOf",
+  "qualityMetricOf",
+  "resourceOf",
+  "storageSpecOf",
+  "workloadSpecOf"
+ ],
+ "object_properties_with_inverse": 16,
+ "unconnected": [],
+ "naming_classes": [],
+ "naming_properties": [],
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "consistent_with_case_study": true,
+ "unsatisfiable_classes": []
+}

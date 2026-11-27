@@ -1,0 +1,22 @@
+{
+ "module_stats": {
+  "classes": 3,
+  "datatype_properties": 2,
+  "rules": 1,
+  "individuals": 6
+ },
+ "core_sha256_before": "b047505f802350fa1a69163d01bbd181c746fca2e22142b48d551e452478e350",
+ "baseline": [
+  "PaymentProcessor"
+ ],
+ "fault_in_abstract_layer_targetPort_8080": [
+  "MyWebApp",
+  "PaymentProcessor"
+ ],
+ "aci_vcpu_8": [
+  "MyWebApp",
+  "PaymentProcessor"
+ ],
+ "core_sha256_after": "b047505f802350fa1a69163d01bbd181c746fca2e22142b48d551e452478e350",
+ "core_unchanged": true
+}

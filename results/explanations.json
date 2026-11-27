@@ -1,0 +1,3091 @@
+{
+ "benchmark": {
+  "elements": 180,
+  "errors": 0,
+  "explained": 180,
+  "explanations_per_element": {
+   "min": 1,
+   "max": 1
+  },
+  "axioms": {
+   "min": 6,
+   "median": 7.0,
+   "max": 16
+  },
+  "axioms_by_rule": {
+   "S1": {
+    "min": 7,
+    "max": 7
+   },
+   "S11": {
+    "min": 6,
+    "max": 6
+   },
+   "S15": {
+    "min": 7,
+    "max": 7
+   },
+   "S3": {
+    "min": 9,
+    "max": 9
+   },
+   "S5": {
+    "min": 6,
+    "max": 6
+   },
+   "S7": {
+    "min": 6,
+    "max": 6
+   },
+   "S8": {
+    "min": 9,
+    "max": 16
+   }
+  },
+  "seconds": {
+   "mean": 0.408,
+   "sd": 0.014,
+   "max": 0.455
+  }
+ },
+ "corpus": {
+  "elements": 24,
+  "errors": 0,
+  "explained": 24,
+  "explanations_per_element": {
+   "min": 1,
+   "max": 1
+  },
+  "axioms": {
+   "min": 6,
+   "median": 6.0,
+   "max": 16
+  },
+  "axioms_by_rule": {
+   "S11": {
+    "min": 6,
+    "max": 6
+   },
+   "S7": {
+    "min": 6,
+    "max": 6
+   },
+   "S8": {
+    "min": 16,
+    "max": 16
+   }
+  },
+  "seconds": {
+   "mean": 0.42,
+   "sd": 0.05,
+   "max": 0.59
+  }
+ },
+ "impact_eshop": {
+  "microservices": 21,
+  "depends_on": 29,
+  "sparql_equals_closure": true,
+  "direct": {
+   "identity-api": [
+    "basket-api",
+    "mobileshoppingagg",
+    "ordering-api",
+    "ordering-signalrhub",
+    "webhooks-api",
+    "webmvc",
+    "webshoppingagg",
+    "webspa",
+    "webstatus"
+   ],
+   "ordering-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "payment-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "catalog-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "basket-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "webshoppingapigw": [
+    "webmvc"
+   ],
+   "webmvc": [
+    "webstatus"
+   ],
+   "webspa": [
+    "webstatus"
+   ],
+   "ordering-signalrhub": [
+    "webstatus"
+   ],
+   "ordering-backgroundtasks": [
+    "webstatus"
+   ],
+   "mobileshoppingagg": [
+    "webstatus"
+   ],
+   "webshoppingagg": [
+    "webstatus"
+   ],
+   "webhooks-api": [
+    "webhooks-client"
+   ]
+  },
+  "affected": {
+   "identity-api": [
+    "basket-api",
+    "mobileshoppingagg",
+    "ordering-api",
+    "ordering-signalrhub",
+    "webhooks-api",
+    "webhooks-client",
+    "webmvc",
+    "webshoppingagg",
+    "webspa",
+    "webstatus"
+   ],
+   "ordering-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "payment-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "catalog-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "basket-api": [
+    "mobileshoppingagg",
+    "webshoppingagg",
+    "webstatus"
+   ],
+   "webshoppingapigw": [
+    "webmvc",
+    "webstatus"
+   ],
+   "webmvc": [
+    "webstatus"
+   ],
+   "webspa": [
+    "webstatus"
+   ],
+   "ordering-signalrhub": [
+    "webstatus"
+   ],
+   "ordering-backgroundtasks": [
+    "webstatus"
+   ],
+   "mobileshoppingagg": [
+    "webstatus"
+   ],
+   "webshoppingagg": [
+    "webstatus"
+   ],
+   "webhooks-api": [
+    "webhooks-client"
+   ]
+  },
+  "query": "SELECT ?x WHERE { ?x mw:dependsOn+ mw:<failed microservice> }"
+ },
+ "examples": {
+  "FudanSELab_train-ticket/deployment/docker-compose-manifests/quickstart-docker-compose.yml::ts-assurance-service": {
+   "set": "apps-compose",
+   "id": "FudanSELab_train-ticket/deployment/docker-compose-manifests/quickstart-docker-compose.yml::ts-assurance-service",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.581,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 146
+  }
+ },
+ "rows": [
+  {
+   "set": "benchmark",
+   "id": "M5_243",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.384,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_239",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.383,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_157",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.379,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_224",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_154",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_196",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_153",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_217",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_214",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_245",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_240",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_218",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_150",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_241",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_229",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_164",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.42,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_155",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.411,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_204",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_223",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.398,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_192",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_194",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.396,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_213",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.397,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_247",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.398,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_163",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.411,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_209",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.389,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_197",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.396,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_237",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_191",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.392,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_206",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.419,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_193",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_211",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.423,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_152",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.455,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_199",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.42,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_234",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_236",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.427,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_216",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_156",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.411,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_246",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.41,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_235",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_232",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_168",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_203",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_165",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.389,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_244",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_228",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.398,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_242",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_230",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_200",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.397,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_233",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_201",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_227",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_226",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.411,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_162",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.423,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_205",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.399,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_161",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_158",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.393,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_212",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_160",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.392,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_225",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.396,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_220",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.393,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_208",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.394,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_215",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.395,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_159",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.388,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_167",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.406,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_238",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_249",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_151",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_248",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.4,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_166",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_210",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.4,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_202",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M1_169",
+   "kind": "workload",
+   "rules": [
+    "S1"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M5_231",
+   "kind": "workload",
+   "rules": [
+    "S5"
+   ],
+   "seconds": 0.424,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_207",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.387,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_190",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.387,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_198",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.394,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_219",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.392,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_222",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M3_195",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.389,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "M4_221",
+   "kind": "workload",
+   "rules": [
+    "S3"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "benchmark",
+   "id": "D314_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.393,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D222_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D165_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.421,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D165_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D301_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D171_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.415,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D171_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.421,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D135_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.387,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D157_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D157_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.425,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D229_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D154_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.418,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D300_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D152_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.423,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D223_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.421,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D169_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.426,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D169_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.439,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D146_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.414,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D227_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.394,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D298_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.392,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D228_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D234_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D151_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.389,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D313_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.392,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D308_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.395,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D150_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.391,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D221_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.39,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D138_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.393,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D219_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.386,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D224_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.389,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D161_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D161_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D307_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D153_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D312_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.427,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D297_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D303_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.396,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D230_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.398,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D144_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.414,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D167_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.415,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D167_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D155_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.426,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D155_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D158_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.431,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D158_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.429,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D233_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.428,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D143_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D302_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D309_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D296_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.419,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D299_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D137_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D216_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D140_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.414,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D218_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D306_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D295_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.414,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D148_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D174_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D174_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.42,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D160_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.421,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D160_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.42,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D147_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.41,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D220_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.416,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D232_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.4,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D215_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.4,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D170_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.428,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D170_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.422,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D149_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D141_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D162_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.43,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D162_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.451,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D231_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.419,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D304_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.403,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D173_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.421,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D173_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D139_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.399,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D166_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.423,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D166_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.428,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D310_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D136_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.444,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D145_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.388,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D163_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.442,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D163_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.419,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D142_M7/web",
+   "kind": "workload",
+   "rules": [
+    "S7"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D164_M8/web@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.417,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D164_M8/pay@ep",
+   "kind": "endpoint",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.42,
+   "n_explanations": 1,
+   "axioms": [
+    9
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D156_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.424,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D156_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.425,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D159_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.429,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D159_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D172_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.43,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D172_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.429,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D225_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "benchmark",
+   "id": "D311_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D217_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.415,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 7
+  },
+  {
+   "set": "benchmark",
+   "id": "D305_M15/pay",
+   "kind": "workload",
+   "rules": [
+    "S15"
+   ],
+   "seconds": 0.41,
+   "n_explanations": 1,
+   "axioms": [
+    7
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D168_M8/web",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D168_M8/pay",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.424,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "benchmark",
+   "id": "D226_M11/web",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.401,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/nodesjs-mongodb::ReplicationController/web-controller~1",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.398,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 5
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/openshift-origin::Deployment/etcd",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 6
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/storage/minio::StatefulSet/minio",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.388,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 4
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/storm::Deployment/storm-worker-controller",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/sysdig-cloud::ReplicationController/sysdig-agent",
+   "kind": "workload",
+   "rules": [
+    "S11",
+    "S7"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/volumes/nfs::Deployment/nfs-busybox",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 5
+  },
+  {
+   "set": "k8s-examples",
+   "id": "_archived/volumes/nfs::Deployment/nfs-web",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.41,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 5
+  },
+  {
+   "set": "apps-compose",
+   "id": "FudanSELab_train-ticket/deployment/docker-compose-manifests/quickstart-docker-compose.yml::ts-assurance-service",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.581,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 146
+  },
+  {
+   "set": "apps-compose",
+   "id": "FudanSELab_train-ticket/deployment/docker-compose-manifests/quickstart-docker-compose.yml::ts-gateway-service",
+   "kind": "workload",
+   "rules": [
+    "S8"
+   ],
+   "seconds": 0.59,
+   "n_explanations": 1,
+   "axioms": [
+    16
+   ],
+   "elements_in_unit": 146
+  },
+  {
+   "set": "ecs-services",
+   "id": "awslabs_aws-cloudformation-templates/ECS/EC2LaunchType/services/private-service.yaml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.402,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "awslabs_aws-cloudformation-templates/ECS/EC2LaunchType/services/public-service.yaml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "awslabs_aws-cloudformation-templates/ECS/FargateLaunchType/services/private-subnet-private-service.yaml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "awslabs_aws-cloudformation-templates/ECS/FargateLaunchType/services/private-subnet-public-service.yaml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "awslabs_aws-cloudformation-templates/ECS/FargateLaunchType/services/public-service.yaml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.409,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-ec2-private-discovery.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.414,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-ec2-private-lb.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.405,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-ec2-public-lb.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.404,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-fargate-private-subnet-private-discovery.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.408,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 1
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-fargate-private-subnet-private-lb.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.413,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-fargate-private-subnet-public-lb.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.412,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "nathanpeck_ecs-cloudformation/service/service-fargate-public-subnet-public-lb.yml::Service",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.406,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "aws-samples_serverless-patterns/apigw-rest-vpclink-pvt-alb-sam/template.yaml::ECSService",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.407,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "aws-samples_serverless-patterns/apigw-vpclink-pvt-alb/template.yml::ECSService",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.394,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  },
+  {
+   "set": "ecs-services",
+   "id": "aws-samples_serverless-patterns/cognito-restapi-vpclink/ecs.yml::ECSService",
+   "kind": "workload",
+   "rules": [
+    "S11"
+   ],
+   "seconds": 0.394,
+   "n_explanations": 1,
+   "axioms": [
+    6
+   ],
+   "elements_in_unit": 2
+  }
+ ]
+}

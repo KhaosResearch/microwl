@@ -1,0 +1,651 @@
+{
+ "commits": {
+  "online-boutique": "38e7348eb289eb5b87c0c6e8cb19ced0449dc389",
+  "sock-shop": "9dff06fae4981921caec6a62393a6ebfce4b3e3f",
+  "k8s-examples": "d6b8cd27eacb51e651a1aa6f7c190a28713eff6e",
+  "awesome-compose": "30f4b7f6a6c3b0c0ecf4d4efb0de203c48d11562",
+  "ecs-task-defs": "75aee9ed5a9d0c63880d1d2a3c03e462aa8f13b9",
+  "cfn-templates": "a0f43bc6d20813052892546f445037cf84c75b54",
+  "ecs-refarch": "a257e226b33bd9d2a721e5afd9d7e8b66dbacfdc",
+  "ecs-cloudformation": "6d274b43bbff12ba6960f0557270d2de85a0c8ce",
+  "serverless-patterns": "23b5a9ec6b25c30268bae70b334b0dffca74d7ee",
+  "trainticket": "313886e99befb94be6cd45f085c98e0019f59829",
+  "deathstarbench": "6ecb09706140f8730b5385c08f1386c654c3c526",
+  "teastore": "34b37f7e7be433ce72d5f9455e66922a13116749",
+  "eshop": "b6965936842cab32553543c1abe8a68714956f44",
+  "petclinic": "e8b747ab522721076cacb5cf688eb8a54ba8c5c9",
+  "bookinfo": "dd6f272a9f0d5cbfe6edd36365def9d0f2bba5ed"
+ },
+ "corpora": {
+  "online-boutique": {
+   "n_workloads": 12,
+   "n_endpoints": 12,
+   "n_ingresses": 0,
+   "n_sources": 1,
+   "coverage": {
+    "hasReplicas": 1.0,
+    "hasContainerImage": 1.0,
+    "hasContainerPort": 0.917,
+    "hasExposedPort": 0.917,
+    "hasTargetPort": 0.917,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.0,
+    "hasImageTag": 1.0,
+    "hasProbePort": 0.917,
+    "hasMemoryLimit": 1.0,
+    "hasDependency": 0.417
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 1,
+    "elements_with_only_warnings": 0
+   },
+   "n_dependencies": 17,
+   "flagged": {
+    "pellet": 0,
+    "shacl": 0,
+    "opa": 0,
+    "shacl_closed": 1,
+    "opa_closed": 1,
+    "hybrid": 1
+   },
+   "flagged_by_rule_hybrid": {
+    "S10": 1
+   },
+   "inferred_depends_on": 16,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.41,
+    "shacl": 0.272,
+    "opa": 0.014,
+    "hybrid": 0.641
+   },
+   "mutation": {
+    "M1": {
+     "n": 12,
+     "pellet": 12,
+     "shacl": 12,
+     "opa": 12,
+     "hybrid": 12
+    },
+    "M5": {
+     "n": 12,
+     "pellet": 12,
+     "shacl": 12,
+     "opa": 12,
+     "hybrid": 12
+    },
+    "M2": {
+     "n": 11,
+     "pellet": 11,
+     "shacl": 11,
+     "opa": 11,
+     "hybrid": 11
+    },
+    "M3": {
+     "n": 11,
+     "pellet": 11,
+     "shacl": 11,
+     "opa": 11,
+     "hybrid": 11
+    },
+    "M4": {
+     "n": 11,
+     "pellet": 11,
+     "shacl": 11,
+     "opa": 11,
+     "hybrid": 11
+    }
+   },
+   "mutation_error": null
+  },
+  "sock-shop": {
+   "n_workloads": 14,
+   "n_endpoints": 14,
+   "n_ingresses": 0,
+   "n_sources": 1,
+   "coverage": {
+    "hasReplicas": 1.0,
+    "hasContainerImage": 1.0,
+    "hasContainerPort": 1.0,
+    "hasExposedPort": 1.0,
+    "hasTargetPort": 1.0,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.0,
+    "hasImageTag": 1.0,
+    "hasProbePort": 0.286,
+    "hasMemoryLimit": 0.571,
+    "hasDependency": 0.071
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 0,
+    "elements_with_only_warnings": 6
+   },
+   "n_dependencies": 1,
+   "flagged": {
+    "pellet": 1,
+    "shacl": 1,
+    "opa": 1,
+    "shacl_closed": 6,
+    "opa_closed": 6,
+    "hybrid": 6
+   },
+   "flagged_by_rule_hybrid": {
+    "S16": 6
+   },
+   "inferred_depends_on": 1,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.428,
+    "shacl": 0.322,
+    "opa": 0.012,
+    "hybrid": 0.666
+   },
+   "mutation": {
+    "M1": {
+     "n": 14,
+     "pellet": 14,
+     "shacl": 14,
+     "opa": 14,
+     "hybrid": 14
+    },
+    "M5": {
+     "n": 14,
+     "pellet": 14,
+     "shacl": 14,
+     "opa": 14,
+     "hybrid": 14
+    },
+    "M2": {
+     "n": 13,
+     "pellet": 13,
+     "shacl": 13,
+     "opa": 13,
+     "hybrid": 13
+    },
+    "M3": {
+     "n": 14,
+     "pellet": 14,
+     "shacl": 14,
+     "opa": 14,
+     "hybrid": 14
+    },
+    "M4": {
+     "n": 14,
+     "pellet": 14,
+     "shacl": 14,
+     "opa": 14,
+     "hybrid": 14
+    }
+   },
+   "mutation_error": null
+  },
+  "k8s-examples": {
+   "n_workloads": 67,
+   "n_endpoints": 53,
+   "n_ingresses": 1,
+   "n_sources": 37,
+   "coverage": {
+    "hasReplicas": 0.94,
+    "hasContainerImage": 1.0,
+    "hasContainerPort": 0.851,
+    "hasExposedPort": 0.687,
+    "hasTargetPort": 0.687,
+    "hasAccessMode": 0.119,
+    "hasStorageSize": 0.119,
+    "hasHostPort": 0.09,
+    "hasImageTag": 1.0,
+    "hasProbePort": 0.075,
+    "hasMemoryLimit": 0.134,
+    "hasDependency": 0.045
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 6,
+    "elements_with_only_warnings": 55
+   },
+   "n_dependencies": 3,
+   "flagged": {
+    "pellet": 21,
+    "shacl": 21,
+    "opa": 21,
+    "shacl_closed": 61,
+    "opa_closed": 61,
+    "hybrid": 61
+   },
+   "flagged_by_rule_hybrid": {
+    "S11": 7,
+    "S12": 2,
+    "S16": 58,
+    "S2c": 1,
+    "S7": 3
+   },
+   "inferred_depends_on": 3,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.532,
+    "shacl": 1.492,
+    "opa": 0.015,
+    "hybrid": 1.62
+   },
+   "mutation": {
+    "M1": {
+     "n": 63,
+     "pellet": 63,
+     "shacl": 63,
+     "opa": 63,
+     "hybrid": 63
+    },
+    "M5": {
+     "n": 63,
+     "pellet": 63,
+     "shacl": 63,
+     "opa": 63,
+     "hybrid": 63
+    },
+    "M3": {
+     "n": 46,
+     "pellet": 46,
+     "shacl": 46,
+     "opa": 46,
+     "hybrid": 46
+    },
+    "M4": {
+     "n": 46,
+     "pellet": 46,
+     "shacl": 46,
+     "opa": 46,
+     "hybrid": 46
+    },
+    "M2": {
+     "n": 30,
+     "pellet": 30,
+     "shacl": 30,
+     "opa": 30,
+     "hybrid": 30
+    }
+   },
+   "mutation_error": null
+  },
+  "awesome-compose": {
+   "n_workloads": 81,
+   "n_endpoints": 81,
+   "n_ingresses": 0,
+   "n_sources": 39,
+   "coverage": {
+    "hasReplicas": 0.0,
+    "hasContainerImage": 0.58,
+    "hasContainerPort": 0.16,
+    "hasExposedPort": 0.642,
+    "hasTargetPort": 0.642,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.642,
+    "hasImageTag": 0.58,
+    "hasProbePort": 0.0,
+    "hasMemoryLimit": 0.012,
+    "hasDependency": 0.136
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 1,
+    "elements_with_only_warnings": 79
+   },
+   "n_dependencies": 13,
+   "flagged": {
+    "pellet": 1,
+    "shacl": 1,
+    "opa": 1,
+    "shacl_closed": 80,
+    "opa_closed": 80,
+    "hybrid": 80
+   },
+   "flagged_by_rule_hybrid": {
+    "S16": 80,
+    "S2c": 1
+   },
+   "inferred_depends_on": 13,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.545,
+    "shacl": 3.662,
+    "opa": 0.02,
+    "hybrid": 1.891
+   }
+  },
+  "ecs-task-defs": {
+   "n_workloads": 14,
+   "n_endpoints": 0,
+   "n_ingresses": 0,
+   "n_sources": 14,
+   "coverage": {
+    "hasReplicas": 0.0,
+    "hasContainerImage": 1.0,
+    "hasContainerPort": 0.857,
+    "hasExposedPort": 0.857,
+    "hasTargetPort": 0.857,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.0,
+    "hasImageTag": 1.0,
+    "hasProbePort": 0.0,
+    "hasMemoryLimit": 1.0,
+    "hasDependency": 0.0
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 0,
+    "elements_with_only_warnings": 0
+   },
+   "n_dependencies": 0,
+   "flagged": {
+    "pellet": 4,
+    "shacl": 4,
+    "opa": 4,
+    "shacl_closed": 0,
+    "opa_closed": 0,
+    "hybrid": 0
+   },
+   "flagged_by_rule_hybrid": {},
+   "inferred_depends_on": 0,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.446,
+    "shacl": 0.278,
+    "opa": 0.014,
+    "hybrid": 0.632
+   }
+  },
+  "apps-k8s": {
+   "n_workloads": 156,
+   "n_endpoints": 157,
+   "n_ingresses": 0,
+   "n_sources": 6,
+   "coverage": {
+    "hasReplicas": 1.0,
+    "hasContainerImage": 1.0,
+    "hasContainerPort": 1.0,
+    "hasExposedPort": 1.0,
+    "hasTargetPort": 1.0,
+    "hasAccessMode": 0.038,
+    "hasStorageSize": 0.038,
+    "hasHostPort": 0.0,
+    "hasImageTag": 1.0,
+    "hasProbePort": 0.263,
+    "hasMemoryLimit": 0.436,
+    "hasDependency": 0.032
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 2,
+    "elements_with_only_warnings": 87
+   },
+   "n_dependencies": 6,
+   "flagged": {
+    "pellet": 6,
+    "shacl": 6,
+    "opa": 6,
+    "shacl_closed": 89,
+    "opa_closed": 89,
+    "hybrid": 89
+   },
+   "flagged_by_rule_hybrid": {
+    "S14": 1,
+    "S16": 88,
+    "S2c": 2
+   },
+   "inferred_depends_on": 6,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.727,
+    "shacl": 3.94,
+    "opa": 0.033,
+    "hybrid": 3.214
+   },
+   "mutation": {
+    "M1": {
+     "n": 156,
+     "pellet": 156,
+     "shacl": 156,
+     "opa": 156,
+     "hybrid": 156
+    },
+    "M5": {
+     "n": 156,
+     "pellet": 156,
+     "shacl": 156,
+     "opa": 156,
+     "hybrid": 156
+    },
+    "M2": {
+     "n": 150,
+     "pellet": 150,
+     "shacl": 150,
+     "opa": 150,
+     "hybrid": 150
+    },
+    "M3": {
+     "n": 156,
+     "pellet": 156,
+     "shacl": 156,
+     "opa": 156,
+     "hybrid": 156
+    },
+    "M4": {
+     "n": 156,
+     "pellet": 156,
+     "shacl": 156,
+     "opa": 156,
+     "hybrid": 156
+    }
+   },
+   "mutation_error": null
+  },
+  "apps-compose": {
+   "n_workloads": 196,
+   "n_endpoints": 196,
+   "n_ingresses": 0,
+   "n_sources": 7,
+   "coverage": {
+    "hasReplicas": 0.122,
+    "hasContainerImage": 0.99,
+    "hasContainerPort": 0.041,
+    "hasExposedPort": 0.454,
+    "hasTargetPort": 0.454,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.454,
+    "hasImageTag": 0.694,
+    "hasProbePort": 0.0,
+    "hasMemoryLimit": 0.056,
+    "hasDependency": 0.077
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 2,
+    "elements_with_only_warnings": 183
+   },
+   "n_dependencies": 49,
+   "flagged": {
+    "pellet": 2,
+    "shacl": 2,
+    "opa": 2,
+    "shacl_closed": 185,
+    "opa_closed": 185,
+    "hybrid": 185
+   },
+   "flagged_by_rule_hybrid": {
+    "S16": 185,
+    "S8": 2
+   },
+   "inferred_depends_on": 35,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.951,
+    "shacl": 33.004,
+    "opa": 0.067,
+    "hybrid": 4.661
+   },
+   "mutation": {
+    "M1": {
+     "n": 24,
+     "pellet": 24,
+     "shacl": 24,
+     "opa": 24,
+     "hybrid": 24
+    },
+    "M5": {
+     "n": 24,
+     "pellet": 24,
+     "shacl": 24,
+     "opa": 24,
+     "hybrid": 24
+    },
+    "M2": {
+     "n": 2,
+     "pellet": 2,
+     "shacl": 2,
+     "opa": 2,
+     "hybrid": 2
+    }
+   },
+   "mutation_error": null
+  },
+  "ecs-services": {
+   "n_workloads": 22,
+   "n_endpoints": 19,
+   "n_ingresses": 0,
+   "n_sources": 22,
+   "coverage": {
+    "hasReplicas": 1.0,
+    "hasContainerImage": 0.909,
+    "hasContainerPort": 0.955,
+    "hasExposedPort": 0.0,
+    "hasTargetPort": 0.909,
+    "hasAccessMode": 0.0,
+    "hasStorageSize": 0.0,
+    "hasHostPort": 0.0,
+    "hasImageTag": 0.909,
+    "hasProbePort": 0.0,
+    "hasMemoryLimit": 1.0,
+    "hasDependency": 0.0
+   },
+   "pellet_error": null,
+   "by_severity_hybrid": {
+    "elements_with_error": 0,
+    "elements_with_only_warnings": 15
+   },
+   "n_dependencies": 0,
+   "flagged": {
+    "pellet": 15,
+    "shacl": 15,
+    "opa": 15,
+    "shacl_closed": 15,
+    "opa_closed": 15,
+    "hybrid": 15
+   },
+   "flagged_by_rule_hybrid": {
+    "S11": 15
+   },
+   "inferred_depends_on": 0,
+   "agreement_closed": {
+    "hybrid_vs_shacl_closed": true,
+    "hybrid_vs_opa_closed": true,
+    "rules_hybrid_vs_opa_closed": true
+   },
+   "agreement": {
+    "pellet_vs_shacl": true,
+    "pellet_vs_opa": true
+   },
+   "seconds": {
+    "pellet": 0.512,
+    "shacl": 0.508,
+    "opa": 0.019,
+    "hybrid": 0.914
+   },
+   "mutation": {
+    "M1": {
+     "n": 22,
+     "pellet": 22,
+     "shacl": 22,
+     "opa": 22,
+     "hybrid": 22
+    },
+    "M5": {
+     "n": 22,
+     "pellet": 22,
+     "shacl": 22,
+     "opa": 22,
+     "hybrid": 22
+    },
+    "M2": {
+     "n": 20,
+     "pellet": 20,
+     "shacl": 20,
+     "opa": 20,
+     "hybrid": 20
+    }
+   },
+   "mutation_error": null
+  }
+ }
+}

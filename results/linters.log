@@ -1,0 +1,302 @@
+{
+ "kubeconform": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": false,
+  "F4_nodeport_high": false,
+  "F5_rwo_zero": false,
+  "F7_hostport_replicas": false,
+  "F8_duplicate_nodeport": false,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": false,
+  "F12_dangling_service": false,
+  "F13_ingress_backend": false,
+  "F14_probe_port": false,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": false
+ },
+ "kube-linter": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": false,
+  "F4_nodeport_high": false,
+  "F5_rwo_zero": false,
+  "F7_hostport_replicas": false,
+  "F8_duplicate_nodeport": false,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": true,
+  "F12_dangling_service": true,
+  "F13_ingress_backend": false,
+  "F14_probe_port": true,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": true
+ },
+ "kube-score": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": false,
+  "F4_nodeport_high": false,
+  "F5_rwo_zero": true,
+  "F7_hostport_replicas": false,
+  "F8_duplicate_nodeport": false,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": true,
+  "F12_dangling_service": true,
+  "F13_ingress_backend": false,
+  "F14_probe_port": false,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": true
+ },
+ "checkov": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": false,
+  "F4_nodeport_high": false,
+  "F5_rwo_zero": false,
+  "F7_hostport_replicas": true,
+  "F8_duplicate_nodeport": false,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": true,
+  "F12_dangling_service": false,
+  "F13_ingress_backend": false,
+  "F14_probe_port": false,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": true
+ },
+ "API server (dry run)": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": false,
+  "F4_nodeport_high": false,
+  "F5_rwo_zero": false,
+  "F7_hostport_replicas": false,
+  "F8_duplicate_nodeport": false,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": false,
+  "F12_dangling_service": false,
+  "F13_ingress_backend": false,
+  "F14_probe_port": false,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": false
+ },
+ "API server (apply)": {
+  "F1_rwo_replicas": false,
+  "F2_targetport": false,
+  "F3_nodeport_low": true,
+  "F4_nodeport_high": true,
+  "F5_rwo_zero": false,
+  "F7_hostport_replicas": false,
+  "F8_duplicate_nodeport": true,
+  "F9_dependency_port": false,
+  "F10_dependency_name": false,
+  "F11_latest_tag": false,
+  "F12_dangling_service": false,
+  "F13_ingress_backend": false,
+  "F14_probe_port": false,
+  "F15_rwop_replicas": false,
+  "F16_no_memory_limit": false
+ },
+ "MicrOWL (hybrid)": {
+  "F1_rwo_replicas": true,
+  "F2_targetport": true,
+  "F3_nodeport_low": true,
+  "F4_nodeport_high": true,
+  "F5_rwo_zero": true,
+  "F7_hostport_replicas": true,
+  "F8_duplicate_nodeport": true,
+  "F9_dependency_port": true,
+  "F10_dependency_name": true,
+  "F11_latest_tag": true,
+  "F12_dangling_service": true,
+  "F13_ingress_backend": true,
+  "F14_probe_port": true,
+  "F15_rwop_replicas": true,
+  "F16_no_memory_limit": true
+ }
+}
+{
+ "kubeconform": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [],
+  "F4_nodeport_high": [],
+  "F5_rwo_zero": [],
+  "F7_hostport_replicas": [],
+  "F8_duplicate_nodeport": [],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [],
+  "F12_dangling_service": [],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": []
+ },
+ "kube-linter": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [],
+  "F4_nodeport_high": [],
+  "F5_rwo_zero": [],
+  "F7_hostport_replicas": [],
+  "F8_duplicate_nodeport": [],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [
+   "latest-tag"
+  ],
+  "F12_dangling_service": [
+   "dangling-service"
+  ],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [
+   "liveness-port",
+   "readiness-port"
+  ],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": [
+   "unset-memory-requirements"
+  ]
+ },
+ "kube-score": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [],
+  "F4_nodeport_high": [],
+  "F5_rwo_zero": [
+   "Deployment/apps/v1//payment:deployment-replicas"
+  ],
+  "F7_hostport_replicas": [],
+  "F8_duplicate_nodeport": [],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [
+   "Deployment/apps/v1//web:container-image-tag"
+  ],
+  "F12_dangling_service": [
+   "Service/v1//payment-service:service-targets-pod"
+  ],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": [
+   "Deployment/apps/v1//web:container-resources"
+  ]
+ },
+ "checkov": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [],
+  "F4_nodeport_high": [],
+  "F5_rwo_zero": [],
+  "F7_hostport_replicas": [
+   "CKV_K8S_26:Deployment.default.web"
+  ],
+  "F8_duplicate_nodeport": [],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [
+   "CKV_K8S_14:Deployment.default.web"
+  ],
+  "F12_dangling_service": [],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": [
+   "CKV_K8S_13:Deployment.default.web"
+  ]
+ },
+ "API server (dry run)": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [],
+  "F4_nodeport_high": [],
+  "F5_rwo_zero": [],
+  "F7_hostport_replicas": [],
+  "F8_duplicate_nodeport": [],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [],
+  "F12_dangling_service": [],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": []
+ },
+ "API server (apply)": {
+  "F1_rwo_replicas": [],
+  "F2_targetport": [],
+  "F3_nodeport_low": [
+   "The Service \"payment-service\" is invalid: spec.ports[0].nodePort: Invalid value: 8080: provided port is not in the valid range. The range of valid ports is 30000-32767"
+  ],
+  "F4_nodeport_high": [
+   "The Service \"payment-service\" is invalid: spec.ports[0].nodePort: Invalid value: 40000: provided port is not in the valid range. The range of valid ports is 30000-32767"
+  ],
+  "F5_rwo_zero": [],
+  "F7_hostport_replicas": [],
+  "F8_duplicate_nodeport": [
+   "The Service \"payment-service\" is invalid: spec.ports[0].nodePort: Invalid value: 30080: provided port is already allocated"
+  ],
+  "F9_dependency_port": [],
+  "F10_dependency_name": [],
+  "F11_latest_tag": [],
+  "F12_dangling_service": [],
+  "F13_ingress_backend": [],
+  "F14_probe_port": [],
+  "F15_rwop_replicas": [],
+  "F16_no_memory_limit": []
+ },
+ "MicrOWL (hybrid)": {
+  "F1_rwo_replicas": [
+   "S1:app::Deployment/payment"
+  ],
+  "F2_targetport": [
+   "S2c:app::Deployment/payment"
+  ],
+  "F3_nodeport_low": [
+   "S3:app::Deployment/payment"
+  ],
+  "F4_nodeport_high": [
+   "S3:app::Deployment/payment"
+  ],
+  "F5_rwo_zero": [
+   "S5:app::Deployment/payment"
+  ],
+  "F7_hostport_replicas": [
+   "S7:app::Deployment/web"
+  ],
+  "F8_duplicate_nodeport": [
+   "S8:app::Service/payment-service",
+   "S8:app::Service/web-service"
+  ],
+  "F9_dependency_port": [
+   "S9:app::Deployment/web"
+  ],
+  "F10_dependency_name": [
+   "S10:app::Deployment/web"
+  ],
+  "F11_latest_tag": [
+   "S11:app::Deployment/web"
+  ],
+  "F12_dangling_service": [
+   "S12:app::Service/payment-service"
+  ],
+  "F13_ingress_backend": [
+   "S13:app::Ingress/web-ingress"
+  ],
+  "F14_probe_port": [
+   "S14:app::Deployment/web"
+  ],
+  "F15_rwop_replicas": [
+   "S15:app::Deployment/payment"
+  ],
+  "F16_no_memory_limit": [
+   "S16:app::Deployment/web"
+  ]
+ }
+}

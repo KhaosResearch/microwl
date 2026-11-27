@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.khaos.uma.es/microwl/aci/"
+   xmlns:ns2="http://www.w3.org/2003/11/swrl#"
+   xmlns:ns3="http://www.khaos.uma.es/microwl/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_Cpu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/aci/ACICPUResource"/>
+    <ns1:hasCpuCores rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns1:hasCpuCores>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_Memory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIMemoryResource"/>
+    <ns1:hasMemoryGB rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</ns1:hasMemoryGB>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f3ba3d098644687868e1002011005fa">
+    <rdf:first rdf:nodeID="N356cca4e89614e7f8588dcbfc62d9dd7"/>
+    <rdf:rest rdf:nodeID="Nd5a39708eb124df98c26d1237810ce0e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACIConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIConfig"/>
+    <ns3:deployedOn rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIPlatform"/>
+    <ns3:hasResource rdf:resource="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_Cpu"/>
+    <ns3:hasResource rdf:resource="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_Memory"/>
+    <ns3:hasResource rdf:resource="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_RestartPolicy"/>
+    <ns3:hasResource rdf:resource="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_DnsName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/hasCpuCores">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/aci/ACICPUResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/hasMemoryGB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIMemoryResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/ACIPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/DeploymentPlatform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_RestartPolicy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <ns3:resourceType>restartPolicy</ns3:resourceType>
+    <ns3:resourceValue>Always</ns3:resourceValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2be00534a07c4a02b76aa740278fc997">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns2:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasResource"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/cfg"/>
+    <ns2:argument2 rdf:resource="http://www.khaos.uma.es/microwl/aci/r"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b6d1c3ad1c347d7b57ad8282633d7e5">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+    <ns2:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/aci/hasCpuCores"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/r"/>
+    <ns2:argument2 rdf:resource="http://www.khaos.uma.es/microwl/aci/c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc80bacc24fcb418a862419ba1feaeeef">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+    <ns2:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <ns2:arguments rdf:nodeID="N61dae223a7e34840857950053646fe4d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACI_DnsName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+    <ns3:resourceType>dnsNameLabel</ns3:resourceType>
+    <ns3:resourceValue>mywebapp-demo</ns3:resourceValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5a39708eb124df98c26d1237810ce0e">
+    <rdf:first rdf:nodeID="N6b519319dbda4df3802abe5ac1b8ef27"/>
+    <rdf:rest rdf:nodeID="N31a9b23832ed4831b6c3e822a77e3f7b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb64369a30c324594adb765125398b630">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <rdfs:label>S6_ACI_VcpuLimit</rdfs:label>
+    <ns2:body rdf:nodeID="Na3de97db2d6a4c35a79aba10a93d4750"/>
+    <ns2:head rdf:nodeID="N131337f8b6b9495ebcee6a945dcaab46"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N356cca4e89614e7f8588dcbfc62d9dd7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <ns2:propertyPredicate rdf:resource="http://www.khaos.uma.es/microwl/hasPlatformConfig"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/m"/>
+    <ns2:argument2 rdf:resource="http://www.khaos.uma.es/microwl/aci/cfg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b519319dbda4df3802abe5ac1b8ef27">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <ns2:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIConfig"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/cfg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6eb634f66783470b9bac9403ee42d7a1">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <ns2:classPredicate rdf:resource="http://www.semanticweb.org/ontologyOfMicroservicesArchitecture/Microservice"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/ACICPUResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61dae223a7e34840857950053646fe4d">
+    <rdf:first rdf:resource="http://www.khaos.uma.es/microwl/aci/c"/>
+    <rdf:rest rdf:nodeID="N394cec0f6b8d4ddd9e51f60236fbd039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/MyWebApp">
+    <ns3:hasPlatformConfig rdf:resource="http://www.khaos.uma.es/microwl/aci/MyWebApp_ACIConfig"/>
+    <ns3:deployedTo rdf:resource="http://www.khaos.uma.es/microwl/aci/ACIPlatform"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2b527856be44a2abd7c4f1f7ca78866">
+    <rdf:first rdf:nodeID="Nc80bacc24fcb418a862419ba1feaeeef"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31a9b23832ed4831b6c3e822a77e3f7b">
+    <rdf:first rdf:nodeID="N2be00534a07c4a02b76aa740278fc997"/>
+    <rdf:rest rdf:nodeID="Nfd6c6f2078df469d9e90db9c2dda1b94"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/ACIMemoryResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/ACIConfig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.khaos.uma.es/microwl/PlatformSpecificConfiguration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2a696df81094f878621bc37a4a879ea">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+    <ns2:classPredicate rdf:resource="http://www.khaos.uma.es/microwl/InconsistentDeployment"/>
+    <ns2:argument1 rdf:resource="http://www.khaos.uma.es/microwl/aci/m"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N131337f8b6b9495ebcee6a945dcaab46">
+    <rdf:first rdf:nodeID="Ne2a696df81094f878621bc37a4a879ea"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://www.khaos.uma.es/microwl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N394cec0f6b8d4ddd9e51f60236fbd039">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/m">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3de97db2d6a4c35a79aba10a93d4750">
+    <rdf:first rdf:nodeID="N6eb634f66783470b9bac9403ee42d7a1"/>
+    <rdf:rest rdf:nodeID="N5f3ba3d098644687868e1002011005fa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd6c6f2078df469d9e90db9c2dda1b94">
+    <rdf:first rdf:nodeID="N3b6d1c3ad1c347d7b57ad8282633d7e5"/>
+    <rdf:rest rdf:nodeID="Nf2b527856be44a2abd7c4f1f7ca78866"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.khaos.uma.es/microwl/aci/cfg">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+</rdf:RDF>

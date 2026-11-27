@@ -1,0 +1,145 @@
+{'repo': 'cristianespinosa9/k8s-tasks-app', 'sha': '199eb6efb5aec7a3950ce48423a43662cb36d763', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'srikanthmatheesh/ReleaseSphere.GitOps', 'sha': '1f6724cb3d0ea5c6f6f12ed5e587495bec78b612', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 16, 'elements_after': 16, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'named-target'}
+{'repo': 'hoang-trong-tan/gitops-w9-152', 'sha': 'dc42aa80fcedde66ae4dd95d47d582e775abbf1c', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'shanthigowd28-sys/Trend', 'sha': 'ce6b2e3cf06bad6f7c431a59b51e4e4b00af2b61', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'vladagasevic/LeniTECH.K8s.Training', 'sha': 'e901ef45ab3acebbb1eed68f4d96e1642db700c2', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Tunakirkoc/homelab', 'sha': '3e85624cb0bff889f9973b6030de9de2d0eb08a6', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'named-target'}
+{'repo': 'DorianNiemiecSVRJS/ferron-ingress-poc', 'sha': '16786c3ea1892f40c5759802b458456511a2b99d', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'named-target'}
+{'repo': 'mithleshdev/gitops-demo', 'sha': 'f5f38159a4100f67780c9444f7ba2ba4a9d5ba85', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Karma-Soliman/citybike-k8s-gitops', 'sha': 'ea6a8dbcf9912a5a34e3577713c1047d073fa263', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Aaris-Kazi/Synapse-AI', 'sha': 'fa10b9bf18fdd95c06be28df7eb341643956ac79', 'category': 'M3', 'constraint': 'S3', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'service-only'}
+{'repo': 'alissonmarcs/vde-frei', 'sha': 'd3ee2ff1ca86f70a2498266dbe27916760746050', 'category': 'M3', 'constraint': 'S3', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'solra-org/solra', 'sha': '52bea6a6c9d58e3cc221b735857b4ea249f8049e', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 1, 'outcome': 'missed', 'review': 'residual'}
+{'repo': 'AhmedAbdElnasserAhmed/FlowOps-Gitops', 'sha': '3a6415b75ff337bd7753fd276de34cf41b4861be', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'meghanareddy02/movie-picture-pipeline', 'sha': 'b22ec13235494332bdbf19fc5f6049d09abd9019', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'sonhs99/kube-bootstrap', 'sha': 'cb346c102ba939a613afa602f6efe976f201efc7', 'category': 'M3', 'constraint': 'S3', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 1, 'elements_after': 1, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'service-only'}
+{'repo': 'thegostev/k8s_yaml_manifests', 'sha': '3a3d43b4a3f11457550a3b59e6c06ec7b70cbb84', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 0, 'elements_after': 0, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'not translated', 'review': 'bare-pod'}
+{'repo': 'uruws/uws', 'sha': '539e3494bbad4f7a025751d96a3d2609ccb3589b', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'outcome': 'error', 'error': 'Java error message is: ERROR: Ontology is inconsistent, run "pellet explain" to get the reason', 'review': 'placeholder'}
+{'repo': 'buddybs/k8s_nas', 'sha': 'c5ed1b486980408798b699bdc4f0f739d53eaa49', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 27, 'elements_after': 27, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'echarin/tfip-miniproject', 'sha': 'b2b9097b60dd2d85c55a5aa4e2817ade9cd9c1fa', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 5, 'elements_after': 5, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'matthew-r-richards/cloud-cd', 'sha': '8d398ee7ba6f72c0884cba2c1b7e11c8cb10bb0a', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'placeholder'}
+{'repo': 'Nxndzz/banking_application', 'sha': '0dc6abccf90853157638385b57b863e979d9a781', 'category': 'M14', 'constraint': 'S14', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'nimmalabalagit/compose-portal-application', 'sha': '6530eb8f4ea46b333e66948f109da80a9885149c', 'category': 'M11', 'constraint': 'S11', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'DavBax/docker-compose', 'sha': 'e5dec6aad976c3aa568f85b2a310773ea085eaa8', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'ismaelOrtega14/selfhost', 'sha': '85a1ac193399b1cbfcaa17885ceac76119a8f3d9', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 16, 'elements_after': 16, 'flagged_before': 8, 'flagged_after': 7, 'outcome': 'detected'}
+{'repo': 'Steam-Style/ingestion', 'sha': 'e98dd1074e7e1e3f7c729e7db5d6af412094867f', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Mutualist-Creatives/mutualist', 'sha': '44ef97a46d5a7d5b6f70b584117c17746f5d0c5b', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 10, 'elements_after': 10, 'flagged_before': 5, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'EderGtz/GTFS-Realtime-Stream-Engine', 'sha': '827e9dd53094d5013147ae1dcab7f994b4af69aa', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 12, 'elements_after': 12, 'flagged_before': 6, 'flagged_after': 5, 'outcome': 'detected'}
+{'repo': 'Dr20Ervin/205hlab', 'sha': 'b21181d79ec9549e6879a690a7ae59976a4bad65', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'intamixx/matnn', 'sha': '7e31f62b9dc66d672db7fdd7f079f176ff2ba6b5', 'category': 'M16', 'constraint': 'S16', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 5, 'elements_after': 5, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Saker233/go-microservices', 'sha': 'a1dd92ccee93dad3a5f819b70b52e0df799ae60a', 'category': 'M16', 'constraint': 'S16', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'MilanMareels/email-service', 'sha': '1c10081a7442a67a11db3e4b47712079077daae9', 'category': 'M16', 'constraint': 'S16', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Eldemarkki/devops-with-kubernetes-submissions', 'sha': '782de6c808b055c78cf1107c61c8b367b81999e0', 'category': 'M16', 'constraint': 'S16', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'GoormPlay/apigateway-service', 'sha': 'c4794196c9a8d7daa4aed757767b00a694a70205', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'YShimy/argocd-capstone-manifests', 'sha': '13365291e278a852cc8f7c5eb6fb0d5c178059a1', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'lifecheatyou/sessac-hybrid-cloud', 'sha': 'b7fb8eedd36296e0999debda54d854fc82e2b00a', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 7, 'elements_after': 7, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'ghaith-bl/incident-Arena', 'sha': '9c53acc975cae9c7ee1ab6370dd27447d3a2ba5d', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'nyeinpyaesone-ui/ERP03', 'sha': 'ccba91fb1b6ff626db18fac95dbd6370040484c3', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 10, 'elements_after': 10, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Antonymous1337/03-mysql-list-creation', 'sha': '926c02e837a0ee906e884c28e989688e47d7fb5d', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 5, 'elements_after': 5, 'flagged_before': 1, 'flagged_after': 1, 'outcome': 'missed', 'review': 'residual'}
+{'repo': 'EidAbokor1/EKS-Status-Hub', 'sha': '9c34523bcf6787a688e8eecac21fe4ff045951d3', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Sumyabazar1/goatRPC-node-monitoring', 'sha': '581b88a4ba4f1ab317d86f95f726e0b400e51268', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'adil5800/musta', 'sha': 'a4dd13e60d3e43126c7962827dd9a1bbbef86d4e', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 1, 'outcome': 'missed', 'review': 'residual'}
+{'repo': 'medwards2009/michaelswebstuff-iac', 'sha': 'f53fdc5c2319e14f435c37bbafd3bd7ecdcb51d5', 'category': 'M13', 'constraint': 'S13', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'CNSCP/cns-cli', 'sha': '2fb0dd4ad2882e5d1b41bc014121f24a8badf804', 'category': 'M12', 'constraint': 'S12', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Damandan/komodo-stacks', 'sha': 'bd8a52280686dd132e3869448a5a48d5415400b0', 'category': 'M10', 'constraint': 'S10', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 56, 'elements_after': 56, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Jovandosg/Encontro-DevOps-Custom', 'sha': '2be9c12aea4fae81fc5f8653f06ebca667dce94b', 'category': 'M11', 'constraint': 'S11', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'JuanRuano1247723/Biblioteca-GKE', 'sha': '51550d1f2fd98eb93f0d74b4633350ff2759f20d', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'outcome': 'error', 'error': 'Java error message is: ERROR: Ontology is inconsistent, run "pellet explain" to get the reason', 'review': 'placeholder'}
+{'repo': 'KauanDiNubila/kubernetes-microsservicos-alura', 'sha': '5ba0add93d3501cd5048448e9a62e3c7b59127aa', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 11, 'elements_after': 11, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'NamanShrivastava1/Capstone', 'sha': '66d2b82181f075a37910d11d1a3a3539d3303b1c', 'category': 'M12', 'constraint': 'S12', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 9, 'elements_after': 9, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'Rafly-Ananda/microservices-alterra-capstone-project', 'sha': '500a73e61eb42169ff1f5941c145e6be34d068f4', 'category': 'M8', 'constraint': 'S8', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 6, 'elements_after': 6, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'WrittenByAli/civicpulse', 'sha': '93032f5f4d37d7658e68912608080295854573eb', 'category': 'M11', 'constraint': 'S11', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 9, 'elements_after': 9, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'arpita-venkat8/simple-java-app', 'sha': '2258021f357aa1e9f7be526a7b7a072c6edec01f', 'category': 'M12', 'constraint': 'S12', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'dbislimi/ft_transcendence', 'sha': '4788810b85f3e3a46e6b3c254d5b495cd3d4cf56', 'category': 'M8', 'constraint': 'S8', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 8, 'elements_after': 8, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'gmorawski/thor-cluster', 'sha': '77819374fccd56ff93bd3952443cf2ae75a14552', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'kamonphank/devsecops-game-pipeline', 'sha': '7a9970f48e03114babdb82a7390096a080f4c9c3', 'category': 'M12', 'constraint': 'S12', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'kyerans/scsystem', 'sha': '281aa941a69d712a539969b59709435beff3a0bd', 'category': 'M8', 'constraint': 'S8', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'madfam-org/bloom-scroll', 'sha': '7f13d58251e91357ef3a1c0764c6726b705f3df9', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 4, 'elements_after': 4, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'shanthikp246/trellis', 'sha': 'a9076423f2eb7cb4d94f9139855cb5adebe413cc', 'category': 'M10', 'constraint': 'S10', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 6, 'elements_after': 8, 'flagged_before': 2, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'stephan-joseph/prism-library', 'sha': '87128a0139265ae3636ede61726b647c0a34c500', 'category': 'M2', 'constraint': 'S2c', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 2, 'elements_after': 2, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'n-32-coder/kardamom-store', 'sha': '9f02d1f036a53e92613bca8503c31cfe3277c26b', 'category': 'M1', 'constraint': 'S1', 'platform': 'kubernetes', 'source': 'targeted search', 'elements_before': 3, 'elements_after': 3, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'pakallis/django-delayed-tasks', 'sha': '0d4d37cad116449e54efe09e4498215dc1cb2cf0', 'category': 'M10', 'constraint': 'S10', 'platform': 'compose', 'source': 'targeted search', 'elements_before': 8, 'elements_after': 8, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'matthew2583/CarLog', 'sha': 'd65591417d310964821575601a0134bedf32f2f4', 'category': 'M16', 'constraint': 'S16', 'platform': 'kubernetes', 'source': 'random sample', 'elements_before': 10, 'elements_after': 10, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'clivemisiko/Cytonn_Weekly', 'sha': 'e9a12644df8c24fd4b61eefd294099112b649f6f', 'category': 'M2', 'constraint': 'S2c', 'platform': 'compose', 'source': 'random sample', 'elements_before': 8, 'elements_after': 4, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'not-declared'}
+{'repo': 'tigerfsh/dapr-example', 'sha': '8062a7f0c220fdc769d240b7eb013568754668f0', 'category': 'M16', 'constraint': 'S16', 'platform': 'kubernetes', 'source': 'random sample', 'elements_before': 21, 'elements_after': 21, 'flagged_before': 11, 'flagged_after': 0, 'outcome': 'detected'}
+{'repo': 'leochales/projet_piscine_G2', 'sha': 'c782928aa56f772ca00711ee07fbc29dd05af03e', 'category': 'M2', 'constraint': 'S2c', 'platform': 'compose', 'source': 'random sample', 'elements_before': 10, 'elements_after': 10, 'flagged_before': 0, 'flagged_after': 0, 'outcome': 'missed', 'review': 'not-declared'}
+{'repo': 'khizerkhan-2316/k8s-streaming-lab', 'sha': '75ebcb752645f6af2fd0bafe4e7342ceb5444d58', 'category': 'M10', 'constraint': 'S10', 'platform': 'kubernetes', 'source': 'random sample', 'elements_before': 8, 'elements_after': 8, 'flagged_before': 1, 'flagged_after': 0, 'outcome': 'detected'}
+{
+ "random sample": {
+  "n": 5,
+  "outcomes": {
+   "detected": 3,
+   "missed": 2
+  },
+  "reported_on_faulty_version": 3,
+  "review": {
+   "not-declared": 2
+  },
+  "by_category": {
+   "M2": {
+    "missed": 2
+   },
+   "M10": {
+    "detected": 1
+   },
+   "M16": {
+    "detected": 2
+   }
+  }
+ },
+ "targeted search": {
+  "n": 60,
+  "outcomes": {
+   "detected": 48,
+   "missed": 9,
+   "not translated": 1,
+   "error": 2
+  },
+  "reported_on_faulty_version": 51,
+  "review": {
+   "named-target": 3,
+   "service-only": 2,
+   "residual": 3,
+   "bare-pod": 1,
+   "placeholder": 3
+  },
+  "by_category": {
+   "M1": {
+    "detected": 1
+   },
+   "M2": {
+    "detected": 12,
+    "missed": 4,
+    "error": 1
+   },
+   "M3": {
+    "missed": 2,
+    "detected": 1
+   },
+   "M8": {
+    "detected": 3
+   },
+   "M10": {
+    "detected": 3
+   },
+   "M11": {
+    "detected": 3
+   },
+   "M12": {
+    "detected": 4
+   },
+   "M13": {
+    "detected": 8,
+    "missed": 2
+   },
+   "M14": {
+    "not translated": 1,
+    "error": 1,
+    "detected": 3,
+    "missed": 1
+   },
+   "M16": {
+    "detected": 10
+   }
+  }
+ }
+}

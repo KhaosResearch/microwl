@@ -1,0 +1,1025 @@
+[
+ {
+  "repo": "cloudops-squad-2/hackaton-portal-dos-links-gitops",
+  "sha": "fb4474fc66c0d592ea5015423c3cfa649e4a316d",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "ports-other",
+  "secondary": [
+   "networking-other",
+   "env-value"
+  ],
+  "rationale": "Changes the frontend containerPort from 3000 to 80 and splits the Ingress; the Service side is not shown so it is not counted as M2."
+ },
+ {
+  "repo": "sujal-dev2030/student-grading-project",
+  "sha": "1d1d81509b6ca40c1cdf321eed04df62e7d34460",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes indentation of the containers block in the Deployment."
+ },
+ {
+  "repo": "ankdeshm/tpu-v7x-video-diffusion-serving",
+  "sha": "3f958931856e873e07eeacecb4e4ba938a05856a",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "labels-other",
+  "secondary": [],
+  "rationale": "Corrects nodeSelector/toleration label keys to the GKE TPU node labels."
+ },
+ {
+  "repo": "pranavv05/verax",
+  "sha": "809c502b43e64f9fc105bf0f1b4e7f0deafa0e5e",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Adds missing email/GSP environment variables to compose services."
+ },
+ {
+  "repo": "manudiv16/scheduled-db",
+  "sha": "5fc475f27315a52a8d116284f62c3cd983a00b72",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "other",
+  "secondary": [
+   "resources-cpu-or-requests"
+  ],
+  "rationale": "Adds pod anti-affinity to the StatefulSet and removes an HPA to fix Raft scheduling."
+ },
+ {
+  "repo": "habibullahslimanzai-glitch/docker-kubernetes-demo-",
+  "sha": "f5b6442d0aa07d2d05394d124314617be611a8e7",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes the indentation of the image field."
+ },
+ {
+  "repo": "slama-mohamed/Country-service",
+  "sha": "5076647beb1d0df5a88d6cb9d3087480ef448232",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes apiVersion casing and the whole indentation of Deployment and Service."
+ },
+ {
+  "repo": "yashaadhav83-arch/secops-gitforge",
+  "sha": "94296dbb3b67da658c9d8bc19fe3449be9e2740a",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "security",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Hardens the Deployment with pod securityContext and namespace PSA labels; pins image tag."
+ },
+ {
+  "repo": "Supriyakondagurugula/week12",
+  "sha": "effd51f4e91e8f9c47683478ef51109e0e903ed5",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "labels-other",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Aligns Deployment template labels with its own selector and corrects the image name."
+ },
+ {
+  "repo": "MathPerv/MyMLServiceProject",
+  "sha": "821754f3274bd908b5c6727a6c775f94c664bcd9",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "env-value",
+  "secondary": [
+   "resources-cpu-or-requests"
+  ],
+  "rationale": "Adds missing envFrom ConfigMap/Secret refs and a CPU limit."
+ },
+ {
+  "repo": "EduPhietro/Finance.io",
+  "sha": "e2b5c5f43138f8e064f317f5fb13424943a113f3",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Rewrites a multi-line redis command block so comments are not passed as part of the command."
+ },
+ {
+  "repo": "passplease-organization/Bilibili-Reranger",
+  "sha": "984649b0c4a42dbee2f660a2a6785133a872029c",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "image",
+  "secondary": [
+   "schema/syntax"
+  ],
+  "rationale": "Fixes a typo in the image name and the invalid list syntax of network aliases."
+ },
+ {
+  "repo": "eniolastyle/ibnbaydoah",
+  "sha": "6d3b80eefe772b556b2d123c630683fe754b0c5f",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "ports-other",
+  "secondary": [
+   "other"
+  ],
+  "rationale": "Replaces a published host port with expose and drops container_name/version."
+ },
+ {
+  "repo": "tbalazs3/media-server",
+  "sha": "143565b6e9a029f6b493e3e1e9974834b2f807d9",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "image",
+  "secondary": [
+   "schema/syntax"
+  ],
+  "rationale": "Fixes a malformed image registry string and the wrong field name volumePath -> mountPath."
+ },
+ {
+  "repo": "Shavari-kd/plagiarism-detection-system",
+  "sha": "f47098b158651f3f43266cc83b65c94dc96705f6",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes indentation of the Service spec."
+ },
+ {
+  "repo": "HuseinJ/authentication-server-ui",
+  "sha": "d6226147eb7420277a7a013f34adea1cebd1b114",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "other",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Fixes the dockerfile name casing, a build-arg name, and makes the env_file optional."
+ },
+ {
+  "repo": "oussamaes1/k8s-dashboard",
+  "sha": "60d903f87d1620c908e93d09b885c2835ff2ebad",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Adds missing SECRET_KEY/ENCRYPTION_KEY/DATABASE_URL variables and corrects DEBUG."
+ },
+ {
+  "repo": "swathi56G/exam",
+  "sha": "77ceb06d99678eb736a2b82ab5459fd91ee5ff01",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes field casing targetport/nodeport in the Service."
+ },
+ {
+  "repo": "Fruup/funk-finder",
+  "sha": "c0d22d0d656699bf3afd90371f28644b5acd9306",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Converts quoted environment/build-arg list entries to a map to fix parsing."
+ },
+ {
+  "repo": "ronakmaheshwari/finsight-ai",
+  "sha": "b9b55d21ac7434a00f71c2dfe5dfce2acdca781a",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Disables depends_on conditions on a migrate service that blocked startup."
+ },
+ {
+  "repo": "siddhijedhe06/threat-intelligence-platform",
+  "sha": "c302af14430bc890728d09caaac1a1caacccec42",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "schema/syntax",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Fixes env/secretKeyRef indentation in several Deployments; adds service URL env vars in compose."
+ },
+ {
+  "repo": "caballerogod/lab14-cicd",
+  "sha": "ccf380b39e5d727ffa8c52ac1c354c5b0c6a514b",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Adds the missing container name entry and points the image to the registry."
+ },
+ {
+  "repo": "eshanhasitha/Luvora",
+  "sha": "b90a4420c6e06230b5f61120a58d4689bc914738",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "env-value",
+  "secondary": [
+   "image",
+   "networking-other"
+  ],
+  "rationale": "Corrects ASPNETCORE environment values and adds missing service URL/JWT env vars; pins images; adjusts NetworkPolicies."
+ },
+ {
+  "repo": "emranisking/school-admission-system",
+  "sha": "375ca44f78859b3a10952dc2bd07329e95d1fbc7",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "ports-other",
+  "secondary": [],
+  "rationale": "Publishes the database port on localhost so clients can connect."
+ },
+ {
+  "repo": "Galo-stack/reto-solca-cloud",
+  "sha": "5f6ff9128633e680ba66ca138186558a868324aa",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [
+   "ports-other"
+  ],
+  "rationale": "Renames datasource env vars to the Spring Boot names and shifts host ports to avoid a host 3306 clash."
+ },
+ {
+  "repo": "maciejdrywa/prestashop-website",
+  "sha": "292dc1debe0b4caa909444ecd07c222e1a744e05",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Removes a broken nginx service from the compose file."
+ },
+ {
+  "repo": "matthew2583/CarLog",
+  "sha": "d65591417d310964821575601a0134bedf32f2f4",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "M16",
+  "secondary": [
+   "env-value",
+   "probes-other",
+   "resources-cpu-or-requests"
+  ],
+  "rationale": "Adds missing memory (and CPU) limits/requests, a liveness probe, and removes a wrong secretRef."
+ },
+ {
+  "repo": "liberusoftware/project-cms-laravel-filament",
+  "sha": "210de3b3ca3127bde784a6fad70bc7bb05509865",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Removes a duplicated MySQL Service definition and sets the overlay namespace."
+ },
+ {
+  "repo": "azrilpramudia/libre-Go",
+  "sha": "6d3a0ecae70e0dc7c48d79ac669cac83398d7210",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "ports-other",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Moves the database host port from 5432 to 5433 to avoid a clash and sets DB_PORT."
+ },
+ {
+  "repo": "SKN24-3RD-1TEAM/4th_project",
+  "sha": "b4855081c32b494b60fe4dd66bc404a41bc67af1",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "volumes-paths",
+  "secondary": [],
+  "rationale": "Adds a missing media volume mount."
+ },
+ {
+  "repo": "Gwennyie/Docker",
+  "sha": "31230fdab2c9a89f017bb1abc9cf2a65d0e8479e",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "schema/syntax",
+  "secondary": [
+   "image",
+   "env-value"
+  ],
+  "rationale": "Fixes a leading space that broke the services key, the image name and env values."
+ },
+ {
+  "repo": "Zuendelmeister-Dev/otio",
+  "sha": "5577a8f1c3afa1a36c7e21c01b66eff3c84f6d61",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "env-value",
+  "secondary": [
+   "probes-other"
+  ],
+  "rationale": "Overrides POSTGRES_PORT/MQTT_PORT env vars clobbered by Kubernetes service-link variables; adds compose healthchecks."
+ },
+ {
+  "repo": "Anderson-Oloroso/karenflix-backend",
+  "sha": "a0ce3a4e89b152c870f81059c31daf62ca43d2d4",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "env-value",
+  "secondary": [
+   "ports-other"
+  ],
+  "rationale": "Moves hard-coded DB credentials to .env variables and parametrises ports."
+ },
+ {
+  "repo": "Portabase/agent",
+  "sha": "0d82f2808109e9842f33fdb65746d9df13442df1",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Replaces a wrong EDGE_KEY value."
+ },
+ {
+  "repo": "guigolab/rnaget-beacon-demo",
+  "sha": "264dd00cf576ba56c5bb0102b1ae2a634cb48b4e",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "ports-other",
+  "secondary": [
+   "networking-other"
+  ],
+  "rationale": "Points the Traefik load-balancer port to the port nginx listens on (5000) and drops the host port."
+ },
+ {
+  "repo": "skit-devops-2026/devops-24ESKCS079",
+  "sha": "8ebc96e89adcb992adbd7be591d88d369639968e",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Points the Deployment to the published registry image."
+ },
+ {
+  "repo": "levanan-1911/oculide-v1",
+  "sha": "d50d82f2b9d22273d4de3ecd996d2069ab81c26c",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "volumes-paths",
+  "secondary": [],
+  "rationale": "Mounts the missing sample-data SQL file into the database container."
+ },
+ {
+  "repo": "vsstrateg/Internet-shop",
+  "sha": "56514cff8cbecd1ab2fdacfa06368278151a4486",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Moves the volumes declaration to the right service/top level."
+ },
+ {
+  "repo": "Stock-Inc/audio-saas-backend",
+  "sha": "8663ff4875f31fe0f8e89d28f2540cd5a15e4405",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "other",
+  "secondary": [
+   "ports-other",
+   "env-value"
+  ],
+  "rationale": "Relaxes depends_on conditions for services without healthchecks; binds postgres to localhost."
+ },
+ {
+  "repo": "ZOKHIDKHANJAROV/Credit-scoring-mlops",
+  "sha": "2da762eb486f209389cefe878a509c50e9ddec17",
+  "platform": "kubernetes",
+  "query": "fix k8s",
+  "label": "other",
+  "secondary": [
+   "security"
+  ],
+  "rationale": "Adds an initContainer to run DB migrations before the AI workloads start."
+ },
+ {
+  "repo": "SivaSakthi08/Brain_Task_App",
+  "sha": "ab3571424842544024fad08ab3516dec492604c7",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes a tab-indented imagePullPolicy line."
+ },
+ {
+  "repo": "vijaykkashyap1711a/ecommerce",
+  "sha": "8b9ab8c121b53806ab9c2ecbd7d121badd6e0c5c",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "ports-other",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Adds PORT env vars so each app listens on its declared containerPort."
+ },
+ {
+  "repo": "coderv1304/PrometheusAI",
+  "sha": "b9e9aa862959c7131e7e248739f710b7ff12d0d0",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "image",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Switches postgres to a pgvector image and maps secret keys to the env var names the apps expect."
+ },
+ {
+  "repo": "timok19/giacom-order-api",
+  "sha": "40d4043f3a3d7c33f367889f0b9cc8778c080f22",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Pins platform linux/amd64 so the MySQL image runs on Apple Silicon."
+ },
+ {
+  "repo": "holmstain/holm-open-translate",
+  "sha": "d2f23af1cf02e1d149a1a68cb52bba54a6cfd016",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [
+   "probes-other",
+   "volumes-paths"
+  ],
+  "rationale": "Loads variables from env_file instead of a mandatory inline variable and adds a healthcheck."
+ },
+ {
+  "repo": "e-hossam96/product-reviews-analysis",
+  "sha": "5b847a255ed592a4bbe25356b2473e5bb3ec481e",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Removes a duplicated restart key and misplaced backend override."
+ },
+ {
+  "repo": "baloghlan/idtech-lab",
+  "sha": "8b64e0ec024101836c2e941e613d47ec60ce53a6",
+  "platform": "kubernetes",
+  "query": "fix k8s",
+  "label": "other",
+  "secondary": [
+   "probes-other",
+   "resources-cpu-or-requests",
+   "labels-other"
+  ],
+  "rationale": "Meets namespace requirements: wait-for-redis initContainer, LimitRange/quota, node affinity and /health probe paths."
+ },
+ {
+  "repo": "komal0106/bmi-system",
+  "sha": "6cb4c1cd1a0fbbdc4d7212354c7f3e3dee3eb03d",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Adds the missing space after image: and expands inline maps."
+ },
+ {
+  "repo": "subzone/my-it-crew",
+  "sha": "17ac2746b11640e5b29174489ec2a8169c422cda",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Moves a misplaced env value line back under its name."
+ },
+ {
+  "repo": "jataware/beaker-biomedical",
+  "sha": "da9750b93da4336de5908cb6c915eac37b710453",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "volumes-paths",
+  "secondary": [],
+  "rationale": "Fixes bind-mount paths after source/skills moved."
+ },
+ {
+  "repo": "shuu01/homeassistant",
+  "sha": "847a3cdff4af52e18d66aae53c21bdc3ba64ec60",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "schema/syntax",
+  "secondary": [
+   "volumes-paths"
+  ],
+  "rationale": "Fixes the invalid ${$HOME} interpolation in a volume path."
+ },
+ {
+  "repo": "harasees-singh/agent-runtime",
+  "sha": "4014e5d617fcf6d5a0decb5fe671d4ad4210a511",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Adds the missing DOCKER_HOST variable."
+ },
+ {
+  "repo": "synanton/platform",
+  "sha": "fcecd3de6cbb894fb98757940dfa38e879b4ccce",
+  "platform": "kubernetes",
+  "query": "fix k8s",
+  "label": "security",
+  "secondary": [
+   "env-value",
+   "probes-other",
+   "volumes-paths"
+  ],
+  "rationale": "Fixes volume ownership (fsGroup, chown initContainers) and disables service links that broke Neo4j config."
+ },
+ {
+  "repo": "Newbie0505/weather-dashboard-gitops",
+  "sha": "78bae0b5161d1e307ec688c66b0bcffa6de27d5f",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes a stray character and indentation under limits."
+ },
+ {
+  "repo": "RakeshGummala07/DevMind",
+  "sha": "5faea84bf9a5d17fe526ad0dc0b6c8a5dd527cae",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "env-value",
+  "secondary": [
+   "image",
+   "ports-other",
+   "volumes-paths"
+  ],
+  "rationale": "Replaces unresolved ${} placeholders in ConfigMap/Secret, fixes image registry names and adds Kafka PVC."
+ },
+ {
+  "repo": "deepthiduddupudi31/products-kubernetes",
+  "sha": "b155080a9a60295030c7f13fd28a3ee3191b7170",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes a tab-indented imagePullPolicy line and stray annotation."
+ },
+ {
+  "repo": "Jr382/EPAM-github-actions",
+  "sha": "32e617ac26c2fcd7eb2197960e39927553457b2f",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes the YAML document separator."
+ },
+ {
+  "repo": "buithaison17/it209-session12-miniproject",
+  "sha": "1f7bcb2d216bf13ac35c48e7ee28718140ff636a",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Switches services from local builds to the published registry images."
+ },
+ {
+  "repo": "i222641-byte/SCD_A1",
+  "sha": "e097897818a9921fbcb7a693aa7139d01dd34fcc",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "volumes-paths",
+  "secondary": [
+   "labels-other"
+  ],
+  "rationale": "Adds emptyDir mounts needed under readOnlyRootFilesystem and a label for apply ordering."
+ },
+ {
+  "repo": "kubecost/mcp-kubecost",
+  "sha": "aaf0bd133afc6b264cb66c5861440075389e8953",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "env-value",
+  "secondary": [
+   "schema/syntax",
+   "networking-other"
+  ],
+  "rationale": "Adds the allowed-hosts env var, fixes list indentation and Ingress pathType."
+ },
+ {
+  "repo": "amiramahmoud77/Distributed-Event-Driven-Task-Notification-Engine",
+  "sha": "c3be49fabd78cf888f354af438afa8f2c66b4e72",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "env-value",
+  "secondary": [
+   "image",
+   "ports-other"
+  ],
+  "rationale": "Loads the app env_file for the Mongo URI, removes a stray service, pins images and binds ports to localhost."
+ },
+ {
+  "repo": "VictoriqueMoe/umineko_quote_finder",
+  "sha": "81e34d2819a4bb735bdc99e895b242d180c0cb37",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "env-value",
+  "secondary": [
+   "volumes-paths"
+  ],
+  "rationale": "Adds the missing env_file and data volume to the production service."
+ },
+ {
+  "repo": "mik-st/mik-homelab",
+  "sha": "f7b8888226c76f5ae7924916b9a604e6c3414b6e",
+  "platform": "kubernetes",
+  "query": "fix deployment.yaml",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Rewrites the container command args into one shell block so the exports take effect."
+ },
+ {
+  "repo": "adishM98/auth-vpn",
+  "sha": "13cc14a50d018dd5bed3a643b598060609331662",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "other",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Switches the Deployment strategy to Recreate because the RWO PVC blocks rolling updates; fixes image registry."
+ },
+ {
+  "repo": "pbures/3d3t-ai-ml-learning",
+  "sha": "15302478632173f4c9e5e8e64344275fae99425d",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "schema/syntax",
+  "secondary": [
+   "networking-other"
+  ],
+  "rationale": "Renames a Service whose name violated RFC-1035 and updates the Ingress backend accordingly."
+ },
+ {
+  "repo": "Cynthia-Valente-Microsservicos/gateway-service",
+  "sha": "4c218edb9bf0bfb4835f4ffbacbb4586980e260a",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "image",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Points to the ECR image and adds the downstream service URL env vars."
+ },
+ {
+  "repo": "NeuraMemoryAI/NeuraMemory-AI",
+  "sha": "1c5fe78d4cd43711419b745588d603a83d9249e1",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "env-value",
+  "secondary": [
+   "other"
+  ],
+  "rationale": "Adds missing DATABASE_URL/QDRANT_URL variables and drops an unused crawl4ai service."
+ },
+ {
+  "repo": "studyphoenix/frontend",
+  "sha": "a7b3591a9f917213edd71d0a4c82b93d35e919ad",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Fixes the image registry organisation."
+ },
+ {
+  "repo": "kexa-io/kxn",
+  "sha": "7bb42c4552fe5380315a91032f2732bafe5e773d",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "security",
+  "secondary": [
+   "image",
+   "env-value"
+  ],
+  "rationale": "Uses a numeric runAsUser so runAsNonRoot can be verified; bumps image and adds metrics token env."
+ },
+ {
+  "repo": "yuvashrir24mis0287/simple-java-app",
+  "sha": "6b22f37a42c18f43d3034e7d3ff99ec967dea951",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Replaces pom.xml content mistakenly saved as deployment.yaml with a valid manifest."
+ },
+ {
+  "repo": "Ziad-Sallam/Weather-Stations-Monitoring",
+  "sha": "db418fdde454eeed6c5e8719f359c928c95f3b4d",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "image",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Replaces bitnami Kafka/Zookeeper images with upstream ones and renames env vars to match."
+ },
+ {
+  "repo": "clivemisiko/Cytonn_Weekly",
+  "sha": "e9a12644df8c24fd4b61eefd294099112b649f6f",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "M2",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Maps the published port to 3000, the port the runner stage actually listens on (was 8080), and names the api service in env."
+ },
+ {
+  "repo": "vanshhthakral/gitops-argocd-demo",
+  "sha": "d9b9fda66ca67cda7997339e093e2d97e3106706",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Removes heredoc shell lines accidentally saved into the manifest."
+ },
+ {
+  "repo": "Cynthia-Valente-Microsservicos/order-service",
+  "sha": "440f4e66d6dbe130215fb22262ffd62ce6433522",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Fixes the image repository name."
+ },
+ {
+  "repo": "AliceG32/devops-hw1",
+  "sha": "7132acf73ea10e08edbcd683334ec85739c8da2d",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "ports-other",
+  "secondary": [],
+  "rationale": "Changes the published host port 80 to 8081 to avoid a host clash."
+ },
+ {
+  "repo": "Leelakrishna463/astral-wing",
+  "sha": "6cc500b98f21e0a54948096ab116f6feecd6874b",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "volumes-paths",
+  "secondary": [
+   "env-value",
+   "networking-other"
+  ],
+  "rationale": "Fixes the Caddy config bind-mount path, adds env_file and creates the network instead of external."
+ },
+ {
+  "repo": "tigerfsh/dapr-example",
+  "sha": "8062a7f0c220fdc769d240b7eb013568754668f0",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "M16",
+  "secondary": [
+   "resources-cpu-or-requests",
+   "schema/syntax"
+  ],
+  "rationale": "Adds missing memory/CPU limits and requests to every Deployment while normalising indentation."
+ },
+ {
+  "repo": "Saad12345-alt/tasklane",
+  "sha": "9a9bc83df241755c494b259a813c4996fdc03719",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "ports-other",
+  "secondary": [],
+  "rationale": "Moves the published Postgres host port from 5432 to 5433 to avoid a host clash."
+ },
+ {
+  "repo": "Rishu011/movie-picture-pipeline",
+  "sha": "74e4ae513393866ed34a428b7c22a4d9920495ba",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Replaces hard-coded ECR images with placeholder names that kustomize rewrites."
+ },
+ {
+  "repo": "m4dison/career-navigator-ci",
+  "sha": "d08655779e2ef4cd23b02f07d756f47b366f0f20",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "security",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Sets a numeric runAsUser for runAsNonRoot and uses an image-tag placeholder instead of latest."
+ },
+ {
+  "repo": "arpita-venkat8/simple-java-app",
+  "sha": "2258021f357aa1e9f7be526a7b7a072c6edec01f",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "M12",
+  "secondary": [],
+  "rationale": "Repairs a Service selector corrupted by a pasted command so it matches the app=java-app pods again."
+ },
+ {
+  "repo": "ibuki-hum4/BlueArchiveAPI",
+  "sha": "e136022d7857c3c5fbe64c61dda0b69f067ca2b4",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "volumes-paths",
+  "secondary": [],
+  "rationale": "Removes a storageClassName that does not exist in the cluster from the volumeClaimTemplate."
+ },
+ {
+  "repo": "leochales/projet_piscine_G2",
+  "sha": "c782928aa56f772ca00711ee07fbc29dd05af03e",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "M2",
+  "secondary": [
+   "env-value"
+  ],
+  "rationale": "Maps the published port to container port 80 (nginx in the built image) instead of 5173; passes VITE_API_URL as build arg."
+ },
+ {
+  "repo": "Fran-Requena/biblioteca",
+  "sha": "f3d146d7c7da8bc9069d20bb9359bd03953cfa82",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Makes DATABASE_URL/SECRET_KEY mandatory with an error message instead of silently empty."
+ },
+ {
+  "repo": "Umair9211/cloud-monitoring-dashboard",
+  "sha": "cbf12df5eb8765d35f5484deec0f354ce35ba4ee",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "volumes-paths",
+  "secondary": [
+   "other"
+  ],
+  "rationale": "Mounts the nginx config file and adds depends_on backend."
+ },
+ {
+  "repo": "gdlopes/pdp-backend",
+  "sha": "a98e5f6a07ebd0db7eacc057eaac798f580d90db",
+  "platform": "kubernetes",
+  "query": "fix k8s",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Adds Argo CD sync-wave annotations so config, DB and migration apply before the API."
+ },
+ {
+  "repo": "akshay-sakharwade/three-tier-k8s-devsecops-gitops-observability-self-healing",
+  "sha": "249058a2a13b04d1bbc31c4a62f66e771083baf4",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes the capitalised Metadata field in the Namespace."
+ },
+ {
+  "repo": "maanyarao/node-cicd-app",
+  "sha": "88a122d37f85f4b2bbf59fb9aac47e29ab11d7bd",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "schema/syntax",
+  "secondary": [],
+  "rationale": "Fixes indentation of the image field."
+ },
+ {
+  "repo": "daihao007/Lumalife",
+  "sha": "2776a38948e2d74c8374aae6bfad598876cd0366",
+  "platform": "kubernetes",
+  "query": "fix kubernetes service",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Adds the missing MySQL datasource env vars to the services."
+ },
+ {
+  "repo": "DevBackend-SENAC-PA26-5-51/estoque",
+  "sha": "503ff3d23431df21ddbdd38aa2543f5f3986666a",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "other",
+  "secondary": [
+   "env-value",
+   "ports-other"
+  ],
+  "rationale": "Makes the seed job tolerate failure, parametrises image/ports and reformats healthchecks."
+ },
+ {
+  "repo": "ramsharmas0109/sre-bootcamp",
+  "sha": "0ed4c38ab07fc58c9287f49372dd63879f34bdc4",
+  "platform": "compose",
+  "query": "fix compose file",
+  "label": "networking-other",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Uses host.docker.internal via extra_hosts to reach the database and the published image."
+ },
+ {
+  "repo": "MindsIgnited/structures",
+  "sha": "b03b760a255d7f3708b7526b68b6c03bb37137aa",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "image",
+  "secondary": [
+   "other"
+  ],
+  "rationale": "Pins observability images from latest to known working versions."
+ },
+ {
+  "repo": "venoprotective/BaseForge",
+  "sha": "1388538d908fd57186abbcc978a8e9ac8c46db00",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Fixes the pgAdmin image name (pgadmin -> pgadmin4)."
+ },
+ {
+  "repo": "PrawinKumar22/PrawinKumar22",
+  "sha": "8ebb3cd8d6eea4cd0ffc3f6e7d7523b903694955",
+  "platform": "kubernetes",
+  "query": "fix kubernetes deployment",
+  "label": "image",
+  "secondary": [
+   "schema/syntax"
+  ],
+  "rationale": "Fixes the image placeholder {DOCKER_IMAGE} -> ${DOCKER_IMAGE}."
+ },
+ {
+  "repo": "ghofraneidriss/Esprit-PI-4SAE6-2026-mind-care",
+  "sha": "2845b14ac2e1eab857238796b156a20059adab18",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "env-value",
+  "secondary": [
+   "resources-cpu-or-requests"
+  ],
+  "rationale": "Replaces the Spring profile with explicit MySQL datasource env vars; sets imagePullPolicy Never."
+ },
+ {
+  "repo": "steph-vie/Prompt_manager",
+  "sha": "05157624a4daaf012ada4680970154ca41278663",
+  "platform": "compose",
+  "query": "fix docker-compose",
+  "label": "other",
+  "secondary": [],
+  "rationale": "Uses ${VERSION:-latest} so an empty VERSION still yields a valid container/project name."
+ },
+ {
+  "repo": "saritMalkiel/Inquiries-task",
+  "sha": "fb3e25fe6dc4374768c532b82233e3b69e3d1dc5",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [],
+  "rationale": "Renames the connection-string env var to the key the application reads."
+ },
+ {
+  "repo": "khizerkhan-2316/k8s-streaming-lab",
+  "sha": "75ebcb752645f6af2fd0bafe4e7342ceb5444d58",
+  "platform": "kubernetes",
+  "query": "fix k8s manifest",
+  "label": "M10",
+  "secondary": [
+   "image",
+   "env-value",
+   "security"
+  ],
+  "rationale": "Points OPENSEARCH env URLs from the non-existent host opensearch to the actual Service opensearch-service; pins images, adds admin secret."
+ },
+ {
+  "repo": "viteacreator/first_cloud_app",
+  "sha": "0ff06f0e0b375721d470b30aaefca890938aef60",
+  "platform": "kubernetes",
+  "query": "fix k8s yaml",
+  "label": "image",
+  "secondary": [],
+  "rationale": "Points the Deployments to the published GHCR image names."
+ },
+ {
+  "repo": "jacksonhmt/customer-registration-api",
+  "sha": "e05700d1dc42864c5c4f1257014a50e66b55a727",
+  "platform": "compose",
+  "query": "fix docker-compose.yml",
+  "label": "env-value",
+  "secondary": [
+   "image"
+  ],
+  "rationale": "Aligns Postgres credentials between compose and the app and requires the password."
+ }
+]

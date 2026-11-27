@@ -1,0 +1,209 @@
+{
+ "CQ1": {
+  "question": "Which microservices are deployed on Kubernetes?",
+  "query": "SELECT ?ms WHERE { ?ms mw:hasPlatformConfig ?c . ?c a mw:KubernetesConfig . }",
+  "n_answers": 3,
+  "answers": [
+   [
+    "MyWebApp"
+   ],
+   [
+    "DataAggregator"
+   ],
+   [
+    "PaymentProcessor"
+   ]
+  ]
+ },
+ "CQ2": {
+  "question": "What are the abstract specifications of MyWebApp?",
+  "query": "SELECT ?replicas ?image ?cport ?eport ?tport ?size ?mode WHERE {\n                 mw:MyWebApp mw:hasWorkloadSpec/mw:hasReplicas ?replicas ;\n                   mw:hasContainerSpec ?c ; mw:hasNetworkSpec ?n ; mw:hasStorageSpec ?s .\n                 ?c mw:hasContainerImage ?image ; mw:hasContainerPort ?cport .\n                 ?n mw:hasExposedPort ?eport ; mw:hasTargetPort ?tport .\n                 ?s mw:hasStorageSize ?size ; mw:hasAccessMode ?mode . }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "3",
+    "nginx:alpine",
+    "80",
+    "80",
+    "80",
+    "10Gi",
+    "ReadWriteMany"
+   ]
+  ]
+ },
+ "CQ3": {
+  "question": "Which microservices have an inconsistent deployment?",
+  "query": "SELECT ?ms WHERE { ?ms a mw:InconsistentDeployment . }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "PaymentProcessor"
+   ]
+  ]
+ },
+ "CQ4": {
+  "question": "Which Kubernetes configurations use an out-of-range NodePort?",
+  "query": "SELECT ?cfg ?p WHERE { ?cfg a mw:KubernetesConfig ; mw:hasResource ?r .\n                 ?r a mw:NodePortResource ; mw:hasNodePortValue ?p . FILTER(?p < 30000 || ?p > 32767) }",
+  "n_answers": 0,
+  "answers": []
+ },
+ "CQ5": {
+  "question": "Which platform-specific parameters does each configuration of DataAggregator define?",
+  "query": "SELECT ?cfg ?type ?value WHERE { mw:DataAggregator mw:hasPlatformConfig ?cfg .\n                 ?cfg mw:hasResource ?r . ?r mw:resourceType ?type .\n                 OPTIONAL { ?r mw:resourceValue ?value } }",
+  "n_answers": 8,
+  "answers": [
+   [
+    "DataAggregator_DockerConfig",
+    "composeVersion",
+    "3.8"
+   ],
+   [
+    "DataAggregator_DockerConfig",
+    "volume",
+    "aggregator_data:/var/lib/aggregator"
+   ],
+   [
+    "DataAggregator_ECSConfig",
+    "cpu",
+    "1024"
+   ],
+   [
+    "DataAggregator_ECSConfig",
+    "launchType",
+    "FARGATE"
+   ],
+   [
+    "DataAggregator_ECSConfig",
+    "memory",
+    "2048"
+   ],
+   [
+    "DataAggregator_ECSConfig",
+    "taskRoleArn",
+    "arn:aws:iam::123456789012:role/dataAggregatorRole"
+   ],
+   [
+    "DataAggregator_K8sConfig",
+    "serviceType",
+    "ClusterIP"
+   ],
+   [
+    "DataAggregator_K8sConfig",
+    "persistentVolumeClaim",
+    "aggregator-pvc"
+   ]
+  ]
+ },
+ "CQ6": {
+  "question": "Which microservices target more than one platform?",
+  "query": "SELECT ?ms (COUNT(DISTINCT ?c) AS ?n) WHERE { ?ms mw:hasPlatformConfig ?c . }\n               GROUP BY ?ms HAVING (COUNT(DISTINCT ?c) > 1)",
+  "n_answers": 3,
+  "answers": [
+   [
+    "MyWebApp",
+    "3"
+   ],
+   [
+    "DataAggregator",
+    "3"
+   ],
+   [
+    "PaymentProcessor",
+    "3"
+   ]
+  ]
+ },
+ "CQ7": {
+  "question": "Which microservices replicate a workload over shared ReadWriteOnce storage?",
+  "query": "SELECT ?ms ?r WHERE { ?ms mw:hasWorkloadSpec/mw:hasReplicas ?r ; mw:hasStorageSpec ?s .\n                 ?s a mw:SharedStorageSpecification ; mw:hasAccessMode ?m .\n                 FILTER(?r > 1 && str(?m) = \"ReadWriteOnce\") }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "PaymentProcessor",
+    "2"
+   ]
+  ]
+ },
+ "CQ8": {
+  "question": "On which infrastructure targets is each microservice deployed?",
+  "query": "SELECT DISTINCT ?ms ?infra WHERE { ?ms mw:hasPlatformConfig ?c .\n                 ?c mw:deployedOnInfrastructure ?infra . }",
+  "n_answers": 6,
+  "answers": [
+   [
+    "MyWebApp",
+    "EKSCluster"
+   ],
+   [
+    "DataAggregator",
+    "EKSCluster"
+   ],
+   [
+    "PaymentProcessor",
+    "EKSCluster"
+   ],
+   [
+    "DataAggregator",
+    "ECSClusterProd"
+   ],
+   [
+    "MyWebApp",
+    "ECSClusterProd"
+   ],
+   [
+    "PaymentProcessor",
+    "ECSClusterProd"
+   ]
+  ]
+ },
+ "CQ9": {
+  "question": "On which microservices does MyWebApp depend?",
+  "query": "SELECT ?ms WHERE { mw:MyWebApp mw:dependsOn ?ms . }",
+  "n_answers": 2,
+  "answers": [
+   [
+    "DataAggregator"
+   ],
+   [
+    "PaymentProcessor"
+   ]
+  ]
+ },
+ "CQ10": {
+  "question": "Which microservices are affected if PaymentProcessor fails?",
+  "query": "SELECT ?ms WHERE { ?ms mw:dependsOn mw:PaymentProcessor . }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "MyWebApp"
+   ]
+  ]
+ },
+ "CQ11": {
+  "question": "Which dependencies do not resolve to an endpoint of their deployment unit?",
+  "query": "SELECT ?ms ?host WHERE { ?ms mw:hasDependency ?d . ?d mw:dependsOnHost ?host .\n                  FILTER NOT EXISTS { ?d mw:resolvesTo ?e } }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "DataAggregator",
+    "kafka"
+   ]
+  ]
+ },
+ "CQ12": {
+  "question": "Which constraints does each microservice violate, and with which severity?",
+  "query": "SELECT ?ms ?id ?severity WHERE { ?ms mw:violates ?c . ?c mw:hasConstraintId ?id .\n                  { ?c a mw:ErrorConstraint . BIND(\"error\" AS ?severity) } UNION\n                  { ?c a mw:WarningConstraint . BIND(\"warning\" AS ?severity) } }",
+  "n_answers": 1,
+  "answers": [
+   [
+    "PaymentProcessor",
+    "S1",
+    "error"
+   ]
+  ]
+ },
+ "shacl_hybrid_case_study": {
+  "DataAggregator": [
+   "S10"
+  ]
+ }
+}

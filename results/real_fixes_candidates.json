@@ -1,0 +1,996 @@
+[
+ {
+  "repo": "cristianespinosa9/k8s-tasks-app",
+  "sha": "199eb6efb5aec7a3950ce48423a43662cb36d763",
+  "parent": "83068346b9626a70033dc44140f8904ea49408d2",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/10-web-service.yaml"
+  ],
+  "dir": "k8s",
+  "message": "Fix: targetPort del Service tasks-web a 8080 (Node), qued\u00f3 en 80 (nginx viejo)",
+  "rationale": "tasks-web Service targetPort 80 but web container listens on containerPort 8080; commit sets targetPort 8080",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "srikanthmatheesh/ReleaseSphere.GitOps",
+  "sha": "1f6724cb3d0ea5c6f6f12ed5e587495bec78b612",
+  "parent": "b7c4c915ae71301b4cda40a82b6466fba2603e3f",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "postgres.yml"
+  ],
+  "dir": ".",
+  "message": "Fix targetPort to use correct port number",
+  "rationale": "postgres Service used named targetPort postgres-port that no container port defines (containerPort 5432 unnamed); commit sets targetPort 5432",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "hoang-trong-tan/gitops-w9-152",
+  "sha": "dc42aa80fcedde66ae4dd95d47d582e775abbf1c",
+  "parent": "c0b75c4f88e4bc582528981baf622756d3041f28",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/frontend/deployment.yaml"
+  ],
+  "dir": "k8s/frontend",
+  "message": "fix targetport",
+  "rationale": "frontend Service targetPort 8085 while nginx container exposes containerPort 80; commit sets targetPort 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "shanthigowd28-sys/Trend",
+  "sha": "ce6b2e3cf06bad6f7c431a59b51e4e4b00af2b61",
+  "parent": "ff458f59a9c8d0b0d4ec03af09c7ab1b4974c533",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "service.yml"
+  ],
+  "dir": ".",
+  "message": "Fix targetPort in trend-service configuration",
+  "rationale": "trend-service targetPort 3000 while the selected trend-app container exposes containerPort 80; commit sets targetPort 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "vladagasevic/LeniTECH.K8s.Training",
+  "sha": "e901ef45ab3acebbb1eed68f4d96e1642db700c2",
+  "parent": "c1b1141606ac5f0c8d89c81a52ceac774faf7c01",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "02-kubernetes-osnove/03-service.yaml"
+  ],
+  "dir": "02-kubernetes-osnove",
+  "message": "Fix targetPort in service configuration to match port 80",
+  "rationale": "Service targetPort 5000 while the training pods expose containerPort 80; commit sets targetPort 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Tunakirkoc/homelab",
+  "sha": "3e85624cb0bff889f9973b6030de9de2d0eb08a6",
+  "parent": "d4d656bf6fc875572e7ae3ecbdaaeb8884f4eaaf",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "apps/bluemap/base/service.yaml"
+  ],
+  "dir": "apps/bluemap/base",
+  "message": "Fix targetPort in Bluemap service configuration",
+  "rationale": "bluemap Service targetPort referenced named port http but the container port 8100 is named web; commit sets targetPort web",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "DorianNiemiecSVRJS/ferron-ingress-poc",
+  "sha": "16786c3ea1892f40c5759802b458456511a2b99d",
+  "parent": "0106c12242bb30a576d2ea0a13f3c05f9dd41017",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "deployment.yaml"
+  ],
+  "dir": ".",
+  "message": "fix: fix targetPort in Kubernetes deployment (in a Service) [skip ci]",
+  "rationale": "Service targetPort referenced named port http but the container declares an unnamed containerPort 80; commit sets targetPort 80",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "mithleshdev/gitops-demo",
+  "sha": "f5f38159a4100f67780c9444f7ba2ba4a9d5ba85",
+  "parent": "b8aed47498e278f1d0ef6f98f4971a993223f1c1",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "apps/go-app/service.yaml"
+  ],
+  "dir": "apps/go-app",
+  "message": "Fix targetPort in service configuration to match the correct port 80",
+  "rationale": "go-app Service targetPort 8080 while the container exposes containerPort 80; commit sets targetPort 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Karma-Soliman/citybike-k8s-gitops",
+  "sha": "ea6a8dbcf9912a5a34e3577713c1047d073fa263",
+  "parent": "03a927c757f25b97020fadfda51b4a545d489e5f",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "gitops/service.yaml"
+  ],
+  "dir": "gitops",
+  "message": "Restore correct CityBike Service targetPort",
+  "rationale": "CityBike Service targetPort 3999 while the container exposes containerPort 3000 (named http); commit restores targetPort 3000",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Aaris-Kazi/Synapse-AI",
+  "sha": "fa10b9bf18fdd95c06be28df7eb341643956ac79",
+  "parent": "3a4545ac10e0b3dd4436cf6eb8190078489a19f0",
+  "category": "M3",
+  "platform": "kubernetes",
+  "files": [
+   "deployment.yml"
+  ],
+  "dir": ".",
+  "message": "FIX :: nodeport fix",
+  "rationale": "NodePort Service declared nodePort 80888, outside 30000-32767; commit sets 30088",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "alissonmarcs/vde-frei",
+  "sha": "d3ee2ff1ca86f70a2498266dbe27916760746050",
+  "parent": "fcb838c9bf58381be45d6f8d7f787b2b237b3efc",
+  "category": "M3",
+  "platform": "kubernetes",
+  "files": [
+   "manifests/deployment.yaml"
+  ],
+  "dir": "manifests",
+  "message": "Fix nodePort value in deployment.yaml",
+  "rationale": "Service nodePort 308888 is outside 30000-32767; commit sets 30888",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "solra-org/solra",
+  "sha": "52bea6a6c9d58e3cc221b735857b4ea249f8049e",
+  "parent": "c5477f7ff937374d1d0fd8745b03e4e0f854eea4",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "deploy/app/gitlab/solra-gitlab-deployment.yaml"
+  ],
+  "dir": "deploy/app/gitlab",
+  "message": "fix: targetport 8080\uc73c\ub85c \uc218\uc815",
+  "rationale": "gitlab Service targetPort 8080 while the container declared containerPort 80; commit changes the containerPort (and nginx listen port) to 8080",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "AhmedAbdElnasserAhmed/FlowOps-Gitops",
+  "sha": "3a6415b75ff337bd7753fd276de34cf41b4861be",
+  "parent": "8e0a8c5e98e6f93d2995adfb6ef5b2d97f9efe4d",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "apps/product-service/service.yaml",
+   "apps/user-service/service.yaml"
+  ],
+  "dir": "apps/product-service",
+  "message": "fix service ports + expose services",
+  "rationale": "product-service and user-service Services had targetPort 80 while their containers expose containerPort 8080; commit sets targetPort 8080 (and type NodePort)",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "meghanareddy02/movie-picture-pipeline",
+  "sha": "b22ec13235494332bdbf19fc5f6049d09abd9019",
+  "parent": "cd70d92269cdae86e57def666dbf1250fcb94925",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "starter/frontend/k8s/service.yaml"
+  ],
+  "dir": "starter/frontend/k8s",
+  "message": "Change targetPort to 80 in frontend service",
+  "rationale": "frontend Service targetPort 3000 while the container exposes containerPort 80; commit sets targetPort 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "sonhs99/kube-bootstrap",
+  "sha": "cb346c102ba939a613afa602f6efe976f201efc7",
+  "parent": "990e095f5516d0b1e25d09bb990e0d712cb8d457",
+  "category": "M3",
+  "platform": "kubernetes",
+  "files": [
+   "argocd/infrastructure/external/proxmox.yaml"
+  ],
+  "dir": "argocd/infrastructure/external",
+  "message": "fix: nodeport",
+  "rationale": "proxmox NodePort Service declared nodePort 34321, outside 30000-32767; commit sets 32222",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "thegostev/k8s_yaml_manifests",
+  "sha": "3a3d43b4a3f11457550a3b59e6c06ec7b70cbb84",
+  "parent": "9fc85d813455bc14f8580f22ff6a7b40b2aae673",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "yaml/app-livenessProbe.yaml"
+  ],
+  "dir": "yaml",
+  "message": "fix(#11): Fix liveness probe port mismatch (8000 -> 8080)",
+  "rationale": "Pod liveness probe on port 8000 while the container declares containerPort 8080; commit sets the probe port to 8080",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "uruws/uws",
+  "sha": "539e3494bbad4f7a025751d96a3d2609ccb3589b",
+  "parent": "22c453e4572d4d324f23350778487292e6c617c4",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "pod/tapo/deploy.yaml"
+  ],
+  "dir": "pod/tapo",
+  "message": "tapo: fix liveness probe port number",
+  "rationale": "tapo Deployment liveness probe on port 80 while the container declares containerPort 3000; commit sets the probe port to 3000 (manifest uses ${VAR} placeholders)",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "buddybs/k8s_nas",
+  "sha": "c5ed1b486980408798b699bdc4f0f739d53eaa49",
+  "parent": "db87686ada77d47dc28daa0acb6bfe10f4a85e38",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "apps/media-services/starr/sabnzbd-deployment.yaml"
+  ],
+  "dir": "apps/media-services/starr",
+  "message": "sabnzbd: fix readinessProbe port to 8080",
+  "rationale": "sabnzbd readinessProbe on port 8081 while the container declares containerPort 8080; commit sets the probe port to 8080",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "echarin/tfip-miniproject",
+  "sha": "b2b9097b60dd2d85c55a5aa4e2817ade9cd9c1fa",
+  "parent": "04fa70f35afbcecea38201741832f52f5259e087",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/ng-frontend-template.yaml"
+  ],
+  "dir": "k8s",
+  "message": "fix readinessprobe port",
+  "rationale": "ng-frontend readinessProbe on port 8080 while the container declares containerPort 80; commit sets the probe port to 80 (manifest uses ${VAR} placeholders)",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "matthew-r-richards/cloud-cd",
+  "sha": "8d398ee7ba6f72c0884cba2c1b7e11c8cb10bb0a",
+  "parent": "e5212642d76324029dd86f57e38bed604519745d",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "teamcity/k8s/deployment_template_teamcity.yaml"
+  ],
+  "dir": "teamcity/k8s",
+  "message": "Fix readinessProbe port",
+  "rationale": "TeamCity server readinessProbe on port 8080 while the container declares containerPort 8111; commit sets the probe port to 8111 (image uses a %VAR% placeholder)",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Nxndzz/banking_application",
+  "sha": "0dc6abccf90853157638385b57b863e979d9a781",
+  "parent": "f25811ef2613d47bfc937a45ca4cc72a3c9225aa",
+  "category": "M14",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/deployment.yaml"
+  ],
+  "dir": "k8s",
+  "message": "Fix readiness probe port in deployment.yaml",
+  "rationale": "readinessProbe on port 5000 while the container declares containerPort 5001; commit sets the probe port to 5001",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "nimmalabalagit/compose-portal-application",
+  "sha": "6530eb8f4ea46b333e66948f109da80a9885149c",
+  "parent": "3dba4979ca927836e8c608d713ea1d9698164d4f",
+  "category": "M11",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/base/gateway-service/deployment.yaml",
+   "k8s/base/order-service/deployment.yaml",
+   "k8s/base/product-service/deployment.yaml",
+   "k8s/base/user-service/deployment.yaml"
+  ],
+  "dir": "k8s/base/gateway-service",
+  "message": "fix: image tags latest -> dev-latest in base deployments",
+  "rationale": "gateway/order/product/user Deployments with replicas: 2 used image tag latest; commit pins them to the explicit dev-latest tag",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "DavBax/docker-compose",
+  "sha": "e5dec6aad976c3aa568f85b2a310773ea085eaa8",
+  "parent": "ca831ca1dcc9feb256a608646884ceb35f3b43da",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "filebrowser-quantum/docker-compose.yaml"
+  ],
+  "dir": "filebrowser-quantum",
+  "message": "added memory limit to filebrowser",
+  "rationale": "filebrowser service had its mem_limit commented out (no memory limit); commit enables mem_limit: 128M",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "ismaelOrtega14/selfhost",
+  "sha": "85a1ac193399b1cbfcaa17885ceac76119a8f3d9",
+  "parent": "f20c7db6154d11caddea3a8d4cd3294556e41a87",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "stacks/media/docker-compose.yml"
+  ],
+  "dir": "stacks/media",
+  "message": "fix: add memory limit to flaresolverr (2G limit / 512M reservation)",
+  "rationale": "flaresolverr service had no memory limit; commit adds deploy.resources.limits.memory: 2G",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Steam-Style/ingestion",
+  "sha": "e98dd1074e7e1e3f7c729e7db5d6af412094867f",
+  "parent": "ec9452dd2fdc10d3f50b47e4f3c99ba233904e93",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "Add memory limits",
+  "rationale": "qdrant and ingestion services had no memory limit; commit adds mem_limit to both",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Mutualist-Creatives/mutualist",
+  "sha": "44ef97a46d5a7d5b6f70b584117c17746f5d0c5b",
+  "parent": "d96bc417644edabf6ae2062c0a247cabc7abf781",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "docker-compose.prod.yml"
+  ],
+  "dir": ".",
+  "message": "chore: add memory limits to production compose (#1)",
+  "rationale": "production compose services had no memory limits; commit adds mem_limit to the five services",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "EderGtz/GTFS-Realtime-Stream-Engine",
+  "sha": "827e9dd53094d5013147ae1dcab7f994b4af69aa",
+  "parent": "91603e85508f920fc0f317114d9fbb5839739ab6",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "feat(analytics): add memory limit to analytics service in docker-compose",
+  "rationale": "analytics service had no memory limit; commit adds mem_limit: 1g",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Dr20Ervin/205hlab",
+  "sha": "b21181d79ec9549e6879a690a7ae59976a4bad65",
+  "parent": "ea86f241bd8f9208137a5c2b72786df633d348cd",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "compose/authentik/compose.yaml"
+  ],
+  "dir": "compose/authentik",
+  "message": "Add resource limits for authentik server and worker services",
+  "rationale": "authentik server and worker had no memory limit; commit adds deploy.resources.limits.memory",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "intamixx/matnn",
+  "sha": "7e31f62b9dc66d672db7fdd7f079f176ff2ba6b5",
+  "parent": "a4edb9502f65ef1f6bf8d166eef8a2e46d689bd3",
+  "category": "M16",
+  "platform": "kubernetes",
+  "files": [
+   "matnn/matnn-deployment.yaml"
+  ],
+  "dir": "matnn",
+  "message": "Add resource limits and requests to deployment",
+  "rationale": "matnn Deployment container had no resources; commit adds limits.memory: 1Gi (and requests)",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Saker233/go-microservices",
+  "sha": "a1dd92ccee93dad3a5f819b70b52e0df799ae60a",
+  "parent": "dc15a742fd363c14936a6a5b8a821fc22ab85aec",
+  "category": "M16",
+  "platform": "kubernetes",
+  "files": [
+   "project/k8s/mongo.yml",
+   "project/k8s/rabbitmq.yml"
+  ],
+  "dir": "project/k8s",
+  "message": "adding resource limits to both deployments",
+  "rationale": "mongo and rabbitmq Deployments had no resources; commit adds limits.memory: 128Mi",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "MilanMareels/email-service",
+  "sha": "1c10081a7442a67a11db3e4b47712079077daae9",
+  "parent": "2a7c63ed8dae84bd7d11bb84daa1401cc51deb58",
+  "category": "M16",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "Add resource limits to email_api and mongodb services",
+  "rationale": "email_api and mongodb services had no memory limit; commit adds deploy.resources.limits.memory",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Eldemarkki/devops-with-kubernetes-submissions",
+  "sha": "782de6c808b055c78cf1107c61c8b367b81999e0",
+  "parent": "1e60baf22cee59bee02048fbf869f148bd27046c",
+  "category": "M16",
+  "platform": "kubernetes",
+  "files": [
+   "random-todo-job/manifests/cronjob.yaml",
+   "the_project/manifests/deployment.yaml",
+   "todo-backend/manifests/database.yaml",
+   "todo-backend/manifests/deployment.yaml"
+  ],
+  "dir": "the_project/manifests",
+  "message": "Add resource limits",
+  "rationale": "todo-app Deployment (and other workloads) had no resources; commit adds limits.memory: 128Mi",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "GoormPlay/apigateway-service",
+  "sha": "c4794196c9a8d7daa4aed757767b00a694a70205",
+  "parent": "6ab1b34c4ea2e41cc218deb3a0bd5eee889725f4",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/ingress-apigateway.yml"
+  ],
+  "dir": "k8s",
+  "message": "fix: ingress backend service name to apigateway-service",
+  "rationale": "Ingress backend named Service apigateway, but the Service in the manifests is apigateway-service; commit renames the backend",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "YShimy/argocd-capstone-manifests",
+  "sha": "13365291e278a852cc8f7c5eb6fb0d5c178059a1",
+  "parent": "f4d5cc3546ab2f8a14ac31f147247081f81006bf",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "base/ingress.yaml"
+  ],
+  "dir": "base",
+  "message": "Fix Ingress backend: point at capstone-app-stable, not the removed capstone-app Service",
+  "rationale": "Ingress backend pointed at the removed capstone-app Service (only capstone-app-stable/canary exist); commit points it at capstone-app-stable",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "lifecheatyou/sessac-hybrid-cloud",
+  "sha": "b7fb8eedd36296e0999debda54d854fc82e2b00a",
+  "parent": "512c723e4d5b73325ab3b173269d5354844d7ebc",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/prod/ingress.yaml"
+  ],
+  "dir": "k8s/prod",
+  "message": "fix: ingress backend \uc11c\ube44\uc2a4\uba85 backend-svc \u2192 hometax-be",
+  "rationale": "prod Ingress backends named backend-svc, but the backend Service is hometax-be; commit renames the backends (also edits a Helm template copy)",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "ghaith-bl/incident-Arena",
+  "sha": "9c53acc975cae9c7ee1ab6370dd27447d3a2ba5d",
+  "parent": "0520b443246d4401dec8c5901bb16d3f82aaa980",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "labs/incident-arena-12-ingress-service-rbac/manifests/05-ingress.yaml"
+  ],
+  "dir": "labs/incident-arena-12-ingress-service-rbac/manifests",
+  "message": "Fix Ingress backend port mismatch",
+  "rationale": "Ingress backend used port 8080 on feature-flag-svc, which only exposes port 80; commit sets port 80",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "nyeinpyaesone-ui/ERP03",
+  "sha": "ccba91fb1b6ff626db18fac95dbd6370040484c3",
+  "parent": "2a071cf6291a1f53f6002e255810e31ba5988b66",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "infra/k8s/base/ingress.yaml",
+   "infra/k8s/base/web-deployment.yaml"
+  ],
+  "dir": "infra/k8s/base",
+  "message": "fix(k8s): correct health probe paths and API service port",
+  "rationale": "Ingress backend used port 3000 on erp03-api, which exposes port 8000; commit sets 8000 (also edits probe paths)",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Antonymous1337/03-mysql-list-creation",
+  "sha": "926c02e837a0ee906e884c28e989688e47d7fb5d",
+  "parent": "f5477a6ec3f0aa4a5f93ed93b0b4bbe31aa86e55",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/ingress.yaml"
+  ],
+  "dir": "k8s",
+  "message": "Fix ingress service name",
+  "rationale": "Ingress backend named phpmyadmin, but the Service is phpmyadmin-service; commit renames the backend",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "EidAbokor1/EKS-Status-Hub",
+  "sha": "9c34523bcf6787a688e8eecac21fe4ff045951d3",
+  "parent": "01d62a64871b85d3f8ad109891d1d8086016f5dd",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "apps/app-hub.yml"
+  ],
+  "dir": "apps",
+  "message": "fix ingress service name",
+  "rationale": "Ingress backend named the-app-hub, but the Service is the-app-hub-service; commit renames the backend",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Sumyabazar1/goatRPC-node-monitoring",
+  "sha": "581b88a4ba4f1ab317d86f95f726e0b400e51268",
+  "parent": "df4ea63424afd454dfe8de2137773fa03fefbd7e",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "part2/node/goat-ingress.yaml"
+  ],
+  "dir": "part2/node",
+  "message": "ingress service name mismatch fix",
+  "rationale": "Ingress backend used Service goat on port 8545, which goat does not expose (geth does); commit points it at geth",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "adil5800/musta",
+  "sha": "a4dd13e60d3e43126c7962827dd9a1bbbef86d4e",
+  "parent": "93cda3a145c65fbe0bcb76a632e86de237e9363b",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "kubernetes-menifeste.yaml"
+  ],
+  "dir": ".",
+  "message": "ingress service name modify in menifeste.yaml",
+  "rationale": "Ingress backend named musta-service-name, but the Service is musta-service; commit renames the backend",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "medwards2009/michaelswebstuff-iac",
+  "sha": "f53fdc5c2319e14f435c37bbafd3bd7ecdcb51d5",
+  "parent": "2348c53f1a80e588c36233507ec6bf5f2b57c6f5",
+  "category": "M13",
+  "platform": "kubernetes",
+  "files": [
+   "toddler-type/ingress.yaml"
+  ],
+  "dir": "toddler-type",
+  "message": "correct ingress service name",
+  "rationale": "Ingress backend named toddler-type-service, but the Service is toddler-type; commit renames the backend",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "CNSCP/cns-cli",
+  "sha": "2fb0dd4ad2882e5d1b41bc014121f24a8badf804",
+  "parent": "87f52dba62881c492209654d99ab85310cbc800e",
+  "category": "M12",
+  "platform": "kubernetes",
+  "files": [
+   "kubernetes/service.yaml"
+  ],
+  "dir": "kubernetes",
+  "message": "fix: kubernetes service match 'app' not 'name'",
+  "rationale": "Service selector name: cns-cli matched no pod template labels (pods are labelled app: cns-cli); commit changes the selector key to app",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Damandan/komodo-stacks",
+  "sha": "bd8a52280686dd132e3869448a5a48d5415400b0",
+  "parent": "8e97c7e0916e39879d8ee0f4b60aab646c11fcf0",
+  "category": "M10",
+  "platform": "compose",
+  "files": [
+   "combined/compose.yaml"
+  ],
+  "dir": "combined",
+  "message": "Fix broker URL",
+  "rationale": "PAPERLESS_REDIS pointed to host broker, but the compose service is named paperless_broker; commit fixes the host name",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Jovandosg/Encontro-DevOps-Custom",
+  "sha": "2be9c12aea4fae81fc5f8653f06ebca667dce94b",
+  "parent": "6ff75b77c5f08e4e66d2a74f46a184c01745a6ce",
+  "category": "M11",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/manifests.yaml"
+  ],
+  "dir": "k8s",
+  "message": "fix: replace latest tag with versioned image in k8s manifest",
+  "rationale": "multi-replica Deployment used image tag latest; commit pins tag v32",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "JuanRuano1247723/Biblioteca-GKE",
+  "sha": "51550d1f2fd98eb93f0d74b4633350ff2759f20d",
+  "parent": "cd92d537de405f4bf4f2ae8dd5c12a1e92886898",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/20-ejemplares.yaml"
+  ],
+  "dir": "k8s",
+  "message": "fix: corregir puerto y healthcheck de ejemplares en Kubernetes",
+  "rationale": "ejemplares Service targetPort 8000 while the container declared containerPort 5000; commit changes containerPort (and probe) to 8000",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "KauanDiNubila/kubernetes-microsservicos-alura",
+  "sha": "5ba0add93d3501cd5048448e9a62e3c7b59127aa",
+  "parent": "8dba7b1af0e2251da3aad5a0611176737cd61f68",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/app.yaml"
+  ],
+  "dir": "k8s",
+  "message": "fix: corrige containerPort do gateway e do pagamentos",
+  "rationale": "gateway and pagamentos Services targeted ports 8082/40000 that the containers did not declare (80/4000); commit fixes the containerPorts",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "NamanShrivastava1/Capstone",
+  "sha": "66d2b82181f075a37910d11d1a3a3539d3303b1c",
+  "parent": "fee974e73e666cd36b964377a7a18f548a79577d",
+  "category": "M12",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/auth-deployment.yml",
+   "k8s/auth-service.yml"
+  ],
+  "dir": "k8s",
+  "message": "feat(auth): update Dockerfile and package.json for improved start script; enhance auth routes with session management; fix Kubernetes service selector",
+  "rationale": "auth Service selector app: app matched no pod labels (pods are app: auth); commit sets the selector to app: auth (also adds an env var)",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "Rafly-Ananda/microservices-alterra-capstone-project",
+  "sha": "500a73e61eb42169ff1f5941c145e6be34d068f4",
+  "parent": "df12e350452eaa60d0e12df92a2255b17f872338",
+  "category": "M8",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "fix port docker compose",
+  "rationale": "two compose services published host port 8081; commit moves one mapping to 8082",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "WrittenByAli/civicpulse",
+  "sha": "93032f5f4d37d7658e68912608080295854573eb",
+  "parent": "a3a011143af66d57d618126c4b3c98712176accb",
+  "category": "M11",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/base/backend-deployment.yaml",
+   "k8s/base/frontend-deployment.yaml",
+   "k8s/base/kustomization.yaml"
+  ],
+  "dir": "k8s/base",
+  "message": "fix(k8s): replace :latest tags with semver 0.1.0 to avoid -8 deduction",
+  "rationale": "multi-replica frontend/backend Deployments used image tag latest; commit pins 0.1.0 (also sets kustomize images)",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "arpita-venkat8/simple-java-app",
+  "sha": "2258021f357aa1e9f7be526a7b7a072c6edec01f",
+  "parent": "e6947204e8505de1d3eb74fe0da8fc9e0d1dfe1a",
+  "category": "M12",
+  "platform": "kubernetes",
+  "files": [
+   "deployment.yaml"
+  ],
+  "dir": ".",
+  "message": "Fix Kubernetes service selector",
+  "rationale": "Service selector value was corrupted (app: java-appdocker pull ...) and matched no pods; commit restores app: java-app",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "dbislimi/ft_transcendence",
+  "sha": "4788810b85f3e3a46e6b3c254d5b495cd3d4cf56",
+  "parent": "0559ae64574614153df2ef3a3ba17e46ca65023d",
+  "category": "M8",
+  "platform": "compose",
+  "files": [
+   "srcs/docker-compose.yml"
+  ],
+  "dir": "srcs",
+  "message": "fix port docker compose eet race conditions dans le bombparty",
+  "rationale": "two compose services (nginx and adminer) published host port 8080; commit removes nginx's 80/8080 mappings and remaps 443 to 8443",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "gmorawski/thor-cluster",
+  "sha": "77819374fccd56ff93bd3952443cf2ae75a14552",
+  "parent": "e2330e002de695188e72ecbaadd9fb375b9d4710",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "apps/base/mealie/deployment.yaml",
+   "apps/base/mealie/expose.yaml",
+   "apps/staging/mealie/cloudflare.yaml"
+  ],
+  "dir": "apps/base/mealie",
+  "message": "Fixing targetPort",
+  "rationale": "mealie Service targetPort 9000 while the container declared containerPort 8080; commit sets containerPort 9000",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "kamonphank/devsecops-game-pipeline",
+  "sha": "7a9970f48e03114babdb82a7390096a080f4c9c3",
+  "parent": "bb62fe7f1a3a0f5b65a4ac7f0bacdb5e8096e627",
+  "category": "M12",
+  "platform": "kubernetes",
+  "files": [
+   "Manifest-file/deployment-service.yml"
+  ],
+  "dir": "Manifest-file",
+  "message": "Fix deployment label to correctly reference 'tetris'",
+  "rationale": "tetris Service selector app: tetris matched no pods (template labelled app: top); commit relabels the pod template",
+  "tutorial": true,
+  "source": "targeted search"
+ },
+ {
+  "repo": "kyerans/scsystem",
+  "sha": "281aa941a69d712a539969b59709435beff3a0bd",
+  "parent": "0e4191cb72e978f1d7a8a77d2d4487e97bfddaa5",
+  "category": "M8",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "chore: fix port docker compose",
+  "rationale": "api-server and alert services both published host port 8000; commit moves one to 5100",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "madfam-org/bloom-scroll",
+  "sha": "7f13d58251e91357ef3a1c0764c6726b705f3df9",
+  "parent": "53d1290e49e57dda588577d1f06f63f18e12c4ac",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "enclii.yaml",
+   "infra/k8s/production/secrets-template.yaml",
+   "infra/k8s/production/web-service.yaml"
+  ],
+  "dir": "infra/k8s/production",
+  "message": "fix: targetPort 3000\u219280, add enclii.yaml for almanac.solar",
+  "rationale": "web Service targetPort 3000 while the container exposes containerPort 80; commit sets targetPort 80",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "shanthikp246/trellis",
+  "sha": "a9076423f2eb7cb4d94f9139855cb5adebe413cc",
+  "parent": "4cda66b55cedf16eda90cf0bb580a30fc6cb8ccb",
+  "category": "M10",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/deployment-celery.yaml",
+   "k8s/deployment-fastapi.yaml",
+   "k8s/deployment-pushgateway.yaml"
+  ],
+  "dir": "k8s",
+  "message": "fix broker url. should be rabbitmq-service not just rabbitmq",
+  "rationale": "CELERY_BROKER_URL pointed to host rabbitmq, but the Service is rabbitmq-service; commit fixes the host",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "stephan-joseph/prism-library",
+  "sha": "87128a0139265ae3636ede61726b647c0a34c500",
+  "parent": "15a059c33a614ff3c7824cc18d44905f3bee8240",
+  "category": "M2",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/deployment.yaml"
+  ],
+  "dir": "k8s",
+  "message": "load sample deals from LIBRARY_SEED in the Node server; fix containerPort; seed in manifest",
+  "rationale": "Service targetPort 8792 while the container declared containerPort 80; commit sets containerPort 8792",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "n-32-coder/kardamom-store",
+  "sha": "9f02d1f036a53e92613bca8503c31cfe3277c26b",
+  "parent": "4f146f44aa794d29ecb8b1933977db4624d35c42",
+  "category": "M1",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/20-pvc.yaml"
+  ],
+  "dir": "k8s",
+  "message": "Use EFS storage class with ReadWriteMany for shared PVC",
+  "rationale": "multi-replica Deployment mounted a ReadWriteOnce PVC; commit switches the PVC to ReadWriteMany (EFS)",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "pakallis/django-delayed-tasks",
+  "sha": "0d4d37cad116449e54efe09e4498215dc1cb2cf0",
+  "parent": "fcc582129118e94eba60f3185ba6bc4652596ef5",
+  "category": "M10",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml"
+  ],
+  "dir": ".",
+  "message": "Fix broker URL",
+  "rationale": "TEST_BROKER pointed to host rabbit, but the compose service is rabbitmq; commit fixes the host",
+  "tutorial": false,
+  "source": "targeted search"
+ },
+ {
+  "repo": "matthew2583/CarLog",
+  "sha": "d65591417d310964821575601a0134bedf32f2f4",
+  "parent": "b1aba98581afd87f7bd814fede218e8d2e2f8744",
+  "category": "M16",
+  "platform": "kubernetes",
+  "files": [
+   "k8s/frontend.yml",
+   "k8s/gateway.yml",
+   "k8s/migrate.yml",
+   "k8s/postgres.yml"
+  ],
+  "dir": "k8s",
+  "message": "",
+  "rationale": "Adds missing memory (and CPU) limits/requests, a liveness probe, and removes a wrong secretRef.",
+  "tutorial": null,
+  "source": "random sample"
+ },
+ {
+  "repo": "clivemisiko/Cytonn_Weekly",
+  "sha": "e9a12644df8c24fd4b61eefd294099112b649f6f",
+  "parent": "833b31a28f1f507508742d95919ab3254b831185",
+  "category": "M2",
+  "platform": "compose",
+  "files": [
+   "docker-compose.yml",
+   "docker-compose.dev.yml"
+  ],
+  "dir": ".",
+  "message": "",
+  "rationale": "Maps the published port to 3000, the port the runner stage actually listens on (was 8080), and names the api service in env.",
+  "tutorial": null,
+  "source": "random sample"
+ },
+ {
+  "repo": "tigerfsh/dapr-example",
+  "sha": "8062a7f0c220fdc769d240b7eb013568754668f0",
+  "parent": "7cf539d3d74a02be00c2a7cf6445c415176fff32",
+  "category": "M16",
+  "platform": "kubernetes",
+  "files": [],
+  "dir": "k8s",
+  "message": "",
+  "rationale": "Adds missing memory/CPU limits and requests to every Deployment while normalising indentation.",
+  "tutorial": null,
+  "source": "random sample"
+ },
+ {
+  "repo": "leochales/projet_piscine_G2",
+  "sha": "c782928aa56f772ca00711ee07fbc29dd05af03e",
+  "parent": "a9733872db48451550c7a9cf6ee2dd4043e2b1fc",
+  "category": "M2",
+  "platform": "compose",
+  "files": [
+   "compose-local.yml"
+  ],
+  "dir": ".",
+  "message": "",
+  "rationale": "Maps the published port to container port 80 (nginx in the built image) instead of 5173; passes VITE_API_URL as build arg.",
+  "tutorial": null,
+  "source": "random sample"
+ },
+ {
+  "repo": "khizerkhan-2316/k8s-streaming-lab",
+  "sha": "75ebcb752645f6af2fd0bafe4e7342ceb5444d58",
+  "parent": "315efade1cd42eab839a1fcbfcbfcdcc372671aa",
+  "category": "M10",
+  "platform": "kubernetes",
+  "files": [],
+  "dir": "k8s-manifests",
+  "message": "",
+  "rationale": "Points OPENSEARCH env URLs from the non-existent host opensearch to the actual Service opensearch-service; pins images, adds admin secret.",
+  "tutorial": null,
+  "source": "random sample",
+  "recursive": true
+ }
+]

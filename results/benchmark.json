@@ -1,0 +1,1524 @@
+{
+ "n_configs": 250,
+ "n_units_b": 335,
+ "n_elements_b": 2086,
+ "batch_seconds_part_a": {
+  "pellet": 0.774,
+  "shacl": 17.107,
+  "opa": 0.033,
+  "shacl_closed": 21.441,
+  "opa_closed": 0.023,
+  "hybrid": 4.43
+ },
+ "pellet": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M10": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M13": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M14": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "Overall": {
+    "TP": 180,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.878,
+    "recall": 0.6,
+    "F1": 0.713,
+    "FPR": 0.088
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.8,
+    "recall": 1.0,
+    "F1": 0.889,
+    "FPR": 0.088
+   },
+   "Part B": {
+    "TP": 80,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.762,
+    "recall": 0.4,
+    "F1": 0.525,
+    "FPR": 0.088
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 15,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 10,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "shacl": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M10": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M13": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M14": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "Overall": {
+    "TP": 180,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.878,
+    "recall": 0.6,
+    "F1": 0.713,
+    "FPR": 0.088
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.8,
+    "recall": 1.0,
+    "F1": 0.889,
+    "FPR": 0.088
+   },
+   "Part B": {
+    "TP": 80,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.762,
+    "recall": 0.4,
+    "F1": 0.525,
+    "FPR": 0.088
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 15,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 10,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "opa": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M10": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M13": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M14": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.444,
+    "recall": 1.0,
+    "F1": 0.615,
+    "FPR": 0.088,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 0,
+    "FP": 25,
+    "FN": 20,
+    "TN": 260,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.088,
+    "attributed": 0
+   },
+   "Overall": {
+    "TP": 180,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.878,
+    "recall": 0.6,
+    "F1": 0.713,
+    "FPR": 0.088
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 25,
+    "FN": 0,
+    "TN": 260,
+    "precision": 0.8,
+    "recall": 1.0,
+    "F1": 0.889,
+    "FPR": 0.088
+   },
+   "Part B": {
+    "TP": 80,
+    "FP": 25,
+    "FN": 120,
+    "TN": 260,
+    "precision": 0.762,
+    "recall": 0.4,
+    "F1": 0.525,
+    "FPR": 0.088
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 15,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 10,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "shacl_closed": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M10": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M13": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M14": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "Overall": {
+    "TP": 300,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part B": {
+    "TP": 200,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 0,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 0,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "opa_closed": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M10": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M13": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M14": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "Overall": {
+    "TP": 300,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part B": {
+    "TP": 200,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 0,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 0,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "hybrid": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M2": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M3": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M4": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M7": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M8": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M9": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M10": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M11": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M12": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M13": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M14": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M15": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "M16": {
+    "TP": 20,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0,
+    "attributed": 20
+   },
+   "Overall": {
+    "TP": 300,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part A": {
+    "TP": 100,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   },
+   "Part B": {
+    "TP": 200,
+    "FP": 0,
+    "FN": 0,
+    "TN": 285,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "FPR": 0.0
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 0,
+   "HN-perrep": 0,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 0,
+   "HN-latest": 0,
+   "HN-external": 0,
+   "HN-probemulti": 0,
+   "HN-rwop": 0,
+   "HN-svcport": 0,
+   "HN-nodeport": 0,
+   "HN-hostport": 0,
+   "HN-portname": 0
+  }
+ },
+ "ablated": {
+  "metrics": {
+   "M1": {
+    "TP": 20,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.294,
+    "recall": 1.0,
+    "F1": 0.455,
+    "FPR": 0.32
+   },
+   "M2": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 20,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M3": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 20,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M4": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 20,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M5": {
+    "TP": 20,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.294,
+    "recall": 1.0,
+    "F1": 0.455,
+    "FPR": 0.32
+   },
+   "M7": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M8": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M9": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M10": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M11": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M12": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M13": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M14": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M15": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "M16": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   },
+   "Overall": {
+    "TP": 40,
+    "FP": 48,
+    "FN": 60,
+    "TN": 102,
+    "precision": 0.455,
+    "recall": 0.4,
+    "F1": 0.426,
+    "FPR": 0.32
+   },
+   "Part A": {
+    "TP": 40,
+    "FP": 48,
+    "FN": 60,
+    "TN": 102,
+    "precision": 0.455,
+    "recall": 0.4,
+    "F1": 0.426,
+    "FPR": 0.32
+   },
+   "Part B": {
+    "TP": 0,
+    "FP": 48,
+    "FN": 0,
+    "TN": 102,
+    "precision": 0.0,
+    "recall": 0.0,
+    "F1": 0.0,
+    "FPR": 0.32
+   }
+  },
+  "hard_negatives_flagged": {
+   "V": 0,
+   "HN-multi": 15,
+   "HN-perrep": 15,
+   "HN-single": 0,
+   "HN-bound": 0,
+   "HN-remap": 18
+  }
+ },
+ "agreement": {
+  "pellet_vs_shacl": true,
+  "pellet_vs_opa": true,
+  "hybrid_vs_shacl_closed": true,
+  "hybrid_vs_opa_closed": true,
+  "rules_hybrid_vs_opa_closed": true
+ },
+ "per_config": {
+  "pellet": {
+   "mean_ms": 413.26,
+   "sd_ms": 12.56,
+   "median_ms": 414.36
+  },
+  "shacl": {
+   "mean_ms": 41.35,
+   "sd_ms": 46.4,
+   "median_ms": 26.79
+  },
+  "opa": {
+   "mean_ms": 26.84,
+   "sd_ms": 7.11,
+   "median_ms": 27.23
+  },
+  "hybrid": {
+   "mean_ms": 460.03,
+   "sd_ms": 52.14,
+   "median_ms": 445.25
+  }
+ }
+}
